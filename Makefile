@@ -21,27 +21,6 @@ micromamba activate zdott
 export PYTHONPATH="$$(pwd)"
 endef
 
-setup/env:
-	cd setup/env
-	for name in liftoff zdott;
-	do
-	  micromamba env create -y --channel-priority flexible --name "$${name}" --file "$${name}.yaml"
-	done
-	micromamba run -n zdott pip install -r zdott-requirements.txt
-	micromamba run -n zdott cargo install --locked --git https://github.com/alnfedorov/reat --rev c166a6c740739c6dbab7bdab971a912bea1031c5
-
-setup/annotation:
-	$(ACTIVATE_ENV)
-	ASSEMBLIES="$$(pwd)/assemblies"
-	cd setup/annotation
-	bash download-annotation.sh "$${ASSEMBLIES}"
-	# Optional - liftoff the annotation
-	# Shouldn't be required because all annotation files were commited
-	# micromamba run -n liftoff bash liftoff-CHM13v2-annotation.sh "$${ASSEMBLIES}"
-	python index-gencode-gff.py
-	python index-refseq-gff.py
-	python index-liftoff-gff.py
-
 setup/pre-mapping:
 	$(ACTIVATE_ENV)
 	cd setup/pre-mapping
