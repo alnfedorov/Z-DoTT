@@ -11,11 +11,11 @@ rm -rf "${INDEXES}/GRCm39" "${INDEXES}/CHM13v2"
 # Cat the annotation data
 mkdir -p "${INDEXES}/CHM13v2"
 zcat "${ASSEMBLIES}/CHM13v2/CHM13v2.fa.bgz" > "${INDEXES}/CHM13v2/sequence.fa"
-zcat "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.liftoff+gencode-*.gff3.gz" > "${INDEXES}/CHM13v2/annotation.gff3"
+zcat "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.liftoff+gencode-47.gff3.gz" > "${INDEXES}/CHM13v2/annotation.gff3"
 
 mkdir -p "${INDEXES}/GRCm39"
 zcat "${ASSEMBLIES}/GRCm39/GRCm39.primary_assembly.genome.fa.bgz" > "${INDEXES}/GRCm39/sequence.fa"
-zcat "${ASSEMBLIES}/GRCm39/gencode/gencode.*.primary_assembly.annotation.gff3.gz" > "${INDEXES}/GRCm39/annotation.gff3"
+zcat "${ASSEMBLIES}/GRCm39/gencode/gencode.vM36.primary_assembly.annotation.gff3.gz" > "${INDEXES}/GRCm39/annotation.gff3"
 
 for assembly in CHM13v2 GRCm39; do
   # Add viruses
