@@ -10,7 +10,7 @@ name = "GRCm39"
 organism = "Mus musculus"
 
 # Sequence
-fasta = ROOT / "GRCm39.primary_assembly.genome.fa.gz"
+fasta = ROOT / "GRCm39.primary_assembly.genome.fa.bgz"
 
 # RepeatMasker
 repcls = RepmaskerClassification(ROOT / "repmasker.GRCm39.classification.tsv.gz")

@@ -10,7 +10,7 @@ name = "CHM13v2"
 organism = "Homo sapiens"
 
 # Sequence
-fasta = ROOT / "CHM13v2.fa.gz"
+fasta = ROOT / "CHM13v2.fa.bgz"
 
 # RepeatMasker
 repcls = RepmaskerClassification(ROOT / "repmasker.CHM13v2.classification.tsv.gz")

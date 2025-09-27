@@ -18,8 +18,8 @@ samtools = "==1.21"
 
 [feature.liftoff.tasks."setup/liftoff"]
 cmd = "./liftoff-CHM13v2-annotation.sh $GENCODE_VERSION $ASSEMBLIES"
-cwd = "setup/annotation"
 env = { GENCODE_VERSION = "47", ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies" }
+cwd = "setup/annotation"
 
 ####################################################################################################
 # Nextflow: data preprocessing
@@ -38,11 +38,11 @@ env = { HUMAN_VERSION = "47", MOUSE_VERSION = "M36", ASSEMBLIES = "$PIXI_PROJECT
 cwd = "setup/annotation"
 
 [feature.nextflow.tasks."setup/make-indexes"]
-cmd = "bash index.sh $ASSEMBLIES $PREMAPPING"
-env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results" }
-cwd = "analyses/nfcore/resources"
+cmd = "./index.sh $ASSEMBLIES $PREMAPPING $INDEXES"
+env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results", INDEXES = "$PIXI_PROJECT_ROOT/analyses/nfcore/resources/indexes" }
+cwd = "setup/nfcore"
 
-[feature.nextflow.tasks."nf-core/rnaseq"]
+[feature.nextflow.tasks."nfcore/rnaseq"]
 cmd = [
     "cd", "$PIXI_PROJECT_ROOT/analyses/nfcore/rnaseq/{{ directory }}", "&&",
     "nfcore", "run", "-c", "resources/nfcore.config", "-params-file", "resources/params.yaml", "-resume",
@@ -50,11 +50,11 @@ cmd = [
 ]
 args = ["directory"]
 
-[feature.nextflow.tasks."nf-core/fetchngs"]
+[feature.nextflow.tasks."nfcore/fetchngs"]
 cmd = [
     # Change to the directory with id.csv
     "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
-    # Run nf-core/fetchngs
+    # Run nfcore/fetchngs
     "nextflow", "run", "-resume", "-profile", "singularity",
     "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
     "--input", "id.csv", "--outdir", "results", "&&",
