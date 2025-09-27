@@ -393,4 +393,4 @@ samples:
       replica: '4'
       HSV-1: F strain[VR-733]
       treatment: HSV-1
-description: null
+description: FLAG RIP-seq of HSV-1 infected MEFs (batch 2)
