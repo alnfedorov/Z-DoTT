@@ -14,12 +14,16 @@ logging.basicConfig(
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
 SEQ_PROJECT_YAML = "seq-project.yaml"
 HEADER = "# AUTO-GENERATED FILE - DO NOT EDIT\n"
+PARSER = f"""
+def {{}}() -> seqproj.Project:
+    return seqproj.adapter.yaml.load(ROOT / "{SEQ_PROJECT_YAML}")
+"""
 
 
 def main():
     """
     Scans subdirectories in the DATA_DIR for seq-project.yaml files
-    and auto-generates __init__.py modules to make them importable.
+    and auto-generates __init__.py modules to make them "importable" from Python.
     """
     if not DATA_DIR.exists():
         logging.error(f"Data directory not found: {DATA_DIR}")
@@ -58,8 +62,8 @@ def main():
                 f.write(HEADER)
                 f.write("from pathlib import Path\n\n")
                 f.write("from biobit.toolkit import seqproj\n\n")
-                f.write(f"ROOT = Path(__file__).parent\n")
-                f.write(f'{folder.name} = seqproj.adapter.yaml.load(ROOT / "{SEQ_PROJECT_YAML}")\n')
+                f.write(f"ROOT = Path(__file__).parent\n\n")
+                f.write(PARSER.format(folder.name))
         except Exception as e:
             logging.error(f"Failed to write __init__.py for '{folder.name}'. Error: {e}")
             continue

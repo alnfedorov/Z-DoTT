@@ -4,4 +4,7 @@ from pathlib import Path
 from biobit.toolkit import seqproj
 
 ROOT = Path(__file__).parent
-PRJNA256013 = seqproj.adapter.yaml.load(ROOT / "seq-project.yaml")
+
+
+def PRJNA256013() -> seqproj.Project:
+    return seqproj.adapter.yaml.load(ROOT / "seq-project.yaml")
