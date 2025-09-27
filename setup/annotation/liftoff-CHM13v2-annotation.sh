@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euxo pipefail
 
-VERSION=47
-ASSEMBLIES=$1
+GENCODE_VERSION=$1
+ASSEMBLIES=$2
 
 # Create a list of chromosomes to map the annotation from
 rm -f "${ASSEMBLIES}/CHM13v2/chroms.txt"
@@ -37,14 +37,14 @@ do
 done
 
 # Unzip fasta files, otherwise Liftoff will not work
-gunzip "${ASSEMBLIES}/CHM13v2/CHM13v2.fa.gz" &
-gunzip "${ASSEMBLIES}/CHM13v2/gencode/liftoff/GRCh38.primary_assembly.genome.fa.gz" &
+gunzip -k "${ASSEMBLIES}/CHM13v2/CHM13v2.fa.bgz" --stdout > "${ASSEMBLIES}/CHM13v2/CHM13v2.fa" &
+gunzip -k "${ASSEMBLIES}/CHM13v2/gencode/liftoff/GRCh38.primary_assembly.genome.fa.gz" &
 wait
 
 liftoff \
-  -g "${ASSEMBLIES}/CHM13v2/gencode/liftoff/gencode.v${VERSION}.primary_assembly.annotation.gff3.gz" \
-  -o "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${VERSION}.gff3" \
-  -u "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${VERSION}.unmapped-gff3.txt" \
+  -g "${ASSEMBLIES}/CHM13v2/gencode/liftoff/gencode.v${GENCODE_VERSION}.primary_assembly.annotation.gff3.gz" \
+  -o "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${GENCODE_VERSION}.gff3" \
+  -u "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${GENCODE_VERSION}.unmapped-gff3.txt" \
   -chroms "${ASSEMBLIES}/CHM13v2/chroms.txt" \
   -unplaced "${ASSEMBLIES}/CHM13v2/contigs.txt" \
   -exclude_partial -a 0.95 -s 0.95 \
@@ -55,23 +55,17 @@ liftoff \
 
 # Cleanup
 rm -rf intermediate_files \
+  "${ASSEMBLIES}/CHM13v2/gencode/liftoff/GRCh38.primary_assembly.genome.fa" \
   "${ASSEMBLIES}/CHM13v2/gencode/liftoff/GRCh38.primary_assembly.genome.fa.fai" \
-  "${ASSEMBLIES}/CHM13v2/gencode/liftoff/gencode.v${VERSION}.primary_assembly.annotation.gff3.gz_db" \
+  "${ASSEMBLIES}/CHM13v2/gencode/liftoff/gencode.v${GENCODE_VERSION}.primary_assembly.annotation.gff3.gz_db" \
   "${ASSEMBLIES}/CHM13v2/chroms.txt" \
   "${ASSEMBLIES}/CHM13v2/contigs.txt" \
+  "${ASSEMBLIES}/CHM13v2/CHM13v2.fa" \
   "${ASSEMBLIES}/CHM13v2/CHM13v2.fa.mmi" \
   "${ASSEMBLIES}/CHM13v2/CHM13v2.fa.fai" \
-  "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${VERSION}.gff3"
+  "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${GENCODE_VERSION}.gff3"
 
-mv "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${VERSION}.gff3_polished" \
-   "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.liftoff+gencode-${VERSION}.gff3"
+mv "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.gencode-${GENCODE_VERSION}.gff3_polished" \
+   "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.liftoff+gencode-${GENCODE_VERSION}.gff3"
 
-gzip -f "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.liftoff+gencode-${VERSION}.gff3" &
-
-# Compress fasta files back
-bgzip -@ "$(nproc)" "${ASSEMBLIES}/CHM13v2/CHM13v2.fa" && \
-  samtools faidx "${ASSEMBLIES}/CHM13v2/CHM13v2.fa.gz" &
-bgzip -@ "$(nproc)" "${ASSEMBLIES}/CHM13v2/gencode/liftoff/GRCh38.primary_assembly.genome.fa" && \
-  samtools faidx "${ASSEMBLIES}/CHM13v2/gencode/liftoff/GRCh38.primary_assembly.genome.fa.gz" &
-wait
-
+gzip -f "${ASSEMBLIES}/CHM13v2/gencode/CHM13v2.liftoff+gencode-${GENCODE_VERSION}.gff3" &
