@@ -18,9 +18,9 @@ cd "$FOLDER"
 cp "${PREMAP}/pre-mapping.fa.gz" .
 gunzip pre-mapping.fa.gz
 
-cp "${PREMAP}/pre-mapping.bed.bgz" .
-gunzip pre-mapping.bed.bgz --stdout > pre-mapping.bed
-rm pre-mapping.bed.bgz
+cp "${PREMAP}/pre-mapping.bed.gz" .
+gunzip pre-mapping.bed.gz --stdout > pre-mapping.bed
+rm pre-mapping.bed.gz
 
 # Generate STAR index
 STAR --runMode genomeGenerate --runThreadN "$(nproc)" \
