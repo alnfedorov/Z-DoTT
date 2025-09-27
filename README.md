@@ -1,149 +1,161 @@
-```shell
-pixi run setup/download-annotations
-pixi run setup/index-annotation
-# Note: These steps are optional, as the required annotations are already included in the repository.
-# pixi run setup/liftoff
-# pixi run setup/derive-premap-library
-
-
-```
-
-
-
-
-
-
-
-
-
-
-
 This repository accompanies the publication *"Host cell Z-RNAs activate ZBP1 during virus infections"* and contains the
 code required to reproduce the bioinformatics results presented in the paper.
 
-The repository is organized into biological or technical "stories" and includes several setup scripts for downloading,
-preprocessing, and indexing reference genomes. Each setup and story has a corresponding make target, allowing easy
-execution via `make <target>` from the repository's root directory.
+The current version of the repository includes a number of quality of life improvements and simplified setup
+compared to the originally published codebase
+available [here](https://github.com/alnfedorov/Z-DoTT/tree/83b3746ef787226e2cc34804619854c5105979f4).
+Because of that, some minor differences in the results should be expected, which, however, do not affect the overall
+conclusions of the study.
+
+The repository is organized into five broad sections:
+
+* `setup/`: Scripts for preparing essential resources, e.g., downloading annotations and indexing reference genomes.
+* `assemblies/`: Reference genome assemblies, including fasta files, annotations, and Python annotation indexes.
+* `data/`: Sequencing data used in the study and its metadata, including both public datasets and newly generated
+  results.
+* `utils/`: Utility scripts for various tasks used throughout the repository.
+* `analyses/`: Main analysis scripts and workflows organized into separate, mostly independent modules.
+
+All dependencies and execution targets are managed via [Pixi](https://pixi.sh/latest/) with all relevant tasks wrapped
+into a separate pixi command (see below).
 
 ---
 
 ### Prerequisites
 
-- [Rust](https://www.rust-lang.org/tools/install) (tested with v1.84.0)
-- [CMake](https://cmake.org/) (tested with v3.31.6)
-- [Micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) (tested with v2.0.2)
-- HPC cluster with the [Slurm](https://slurm.schedmd.com/quickstart.html) scheduler
+- [Pixi](https://pixi.sh/latest/) binary (tested on v0.55.0).
+- An x86-64 HPC cluster with the [Slurm](https://slurm.schedmd.com/quickstart.html) scheduler running a
+  Linux-based OS (tested on Ubuntu 22.04.5).
 
 **Notes:**
 
-* Rust is not included in the Micromamba environment to avoid dependency conflicts.
-* System-wide installations or HPC modules for Micromamba and Rust have not been tested. Please install them locally for
-  the specific user to avoid potential conflicts.
-* Running Micromamba from inside a conda environment does not work. Ensure that all conda environments are deactivated
-  before calling `make <target>`.
+* To avoid environment conflicts, ensure that all conda/mamba environments are deactivated before running any pixi
+  commands.
+* All pixi tasks are *naive* and thus will re-run the entire task even if no code or data has changed. This is
+  intentional as setting up proper caching would be overly complex for this repository.
 
 ---
 
 ### Setup
 
-1. Clone the repository and navigate to its root directory.
+1. Clone the repository and navigate to its root directory:
+
+    ```shell
+    git clone https://github.com/alnfedorov/Z-DoTT.git
+    cd Z-DoTT
+    ```
+
 2. Run the following commands for the initial setup:
 
-   ```bash
-   # Prepare the Micromamba environments and install the REAT A-I editing analysis tool
-   make setup/env
+    ```shell
+    # Install all dependencies via Pixi
+    pixi install --all --frozen
+    
+    # Download genome assemblies and make Python indexes
+    pixi run setup/download-annotations
+    pixi run setup/index-annotations
    
-   # Download the reference genome and index the annotation.
-   # Annotation (GFF) downloading is optional, as it is already included in the repository.
-   make setup/annotation
-   
-   # Derive the pre-mapping library.
-   # This step is optional; results are already included in the repository.
-   # make setup/pre-mapping 
-   ```
+    # Compile REAT, a tool for RNA editing analysis
+    pixi run setup/REAT
+    
+    # Note: These steps are optional, as the required annotations are already included in the repository.
+    # pixi run setup/liftoff # lift over annotations from GRCh38 to CHM13v2 (min 64GB RAM required)
+    # pixi run setup/derive-premap-library # derive the pre-mapping rRNA library
+    ```
 
-   These commands can be executed on either a login node or a compute node in a single-core setup. However, subsequent
-   steps requiring genome indexing must be performed on a compute node with multiple cores and additional memory.
+   These commands can be executed on either a login or a compute node as they do not require significant resources,
+   except for the optional liftoff.
 
-3. Request a compute node and perform genome indexing:
+3. Request a compute node and make STAR/Salmon indexes for (pseudo)alignment of sequencing data:
 
-   ```bash
-   # Request a compute node
-   srun --account $(whoami) --job-name nfcore-indices --cpus-per-task 32 --mem-per-cpu 8G --pty bash -i
-
-   # Run genome indexing
-   make setup/nfcore-indices
-   ```
+    ```shell
+    srun --account $(whoami) --job-name nfcore-indices \
+    --cpus-per-task 24 --mem-per-cpu 8G --time 08:00:00 --pty \
+    bash -lc "pixi run setup/make-nfcore-indexes"
+    ```
 
 ---
 
-### Nextflow
+### Sequencing data
 
-#### Data Download
+#### Download
 
-Public sequencing data can be downloaded using the [`nf-core/fetchngs`](https://nf-co.re/fetchngs) pipeline. For
+Sequencing data can be downloaded using the [`nf-core/fetchngs`](https://nf-co.re/fetchngs) pipeline. For
 example, to download data for *PRJNA256013*:
 
-```bash
-micromamba activate zdott
-cd stories/nfcore/rnaseq/SRA/PRJNA256013/fastq
-nfcore run \
-    -r 7544cb9297a0db754120bd1cb8d7df4586a60610 \
-    nf-core/fetchngs \
-    --input id.csv \
-    --outdir results \
-    -profile singularity
+```shell
+# Run on any network-connected node (login or compute)
+pixi run nfcore/fetchngs PRJNA256013
 
-# Move FASTQ files to the target directory
-mv results/fastq/*.fastq.gz .
-
-# Optionally, verify MD5 checksums. Note that committed checksums may not match downloaded ones due to 
-# data storage and handling variations in SRA/ENA.
-# cat MD5.txt | xargs -I{} -P $(nproc) sh -c 'echo "{}" | md5sum -c -'
-
-# Clean up unnecessary files
-rm -rf work results .nfcore*
+# List downloaded files
+ls -alh data/PRJNA256013/fastq
 ```
 
-Similarly, data can be downloaded for other public sequencing projects in the `stories/nextflow/series/SRA folder`.
-Newly generated data in `stories/nextflow/series/internal` will be released upon publication and made equivalently
-accessible via SRA/ENA.
+Similarly, raw data can be downloaded for other sequencing projects listed in the `data` folder (e.g., B256178). In rare
+instances, `nf-core/fetchngs` may fail due to network issues. A simple re-run usually resolves the problem.
 
----
+#### Processing and QC
 
-#### Data Processing
+A custom fork of the [`nf-core/rnaseq`](https://github.com/nf-core/rnaseq) pipeline is used to process raw sequencing
+data, including alignment, quality control, and RNA abundance estimation. This fork features minor modifications, such
+as additional pre-mapping functionality and improved resource management.
 
-A custom fork of the [`nf-core/rnaseq`](https://github.com/nf-core/rnaseq) pipeline processes raw sequencing data,
-including alignment, quality control, and RNA abundance estimation. This fork features minor modifications, such as
-additional pre-mapping functionality and improved resource management.
+Like `fetchngs`, the RNA-seq pipeline can be executed via a single pixi command. For example, to process the data for
+*PRJNA256013*:
 
-To process each sequencing experiment, navigate to its corresponding directory under `stories/nextflow/series/SRA` or
-`stories/nextflow/series/internal` and run:
+```shell
+# Run on a *login* node
+pixi run nfcore/rnaseq PRJNA256013
 
-```bash
-micromamba activate zdott
-nfcore run \
-    -c resources/nfcore.config \
-    -params-file resources/params.yaml \
-    -resume \
-    -profile slurm,latency \
-    -r 41e95d6a4a24d1f4fe4f2c50bb4d9a4744158c9b \
-    alnfedorov/rnaseq
+# List processed files
+ls -alh analyses/nfcore/rnaseq/PRJNA256013/results
 
-# Optionally, clean up the directory
-# rm -rf work .nfcore*
+# Optionally, clean up the caches
+# rm -rf analyses/nfcore/rnaseq/PRJNA256013/{work,.nfcore*}
 ```
 
-All experiments in `series/SRA` and `series/internal` directories should be processed before proceeding with the
+The pipeline should be run on a login node, as it submits jobs to the cluster via the Slurm scheduler. If needed,
+users can tweak the parameters using the `params.yaml` and `nextflow.config` files located in the
+`analyses/nfcore/resources` directory. Refer to the [`nf-core/rnaseq`](https://github.com/nf-core/rnaseq) documentation
+for details.
+
+All experiments in the `analyses/nfcore/rnaseq` directory should be processed before proceeding with the
 downstream analyses.
 
 ---
 
-### Stories
+### Analyses
 
-Each story can be executed by running `make <story>` from the root directory. As with genome indexing, these stories
-should be run on a compute node with multiple cores (~16) and ~16GB of RAM per core. However, most analyses require
-significantly fewer resources.
+Most analyses feature a dedicated `pixi` task that will execute the entire (sub)analysis from start to finish. Usually,
+each analysis is organized as follows:
+
+```text
+analyses/
+└── example                 # Example analysis folder
+    │   __init__.py         # Each folder is a Python package and optionally contains an __init__.py file
+    ├── resources           # General resources required for the analysis, including local utils and data files
+    │   ├── __init__.py
+    │   ├── utils.py
+    │   └── regions.bed
+    ├── results             # Final or intermediate results, including caches, are stored here
+    │   ├── __init__.py
+    │   ├── cache.pkl
+    │   └── result-1.csv
+    ├── script-1.py         # Main analysis script, almost exclusively in Python
+    └── script-2.py
+```
+
+Note, that most `resources`, `results`, and most analysis folders are Python packages (i.e., they contain an
+`__init__.py` file). These files usually export paths to relevant subdirectories, but `resources` and analysis package
+also re-export functions, data models, or configs (particularly in `resources`).
+
+In rare cases, analyses are split into subanalyses, e.g., `stories/RIP` and `stories/aberrantome`. In such cases,
+each subanalysis is still organized as above and the grouping is largely for convenience.
+
+As with STAR/Salmon indexing, analyses should be run on a compute node with multiple cores (~16) and ~8GB of RAM
+per core. However, most analyses require significantly fewer resources. Notable exceptions are detailed below.
+
+Full list of available analyses:
 
 ```bash
 make stories/annotation     # Annotation filtering and indexing
@@ -164,8 +176,7 @@ make stories/aberrantome/calculate # Statistical tests for aberrant transcriptio
 make stories/aberrantome/plot      # Visualization of aberrantome analysis
 ```
 
-The results for each story will be saved in the `<story>/ld/results` directory. The `ld` directory stands for "local
-data" and is used for storing intermediate files and final outputs.
+You can find plots presented in the manuscript in the respective `analyses/<name>/results` subfolders.
 
 **Note:** Minimum Free Energy (MFE) plots for HSV-1 RNAs are not generated by default, as they require additional
-dependencies and TEX backend configuration. Refer to `stories/HSV1/plot-mfe.py` for details.
+dependencies and TEX backend configuration. Refer to `analyses/HSV1/plot-mfe.py` for details.
