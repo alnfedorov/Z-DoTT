@@ -152,4 +152,9 @@ project = JCCSeq.parse(
     experiment_builder=experiment_builder,
     project_builder=project_builder
 )
+
+object.__setattr__(
+    project, "description", "FLAG/Z22 RIP-seq from HSV-1-/IAV-infected HT-29 cells"
+)
+
 seqproj.adapter.yaml.dump(project, ROOT / "seq-project.yaml")
