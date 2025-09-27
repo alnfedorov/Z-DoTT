@@ -19,7 +19,7 @@ zcat "${ASSEMBLIES}/GRCm39/gencode/gencode.vM36.primary_assembly.annotation.gff3
 
 for assembly in CHM13v2 GRCm39; do
   # Add viruses
-  for virus in EMCV SARSCov2;
+  for virus in HSV1 IAV;
   do
     cat "${ASSEMBLIES}/${virus}/sequence.fa" >> "${INDEXES}/${assembly}/sequence.fa"
     cat "${ASSEMBLIES}/${virus}/sequence.gff3" >> "${INDEXES}/${assembly}/annotation.gff3"
