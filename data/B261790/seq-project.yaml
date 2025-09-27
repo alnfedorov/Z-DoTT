@@ -671,4 +671,4 @@ samples:
       cells: MEF
       treatment: mock
       replica: '2'
-description: null
+description: Z22 RIP-seq of HSV-1 infected MEFs (batch 1)
