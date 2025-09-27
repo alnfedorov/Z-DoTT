@@ -37,7 +37,7 @@ cmd = "bash download-annotations.sh $HUMAN_VERSION $MOUSE_VERSION $ASSEMBLIES"
 env = { HUMAN_VERSION = "47", MOUSE_VERSION = "M36", ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies" }
 cwd = "setup/annotation"
 
-[feature.nextflow.tasks."setup/make-indexes"]
+[feature.nextflow.tasks."setup/make-nfcore-indexes"]
 cmd = "./index.sh $ASSEMBLIES $PREMAPPING $INDEXES"
 env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results", INDEXES = "$PIXI_PROJECT_ROOT/analyses/nfcore/resources/indexes" }
 cwd = "setup/nfcore"
