@@ -112,11 +112,6 @@ ipython_config.py
 *.eps
 *.svg
 
-# Deprecated & unversioned code
-deprecated/
-miscellaneous/
-rerun/
-
 # pytorch checkpoints
 *.pth
 

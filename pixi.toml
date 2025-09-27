@@ -37,23 +37,23 @@ cmd = "bash download-annotations.sh $HUMAN_VERSION $MOUSE_VERSION $ASSEMBLIES"
 env = { HUMAN_VERSION = "47", MOUSE_VERSION = "M36", ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies" }
 cwd = "setup/annotation"
 
-[feature.nfcore.tasks."setup/make-indexes"]
+[feature.nextflow.tasks."setup/make-indexes"]
 cmd = "bash index.sh $ASSEMBLIES $PREMAPPING"
 env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results" }
-cwd = "stories/nfcore/resources"
+cwd = "analyses/nfcore/resources"
 
-#[feature.nfcore.tasks."nf-core/rnaseq"]
-#cmd = [
-#    "cd", "$PIXI_PROJECT_ROOT/stories/nfcore/rnaseq/{{ directory }}", "&&",
-#    "nfcore", "run", "-c", "resources/nfcore.config", "-params-file", "resources/params.yaml", "-resume",
-#    "-profile", "slurm,latency", "-r", "bc8cab3184011fd6903afddf0da731681eb3a942", "alnfedorov/rnaseq"
-#]
-#args = ["directory"]
+[feature.nextflow.tasks."nf-core/rnaseq"]
+cmd = [
+    "cd", "$PIXI_PROJECT_ROOT/analyses/nfcore/rnaseq/{{ directory }}", "&&",
+    "nfcore", "run", "-c", "resources/nfcore.config", "-params-file", "resources/params.yaml", "-resume",
+    "-profile", "slurm,latency", "-r", "bc8cab3184011fd6903afddf0da731681eb3a942", "alnfedorov/rnaseq"
+]
+args = ["directory"]
 
 [feature.nextflow.tasks."nf-core/fetchngs"]
 cmd = [
     # Change to the directory with id.csv
-    "cd", "$PIXI_PROJECT_ROOT/stories/nextflow/series/{{ directory }}/fastq", "&&",
+    "cd", "$PIXI_PROJECT_ROOT/analyses/nfcore/rnaseq/{{ directory }}/fastq", "&&",
     # Run nf-core/fetchngs
     "nextflow", "run", "-resume", "-profile", "singularity",
     "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
@@ -66,57 +66,57 @@ cmd = [
 ]
 args = ["directory"]
 
-#########################################################################################################################
-## Rust: for building the latest version of REAT
-#########################################################################################################################
-#[feature.rust.dependencies]
-#rust = "==1.84.0"
-#cmake = "==4.0.2"
-#gcc = "==12.4"
-#
-#[feature.rust.tasks."setup/REAT"]
-#cmd = [
-#    "cargo", "install", "-v", "--git", "https://github.com/alnfedorov/reat",
-#    "--rev", "c166a6c740739c6dbab7bdab971a912bea1031c5", "--locked",
-#    "--root", "$PIXI_PROJECT_ROOT/stories/A2I/ld/results",
-#    "--force"
-#]
-#
-#####################################################################################################
-## Python: bioinformatics stories
-#####################################################################################################
-#[feature.python.dependencies]
-#python-freethreading = "==3.13.3"
-#pixi-pycharm = "*"
-#tabix = ">=1.11,<2"
-#
-## Python dependecies must be managed only using pip to allow rebuilding wheels for 3.13t
-#[feature.python.pypi-dependencies]
-#attrs = ">=25.1.0, <26"
-#tqdm = ">=4.67.1, <5"
-#biobit = { path = "./../biobit/biobit/py", editable = true } # use pypi version in the final manifest
-#ipython = ">=9.0.2, <10"
-#joblib = ">=1.5.0, <2"
-#pip = ">=25.0.1, <26"
-#pandas = { url = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple/pandas/3.0.0.dev0+2362.g7f670c17cd/pandas-3.0.0.dev0+2362.g7f670c17cd-cp313-cp313t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl" }
-#matplotlib = ">=3.10.1, <4"
-#seaborn = ">=0.13.2, <0.14"
-#scikit-learn = ">=1.6.1, <2"
-#pybigwig = ">=0.3.24, <0.4"
-#networkx = ">=3.4.2, <4"
-#matplotlib-venn = ">=1.1.2, <2"
-#intervaltree = ">=3.1.0, <4"
-#viennarna = ">=2.7.0, <3"
-##primer3-py = "==2.2.0"  # TODO: drop when no longer used
-#statsmodels = "==0.14.5"
-#
-#[feature.python.activation]
-#env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
-#
-#[feature.python.tasks.run-py]
-#cmd = "python {{ script }} {{ args }}"
-#args = ["script", { arg = "args", default = "" }]
-#
+########################################################################################################################
+# Rust: for building the latest version of REAT
+########################################################################################################################
+[feature.rust.dependencies]
+rust = "==1.84.0"
+cmake = "==4.0.2"
+gcc = "==12.4"
+
+[feature.rust.tasks."setup/REAT"]
+cmd = [
+    "cargo", "install", "-v", "--git", "https://github.com/alnfedorov/reat",
+    "--rev", "c166a6c740739c6dbab7bdab971a912bea1031c5", "--locked",
+    "--root", "$PIXI_PROJECT_ROOT/analyses/A2I/resources",
+    "--force"
+]
+
+####################################################################################################
+# Python: bioinformatics stories
+####################################################################################################
+[feature.python.dependencies]
+python = "==3.12.8"
+pixi-pycharm = "*"
+tabix = "==1.11"
+
+# Python dependecies must be managed only using pip to allow rebuilding wheels when needed
+[feature.python.pypi-dependencies]
+attrs = "==23.2.0"
+biobit = "==0.0.4"
+biopython = "==1.84"
+intervaltree = "==3.1.0"
+ipython = "==8.25.0"
+joblib = "==1.4.0"
+matplotlib = "==3.9.2"
+matplotlib-venn = "==1.1.1"
+pandas = "==2.2.1"
+pybigwig = "==0.3.22"
+rustworkx = "==0.15.1"
+scikit-learn = "==1.5.1"
+seaborn = "==0.13.2"
+statsmodels = "==0.14.4"
+tqdm = "==4.66.2"
+viennarna = "==2.7.0"
+zhuntrs = "==0.0.4"
+
+[feature.python.activation]
+env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
+
+[feature.python.tasks.run-py]
+cmd = "python {{ script }} {{ args }}"
+args = ["script", { arg = "args", default = "" }]
+
 #[feature.python.tasks]
 ## Setup
 #"setup/index-annotation" = { depends-on = [
@@ -213,12 +213,12 @@ args = ["directory"]
 #    "python", "volcano-plot.py"
 #]
 #cwd = "stories/aberrantome/plot"
-#
-#####################################################################################################
-## R: differential expression analysis
-#####################################################################################################
-#[feature.R.dependencies]
-#r-base = "==4.4.3"
-#bioconductor-deseq2 = "==1.46.0"
-#bioconductor-dexseq = "==1.52.0"
-#bioconductor-apeglm = "==1.28.0"
+
+####################################################################################################
+# R: differential expression analysis
+####################################################################################################
+[feature.R.dependencies]
+r-base = "==4.4.2"
+bioconductor-deseq2 = "==1.46.0"
+bioconductor-dexseq = "==1.52.0"
+bioconductor-apeglm = "==1.28.0"
