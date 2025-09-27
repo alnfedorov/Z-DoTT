@@ -1,957 +1,956 @@
 ind: PRJNA256013
 experiments:
-  - ind: SRX660425
-    sample: SAMN02935349
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523653
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660425_SRR1523653_1.fastq.gz
-            - fastq/SRX660425_SRR1523653_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 25243096
-        bases: 5099105392
-    attributes:
-      title: HFF_mock_Total-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444166: Total RNA - mock Rep 1
+- ind: SRX660425
+  sample: SAMN02935349
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523653
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660425_SRR1523653_1.fastq.gz
+      - fastq/SRX660425_SRR1523653_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 25243096
+    bases: 5099105392
+  attributes:
+    title: HFF_mock_Total-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444166: Total RNA - mock Rep 1
     Homo sapiens RNA-Seq'
-  - ind: SRX660426
-    sample: SAMN02935350
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523654
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660426_SRR1523654_1.fastq.gz
-            - fastq/SRX660426_SRR1523654_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 40414143
-        bases: 8163656886
-    attributes:
-      title: HFF_2hpi_Total-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444167: Total RNA - 2hpi Rep 1
+- ind: SRX660426
+  sample: SAMN02935350
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523654
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660426_SRR1523654_1.fastq.gz
+      - fastq/SRX660426_SRR1523654_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 40414143
+    bases: 8163656886
+  attributes:
+    title: HFF_2hpi_Total-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444167: Total RNA - 2hpi Rep 1
     Homo sapiens RNA-Seq'
-  - ind: SRX660427
-    sample: SAMN02935351
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523655
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660427_SRR1523655_1.fastq.gz
-            - fastq/SRX660427_SRR1523655_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 43261015
-        bases: 8738725030
-    attributes:
-      title: HFF_4hpi_Total-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444168: Total RNA - 4hpi Rep 1
+- ind: SRX660427
+  sample: SAMN02935351
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523655
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660427_SRR1523655_1.fastq.gz
+      - fastq/SRX660427_SRR1523655_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 43261015
+    bases: 8738725030
+  attributes:
+    title: HFF_4hpi_Total-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444168: Total RNA - 4hpi Rep 1
     Homo sapiens RNA-Seq'
-  - ind: SRX660428
-    sample: SAMN02935352
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523656
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660428_SRR1523656_1.fastq.gz
-            - fastq/SRX660428_SRR1523656_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 30345175
-        bases: 6129725350
-    attributes:
-      title: HFF_6hpi_Total-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444169: Total RNA - 6hpi Rep 1
+- ind: SRX660428
+  sample: SAMN02935352
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523656
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660428_SRR1523656_1.fastq.gz
+      - fastq/SRX660428_SRR1523656_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 30345175
+    bases: 6129725350
+  attributes:
+    title: HFF_6hpi_Total-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444169: Total RNA - 6hpi Rep 1
     Homo sapiens RNA-Seq'
-  - ind: SRX660429
-    sample: SAMN02935353
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523657
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660429_SRR1523657_1.fastq.gz
-            - fastq/SRX660429_SRR1523657_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 37124453
-        bases: 7499139506
-    attributes:
-      title: HFF_8hpi_Total-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444170: Total RNA - 8hpi Rep 1
+- ind: SRX660429
+  sample: SAMN02935353
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523657
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660429_SRR1523657_1.fastq.gz
+      - fastq/SRX660429_SRR1523657_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 37124453
+    bases: 7499139506
+  attributes:
+    title: HFF_8hpi_Total-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444170: Total RNA - 8hpi Rep 1
     Homo sapiens RNA-Seq'
-  - ind: SRX660430
-    sample: SAMN02935354
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523658
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660430_SRR1523658_1.fastq.gz
-            - fastq/SRX660430_SRR1523658_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 43946667
-        bases: 8877226734
-    attributes:
-      title: HFF_mock_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444171: 4sU-RNA - mock Rep 1 Homo
+- ind: SRX660430
+  sample: SAMN02935354
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523658
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660430_SRR1523658_1.fastq.gz
+      - fastq/SRX660430_SRR1523658_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 43946667
+    bases: 8877226734
+  attributes:
+    title: HFF_mock_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444171: 4sU-RNA - mock Rep 1 Homo
     sapiens RNA-Seq'
-  - ind: SRX660431
-    sample: SAMN02935355
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523659
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660431_SRR1523659_1.fastq.gz
-            - fastq/SRX660431_SRR1523659_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 37542089
-        bases: 7583501978
-    attributes:
-      title: HFF_0-1hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444172: 4sU-RNA - 0-1 hpi Rep
+- ind: SRX660431
+  sample: SAMN02935355
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523659
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660431_SRR1523659_1.fastq.gz
+      - fastq/SRX660431_SRR1523659_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 37542089
+    bases: 7583501978
+  attributes:
+    title: HFF_0-1hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444172: 4sU-RNA - 0-1 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660432
-    sample: SAMN02935356
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523660
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660432_SRR1523660_1.fastq.gz
-            - fastq/SRX660432_SRR1523660_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 40895513
-        bases: 8260893626
-    attributes:
-      title: HFF_1-2hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444173: 4sU-RNA - 1-2 hpi Rep
+- ind: SRX660432
+  sample: SAMN02935356
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523660
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660432_SRR1523660_1.fastq.gz
+      - fastq/SRX660432_SRR1523660_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 40895513
+    bases: 8260893626
+  attributes:
+    title: HFF_1-2hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444173: 4sU-RNA - 1-2 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660433
-    sample: SAMN02935357
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523661
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660433_SRR1523661_1.fastq.gz
-            - fastq/SRX660433_SRR1523661_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 38431087
-        bases: 7763079574
-    attributes:
-      title: HFF_2-3hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444174: 4sU-RNA - 2-3 hpi Rep
+- ind: SRX660433
+  sample: SAMN02935357
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523661
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660433_SRR1523661_1.fastq.gz
+      - fastq/SRX660433_SRR1523661_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 38431087
+    bases: 7763079574
+  attributes:
+    title: HFF_2-3hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444174: 4sU-RNA - 2-3 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660434
-    sample: SAMN02935358
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523662
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660434_SRR1523662_1.fastq.gz
-            - fastq/SRX660434_SRR1523662_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 35665499
-        bases: 7204430798
-    attributes:
-      title: HFF_3-4hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444175: 4sU-RNA - 3-4 hpi Rep
+- ind: SRX660434
+  sample: SAMN02935358
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523662
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660434_SRR1523662_1.fastq.gz
+      - fastq/SRX660434_SRR1523662_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 35665499
+    bases: 7204430798
+  attributes:
+    title: HFF_3-4hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444175: 4sU-RNA - 3-4 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660435
-    sample: SAMN02935359
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523663
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660435_SRR1523663_1.fastq.gz
-            - fastq/SRX660435_SRR1523663_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 41127703
-        bases: 8307796006
-    attributes:
-      title: HFF_4-5hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444176: 4sU-RNA - 4-5 hpi Rep
+- ind: SRX660435
+  sample: SAMN02935359
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523663
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660435_SRR1523663_1.fastq.gz
+      - fastq/SRX660435_SRR1523663_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 41127703
+    bases: 8307796006
+  attributes:
+    title: HFF_4-5hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444176: 4sU-RNA - 4-5 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660436
-    sample: SAMN02935360
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523664
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660436_SRR1523664_1.fastq.gz
-            - fastq/SRX660436_SRR1523664_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 36482415
-        bases: 7369447830
-    attributes:
-      title: HFF_5-6hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444177: 4sU-RNA - 5-6 hpi Rep
+- ind: SRX660436
+  sample: SAMN02935360
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523664
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660436_SRR1523664_1.fastq.gz
+      - fastq/SRX660436_SRR1523664_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 36482415
+    bases: 7369447830
+  attributes:
+    title: HFF_5-6hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444177: 4sU-RNA - 5-6 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660437
-    sample: SAMN02935361
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523665
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660437_SRR1523665_1.fastq.gz
-            - fastq/SRX660437_SRR1523665_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 37651445
-        bases: 7605591890
-    attributes:
-      title: HFF_6-7hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444178: 4sU-RNA - 6-7 hpi Rep
+- ind: SRX660437
+  sample: SAMN02935361
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523665
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660437_SRR1523665_1.fastq.gz
+      - fastq/SRX660437_SRR1523665_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 37651445
+    bases: 7605591890
+  attributes:
+    title: HFF_6-7hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444178: 4sU-RNA - 6-7 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660438
-    sample: SAMN02935362
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523666
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660438_SRR1523666_1.fastq.gz
-            - fastq/SRX660438_SRR1523666_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 40015723
-        bases: 8083176046
-    attributes:
-      title: HFF_7-8hpi_4sU-RNA_1
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444179: 4sU-RNA - 7-8 hpi Rep
+- ind: SRX660438
+  sample: SAMN02935362
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523666
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660438_SRR1523666_1.fastq.gz
+      - fastq/SRX660438_SRR1523666_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 40015723
+    bases: 8083176046
+  attributes:
+    title: HFF_7-8hpi_4sU-RNA_1
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444179: 4sU-RNA - 7-8 hpi Rep
     1 Homo sapiens RNA-Seq'
-  - ind: SRX660439
-    sample: SAMN02935363
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523667
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660439_SRR1523667_1.fastq.gz
-            - fastq/SRX660439_SRR1523667_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 25727149
-        bases: 5196884098
-    attributes:
-      title: HFF_mock_Total-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444180: Total RNA - mock Rep 2
+- ind: SRX660439
+  sample: SAMN02935363
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523667
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660439_SRR1523667_1.fastq.gz
+      - fastq/SRX660439_SRR1523667_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 25727149
+    bases: 5196884098
+  attributes:
+    title: HFF_mock_Total-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444180: Total RNA - mock Rep 2
     Homo sapiens RNA-Seq'
-  - ind: SRX660440
-    sample: SAMN02935364
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523668
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660440_SRR1523668_1.fastq.gz
-            - fastq/SRX660440_SRR1523668_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 42786055
-        bases: 8642783110
-    attributes:
-      title: HFF_2hpi_Total-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444181: Total RNA - 2hpi Rep 2
+- ind: SRX660440
+  sample: SAMN02935364
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523668
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660440_SRR1523668_1.fastq.gz
+      - fastq/SRX660440_SRR1523668_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 42786055
+    bases: 8642783110
+  attributes:
+    title: HFF_2hpi_Total-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444181: Total RNA - 2hpi Rep 2
     Homo sapiens RNA-Seq'
-  - ind: SRX660441
-    sample: SAMN02935365
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523669
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660441_SRR1523669_1.fastq.gz
-            - fastq/SRX660441_SRR1523669_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 29399526
-        bases: 5938704252
-    attributes:
-      title: HFF_4hpi_Total-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444182: Total RNA - 4hpi Rep 2
+- ind: SRX660441
+  sample: SAMN02935365
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523669
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660441_SRR1523669_1.fastq.gz
+      - fastq/SRX660441_SRR1523669_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 29399526
+    bases: 5938704252
+  attributes:
+    title: HFF_4hpi_Total-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444182: Total RNA - 4hpi Rep 2
     Homo sapiens RNA-Seq'
-  - ind: SRX660442
-    sample: SAMN02935366
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523670
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660442_SRR1523670_1.fastq.gz
-            - fastq/SRX660442_SRR1523670_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 34543336
-        bases: 6977753872
-    attributes:
-      title: HFF_6hpi_Total-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444183: Total RNA - 6hpi Rep 2
+- ind: SRX660442
+  sample: SAMN02935366
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523670
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660442_SRR1523670_1.fastq.gz
+      - fastq/SRX660442_SRR1523670_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 34543336
+    bases: 6977753872
+  attributes:
+    title: HFF_6hpi_Total-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444183: Total RNA - 6hpi Rep 2
     Homo sapiens RNA-Seq'
-  - ind: SRX660443
-    sample: SAMN02935367
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - Total RNA
-      strandedness: R
-    runs:
-      - ind: SRR1523671
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660443_SRR1523671_1.fastq.gz
-            - fastq/SRX660443_SRR1523671_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 36360827
-        bases: 7344887054
-    attributes:
-      title: HFF_8hpi_Total-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444184: Total RNA - 8hpi Rep 2
+- ind: SRX660443
+  sample: SAMN02935367
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - Total RNA
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR1523671
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660443_SRR1523671_1.fastq.gz
+      - fastq/SRX660443_SRR1523671_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 36360827
+    bases: 7344887054
+  attributes:
+    title: HFF_8hpi_Total-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444184: Total RNA - 8hpi Rep 2
     Homo sapiens RNA-Seq'
-  - ind: SRX660444
-    sample: SAMN02935368
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523672
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660444_SRR1523672_1.fastq.gz
-            - fastq/SRX660444_SRR1523672_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 34521163
-        bases: 6973274926
-    attributes:
-      title: HFF_mock_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444185: 4sU-RNA - mock Rep 2 Homo
+- ind: SRX660444
+  sample: SAMN02935368
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523672
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660444_SRR1523672_1.fastq.gz
+      - fastq/SRX660444_SRR1523672_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 34521163
+    bases: 6973274926
+  attributes:
+    title: HFF_mock_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444185: 4sU-RNA - mock Rep 2 Homo
     sapiens RNA-Seq'
-  - ind: SRX660445
-    sample: SAMN02935369
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523673
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660445_SRR1523673_1.fastq.gz
-            - fastq/SRX660445_SRR1523673_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 44914641
-        bases: 9072757482
-    attributes:
-      title: HFF_0-1hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444186: 4sU-RNA - 0-1 hpi Rep
+- ind: SRX660445
+  sample: SAMN02935369
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523673
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660445_SRR1523673_1.fastq.gz
+      - fastq/SRX660445_SRR1523673_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 44914641
+    bases: 9072757482
+  attributes:
+    title: HFF_0-1hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444186: 4sU-RNA - 0-1 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660446
-    sample: SAMN02935370
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523674
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660446_SRR1523674_1.fastq.gz
-            - fastq/SRX660446_SRR1523674_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 41321633
-        bases: 8346969866
-    attributes:
-      title: HFF_1-2hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444187: 4sU-RNA - 1-2 hpi Rep
+- ind: SRX660446
+  sample: SAMN02935370
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523674
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660446_SRR1523674_1.fastq.gz
+      - fastq/SRX660446_SRR1523674_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 41321633
+    bases: 8346969866
+  attributes:
+    title: HFF_1-2hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444187: 4sU-RNA - 1-2 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660447
-    sample: SAMN02935371
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523675
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660447_SRR1523675_1.fastq.gz
-            - fastq/SRX660447_SRR1523675_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 43091020
-        bases: 8704386040
-    attributes:
-      title: HFF_2-3hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444188: 4sU-RNA - 2-3 hpi Rep
+- ind: SRX660447
+  sample: SAMN02935371
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523675
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660447_SRR1523675_1.fastq.gz
+      - fastq/SRX660447_SRR1523675_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 43091020
+    bases: 8704386040
+  attributes:
+    title: HFF_2-3hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444188: 4sU-RNA - 2-3 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660448
-    sample: SAMN02935372
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523676
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660448_SRR1523676_1.fastq.gz
-            - fastq/SRX660448_SRR1523676_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 40073694
-        bases: 8094886188
-    attributes:
-      title: HFF_3-4hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444189: 4sU-RNA - 3-4 hpi Rep
+- ind: SRX660448
+  sample: SAMN02935372
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523676
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660448_SRR1523676_1.fastq.gz
+      - fastq/SRX660448_SRR1523676_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 40073694
+    bases: 8094886188
+  attributes:
+    title: HFF_3-4hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444189: 4sU-RNA - 3-4 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660449
-    sample: SAMN02935373
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523677
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660449_SRR1523677_1.fastq.gz
-            - fastq/SRX660449_SRR1523677_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 39162376
-        bases: 7910799952
-    attributes:
-      title: HFF_4-5hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444190: 4sU-RNA - 4-5 hpi Rep
+- ind: SRX660449
+  sample: SAMN02935373
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523677
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660449_SRR1523677_1.fastq.gz
+      - fastq/SRX660449_SRR1523677_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 39162376
+    bases: 7910799952
+  attributes:
+    title: HFF_4-5hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444190: 4sU-RNA - 4-5 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660450
-    sample: SAMN02935374
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523678
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660450_SRR1523678_1.fastq.gz
-            - fastq/SRX660450_SRR1523678_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 35241926
-        bases: 7118869052
-    attributes:
-      title: HFF_5-6hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444191: 4sU-RNA - 5-6 hpi Rep
+- ind: SRX660450
+  sample: SAMN02935374
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523678
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660450_SRR1523678_1.fastq.gz
+      - fastq/SRX660450_SRR1523678_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 35241926
+    bases: 7118869052
+  attributes:
+    title: HFF_5-6hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444191: 4sU-RNA - 5-6 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660451
-    sample: SAMN02935375
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523679
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660451_SRR1523679_1.fastq.gz
-            - fastq/SRX660451_SRR1523679_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 53378051
-        bases: 10782366302
-    attributes:
-      title: HFF_6-7hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444192: 4sU-RNA - 6-7 hpi Rep
+- ind: SRX660451
+  sample: SAMN02935375
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523679
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660451_SRR1523679_1.fastq.gz
+      - fastq/SRX660451_SRR1523679_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 53378051
+    bases: 10782366302
+  attributes:
+    title: HFF_6-7hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444192: 4sU-RNA - 6-7 hpi Rep
     2 Homo sapiens RNA-Seq'
-  - ind: SRX660452
-    sample: SAMN02935376
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR1523680
-        layout:
-          type: paired
-          files:
-            - fastq/SRX660452_SRR1523680_1.fastq.gz
-            - fastq/SRX660452_SRR1523680_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina HiSeq 2500'
-        reads: 61227438
-        bases: 12367942476
-    attributes:
-      title: HFF_7-8hpi_4sU-RNA_2
-    description: 'Illumina HiSeq 2500 sequencing: GSM1444193: 4sU-RNA - 7-8 hpi Rep
+- ind: SRX660452
+  sample: SAMN02935376
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    strandedness: R
+  runs:
+  - ind: SRR1523680
+    layout:
+      type: paired
+      files:
+      - fastq/SRX660452_SRR1523680_1.fastq.gz
+      - fastq/SRX660452_SRR1523680_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina HiSeq 2500'
+    reads: 61227438
+    bases: 12367942476
+  attributes:
+    title: HFF_7-8hpi_4sU-RNA_2
+  description: 'Illumina HiSeq 2500 sequencing: GSM1444193: 4sU-RNA - 7-8 hpi Rep
     2 Homo sapiens RNA-Seq'
 samples:
-  - ind: SAMN02935349
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: mock
-      protocol: Total-RNA
-      replica: '1'
-    description: Total RNA - mock Rep 1
-  - ind: SAMN02935350
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 2hpi
-      protocol: Total-RNA
-      replica: '1'
-    description: Total RNA - 2hpi Rep 1
-  - ind: SAMN02935351
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 4hpi
-      protocol: Total-RNA
-      replica: '1'
-    description: Total RNA - 4hpi Rep 1
-  - ind: SAMN02935352
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 6hpi
-      protocol: Total-RNA
-      replica: '1'
-    description: Total RNA - 6hpi Rep 1
-  - ind: SAMN02935353
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 8hpi
-      protocol: Total-RNA
-      replica: '1'
-    description: Total RNA - 8hpi Rep 1
-  - ind: SAMN02935354
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: mock
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - mock Rep 1
-  - ind: SAMN02935355
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 0-1hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 0-1 hpi Rep 1
-  - ind: SAMN02935356
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 1-2hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 1-2 hpi Rep 1
-  - ind: SAMN02935357
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 2-3hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 2-3 hpi Rep 1
-  - ind: SAMN02935358
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 3-4hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 3-4 hpi Rep 1
-  - ind: SAMN02935359
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 4-5hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 4-5 hpi Rep 1
-  - ind: SAMN02935360
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 5-6hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 5-6 hpi Rep 1
-  - ind: SAMN02935361
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 6-7hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 6-7 hpi Rep 1
-  - ind: SAMN02935362
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 7-8hpi
-      protocol: 4sU-RNA
-      replica: '1'
-    description: 4sU-RNA - 7-8 hpi Rep 1
-  - ind: SAMN02935363
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: mock
-      protocol: Total-RNA
-      replica: '2'
-    description: Total RNA - mock Rep 2
-  - ind: SAMN02935364
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 2hpi
-      protocol: Total-RNA
-      replica: '2'
-    description: Total RNA - 2hpi Rep 2
-  - ind: SAMN02935365
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 4hpi
-      protocol: Total-RNA
-      replica: '2'
-    description: Total RNA - 4hpi Rep 2
-  - ind: SAMN02935366
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 6hpi
-      protocol: Total-RNA
-      replica: '2'
-    description: Total RNA - 6hpi Rep 2
-  - ind: SAMN02935367
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      time-point: 8hpi
-      protocol: Total-RNA
-      replica: '2'
-    description: Total RNA - 8hpi Rep 2
-  - ind: SAMN02935368
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: mock
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - mock Rep 2
-  - ind: SAMN02935369
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 0-1hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 0-1 hpi Rep 2
-  - ind: SAMN02935370
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 1-2hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 1-2 hpi Rep 2
-  - ind: SAMN02935371
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 2-3hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 2-3 hpi Rep 2
-  - ind: SAMN02935372
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 3-4hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 3-4 hpi Rep 2
-  - ind: SAMN02935373
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 4-5hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 4-5 hpi Rep 2
-  - ind: SAMN02935374
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 5-6hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 5-6 hpi Rep 2
-  - ind: SAMN02935375
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 6-7hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 6-7 hpi Rep 2
-  - ind: SAMN02935376
-    organism:
-      - HSV-1 (strain 17)
-      - Homo sapiens
-    attributes:
-      cells: HFF
-      4sU: 500 uM
-      time-point: 7-8hpi
-      protocol: 4sU-RNA
-      replica: '2'
-    description: 4sU-RNA - 7-8 hpi Rep 2
-description: 'Wide-spread disruption of transcription termination in HSV-1 infection:
-  Next generation sequencing of total and newly transcribed (4sU-RNA) RNA'
+- ind: SAMN02935349
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: mock
+    protocol: Total-RNA
+    replica: '1'
+  description: Total RNA - mock Rep 1
+- ind: SAMN02935350
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 2hpi
+    protocol: Total-RNA
+    replica: '1'
+  description: Total RNA - 2hpi Rep 1
+- ind: SAMN02935351
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 4hpi
+    protocol: Total-RNA
+    replica: '1'
+  description: Total RNA - 4hpi Rep 1
+- ind: SAMN02935352
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 6hpi
+    protocol: Total-RNA
+    replica: '1'
+  description: Total RNA - 6hpi Rep 1
+- ind: SAMN02935353
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 8hpi
+    protocol: Total-RNA
+    replica: '1'
+  description: Total RNA - 8hpi Rep 1
+- ind: SAMN02935354
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: mock
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - mock Rep 1
+- ind: SAMN02935355
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 0-1hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 0-1 hpi Rep 1
+- ind: SAMN02935356
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 1-2hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 1-2 hpi Rep 1
+- ind: SAMN02935357
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 2-3hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 2-3 hpi Rep 1
+- ind: SAMN02935358
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 3-4hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 3-4 hpi Rep 1
+- ind: SAMN02935359
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 4-5hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 4-5 hpi Rep 1
+- ind: SAMN02935360
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 5-6hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 5-6 hpi Rep 1
+- ind: SAMN02935361
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 6-7hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 6-7 hpi Rep 1
+- ind: SAMN02935362
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 7-8hpi
+    protocol: 4sU-RNA
+    replica: '1'
+  description: 4sU-RNA - 7-8 hpi Rep 1
+- ind: SAMN02935363
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: mock
+    protocol: Total-RNA
+    replica: '2'
+  description: Total RNA - mock Rep 2
+- ind: SAMN02935364
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 2hpi
+    protocol: Total-RNA
+    replica: '2'
+  description: Total RNA - 2hpi Rep 2
+- ind: SAMN02935365
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 4hpi
+    protocol: Total-RNA
+    replica: '2'
+  description: Total RNA - 4hpi Rep 2
+- ind: SAMN02935366
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 6hpi
+    protocol: Total-RNA
+    replica: '2'
+  description: Total RNA - 6hpi Rep 2
+- ind: SAMN02935367
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    time-point: 8hpi
+    protocol: Total-RNA
+    replica: '2'
+  description: Total RNA - 8hpi Rep 2
+- ind: SAMN02935368
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: mock
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - mock Rep 2
+- ind: SAMN02935369
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 0-1hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 0-1 hpi Rep 2
+- ind: SAMN02935370
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 1-2hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 1-2 hpi Rep 2
+- ind: SAMN02935371
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 2-3hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 2-3 hpi Rep 2
+- ind: SAMN02935372
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 3-4hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 3-4 hpi Rep 2
+- ind: SAMN02935373
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 4-5hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 4-5 hpi Rep 2
+- ind: SAMN02935374
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 5-6hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 5-6 hpi Rep 2
+- ind: SAMN02935375
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 6-7hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 6-7 hpi Rep 2
+- ind: SAMN02935376
+  organism:
+  - HSV-1 (strain 17)
+  - Homo sapiens
+  attributes:
+    cells: HFF
+    4sU: 500 uM
+    time-point: 7-8hpi
+    protocol: 4sU-RNA
+    replica: '2'
+  description: 4sU-RNA - 7-8 hpi Rep 2
+description: 4sU/Total RNA-seq of Human Foreskin Fibroblasts (HFF) infected with HSV-1

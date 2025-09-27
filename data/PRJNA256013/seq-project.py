@@ -49,4 +49,8 @@ for exp in project.experiments:
     ])
     exp.attributes["title"] = title
 
+object.__setattr__(
+    project, "description", "4sU/Total RNA-seq of Human Foreskin Fibroblasts (HFF) infected with HSV-1"
+)
+
 seqproj.adapter.yaml.dump(project, FOLDER / "seq-project.yaml")

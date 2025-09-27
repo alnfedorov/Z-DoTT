@@ -59,8 +59,6 @@ for exp in project.experiments:
     else:
         object.__setattr__(exp.library, "strandedness", seqproj.Strandedness.Reverse)
 
-    # A549_IAV-WT_
-
     title = "_".join([
         exp.sample.attributes[k] for k in ("cells", "IAV", "time-point", "fraction", "replica")
     ])
@@ -68,5 +66,8 @@ for exp in project.experiments:
     print(title)
 assert len(forward_layout) == 0, forward_layout
 
-seqproj.adapter.yaml.dump(project, FOLDER / "seq-project.yaml")
+object.__setattr__(
+    project, "description", "RNA-seq of nuclear and cytoplasmic transcripts from IAV-infected A549 cells"
+)
 
+seqproj.adapter.yaml.dump(project, FOLDER / "seq-project.yaml")

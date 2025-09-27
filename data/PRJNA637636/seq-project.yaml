@@ -1,527 +1,525 @@
 ind: PRJNA637636
 experiments:
-  - ind: SRX8483053
-    sample: SAMN15147615
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937720
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483053_SRR11937720_1.fastq.gz
-            - fastq/SRX8483053_SRR11937720_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 49844960
-        bases: 7576433920
-    attributes:
-      title: HFF_mock_1
-    description: 'NextSeq 500 sequencing: GSM4593513: Mock Rep. 1 Homo sapiens RNA-Seq'
-  - ind: SRX8483054
-    sample: SAMN15147633
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937721
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483054_SRR11937721_1.fastq.gz
-            - fastq/SRX8483054_SRR11937721_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 45491574
-        bases: 6914719248
-    attributes:
-      title: HFF_Strain-17_7-8hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593514: WT strain 17 Rep. 1 Homo sapiens
+- ind: SRX8483053
+  sample: SAMN15147615
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937720
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483053_SRR11937720_1.fastq.gz
+      - fastq/SRX8483053_SRR11937720_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 49844960
+    bases: 7576433920
+  attributes:
+    title: HFF_mock_1
+  description: 'NextSeq 500 sequencing: GSM4593513: Mock Rep. 1 Homo sapiens RNA-Seq'
+- ind: SRX8483054
+  sample: SAMN15147633
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937721
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483054_SRR11937721_1.fastq.gz
+      - fastq/SRX8483054_SRR11937721_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 45491574
+    bases: 6914719248
+  attributes:
+    title: HFF_Strain-17_7-8hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593514: WT strain 17 Rep. 1 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483055
-    sample: SAMN15147632
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937722
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483055_SRR11937722_1.fastq.gz
-            - fastq/SRX8483055_SRR11937722_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 44561177
-        bases: 6773298904
-    attributes:
-      title: HFF_delta-VHS_7-8hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593515: delta vhs Rep. 1 Homo sapiens
+- ind: SRX8483055
+  sample: SAMN15147632
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937722
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483055_SRR11937722_1.fastq.gz
+      - fastq/SRX8483055_SRR11937722_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 44561177
+    bases: 6773298904
+  attributes:
+    title: HFF_delta-VHS_7-8hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593515: delta vhs Rep. 1 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483056
-    sample: SAMN15147630
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937723
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483056_SRR11937723_1.fastq.gz
-            - fastq/SRX8483056_SRR11937723_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 41830355
-        bases: 6358213960
-    attributes:
-      title: HFF_TsK_7-8hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593516: TsK Rep. 1 Homo sapiens RNA-Seq'
-  - ind: SRX8483057
-    sample: SAMN15147629
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937724
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483057_SRR11937724_1.fastq.gz
-            - fastq/SRX8483057_SRR11937724_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 43027928
-        bases: 6540245056
-    attributes:
-      title: HFF_delta-ICP27_7-8hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593517: delta ICP27 Rep. 1 Homo sapiens
+- ind: SRX8483056
+  sample: SAMN15147630
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937723
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483056_SRR11937723_1.fastq.gz
+      - fastq/SRX8483056_SRR11937723_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 41830355
+    bases: 6358213960
+  attributes:
+    title: HFF_TsK_7-8hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593516: TsK Rep. 1 Homo sapiens RNA-Seq'
+- ind: SRX8483057
+  sample: SAMN15147629
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937724
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483057_SRR11937724_1.fastq.gz
+      - fastq/SRX8483057_SRR11937724_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 43027928
+    bases: 6540245056
+  attributes:
+    title: HFF_delta-ICP27_7-8hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593517: delta ICP27 Rep. 1 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483058
-    sample: SAMN15147628
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937725
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483058_SRR11937725_1.fastq.gz
-            - fastq/SRX8483058_SRR11937725_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 49310468
-        bases: 7495191136
-    attributes:
-      title: HFF_delta-ICP0_11-12hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593518: delta IPC0 Rep. 1 Homo sapiens
+- ind: SRX8483058
+  sample: SAMN15147628
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937725
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483058_SRR11937725_1.fastq.gz
+      - fastq/SRX8483058_SRR11937725_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 49310468
+    bases: 7495191136
+  attributes:
+    title: HFF_delta-ICP0_11-12hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593518: delta IPC0 Rep. 1 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483059
-    sample: SAMN15147627
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937726
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483059_SRR11937726_1.fastq.gz
-            - fastq/SRX8483059_SRR11937726_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 44444182
-        bases: 6755515664
-    attributes:
-      title: HFF_delta-ICP22_11-12hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593519: delta ICP22 Rep. 1 Homo sapiens
+- ind: SRX8483059
+  sample: SAMN15147627
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937726
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483059_SRR11937726_1.fastq.gz
+      - fastq/SRX8483059_SRR11937726_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 44444182
+    bases: 6755515664
+  attributes:
+    title: HFF_delta-ICP22_11-12hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593519: delta ICP22 Rep. 1 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483060
-    sample: SAMN15147626
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937727
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483060_SRR11937727_1.fastq.gz
-            - fastq/SRX8483060_SRR11937727_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 24176189
-        bases: 3674780728
-    attributes:
-      title: HFF_delta-ICP4_7-8hpi_1
-    description: 'NextSeq 500 sequencing: GSM4593520: delta ICP4 Rep. 1 Homo sapiens
+- ind: SRX8483060
+  sample: SAMN15147626
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937727
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483060_SRR11937727_1.fastq.gz
+      - fastq/SRX8483060_SRR11937727_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 24176189
+    bases: 3674780728
+  attributes:
+    title: HFF_delta-ICP4_7-8hpi_1
+  description: 'NextSeq 500 sequencing: GSM4593520: delta ICP4 Rep. 1 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483061
-    sample: SAMN15147624
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937728
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483061_SRR11937728_1.fastq.gz
-            - fastq/SRX8483061_SRR11937728_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 66779832
-        bases: 9988927361
-    attributes:
-      title: HFF_mock_2
-    description: 'NextSeq 500 sequencing: GSM4593521: Mock Rep. 2 Homo sapiens RNA-Seq'
-  - ind: SRX8483062
-    sample: SAMN15147623
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937729
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483062_SRR11937729_1.fastq.gz
-            - fastq/SRX8483062_SRR11937729_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 54540653
-        bases: 8183417168
-    attributes:
-      title: HFF_Strain-17_7-8hpi_2
-    description: 'NextSeq 500 sequencing: GSM4593522: WT strain 17 Rep. 2 Homo sapiens
+- ind: SRX8483061
+  sample: SAMN15147624
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937728
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483061_SRR11937728_1.fastq.gz
+      - fastq/SRX8483061_SRR11937728_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 66779832
+    bases: 9988927361
+  attributes:
+    title: HFF_mock_2
+  description: 'NextSeq 500 sequencing: GSM4593521: Mock Rep. 2 Homo sapiens RNA-Seq'
+- ind: SRX8483062
+  sample: SAMN15147623
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937729
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483062_SRR11937729_1.fastq.gz
+      - fastq/SRX8483062_SRR11937729_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 54540653
+    bases: 8183417168
+  attributes:
+    title: HFF_Strain-17_7-8hpi_2
+  description: 'NextSeq 500 sequencing: GSM4593522: WT strain 17 Rep. 2 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483063
-    sample: SAMN15147622
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937730
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483063_SRR11937730_1.fastq.gz
-            - fastq/SRX8483063_SRR11937730_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 62793132
-        bases: 9396730053
-    attributes:
-      title: HFF_delta-VHS_7-8hpi_2
-    description: 'NextSeq 500 sequencing: GSM4593523: delta vhs Rep. 2 Homo sapiens
+- ind: SRX8483063
+  sample: SAMN15147622
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937730
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483063_SRR11937730_1.fastq.gz
+      - fastq/SRX8483063_SRR11937730_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 62793132
+    bases: 9396730053
+  attributes:
+    title: HFF_delta-VHS_7-8hpi_2
+  description: 'NextSeq 500 sequencing: GSM4593523: delta vhs Rep. 2 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483064
-    sample: SAMN15147620
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937731
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483064_SRR11937731_1.fastq.gz
-            - fastq/SRX8483064_SRR11937731_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 56971443
-        bases: 8526854329
-    attributes:
-      title: HFF_TsK_7-8hpi_2
-    description: 'NextSeq 500 sequencing: GSM4593524: TsK Rep. 2 Homo sapiens RNA-Seq'
-  - ind: SRX8483065
-    sample: SAMN15147619
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937732
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483065_SRR11937732_1.fastq.gz
-            - fastq/SRX8483065_SRR11937732_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 58768826
-        bases: 8808365259
-    attributes:
-      title: HFF_delta-ICP27_7-8hpi_2
-    description: 'NextSeq 500 sequencing: GSM4593525: delta ICP27 Rep. 2 Homo sapiens
+- ind: SRX8483064
+  sample: SAMN15147620
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937731
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483064_SRR11937731_1.fastq.gz
+      - fastq/SRX8483064_SRR11937731_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 56971443
+    bases: 8526854329
+  attributes:
+    title: HFF_TsK_7-8hpi_2
+  description: 'NextSeq 500 sequencing: GSM4593524: TsK Rep. 2 Homo sapiens RNA-Seq'
+- ind: SRX8483065
+  sample: SAMN15147619
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937732
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483065_SRR11937732_1.fastq.gz
+      - fastq/SRX8483065_SRR11937732_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 58768826
+    bases: 8808365259
+  attributes:
+    title: HFF_delta-ICP27_7-8hpi_2
+  description: 'NextSeq 500 sequencing: GSM4593525: delta ICP27 Rep. 2 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483066
-    sample: SAMN15147618
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937733
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483066_SRR11937733_1.fastq.gz
-            - fastq/SRX8483066_SRR11937733_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 62249565
-        bases: 9332008566
-    attributes:
-      title: HFF_delta-ICP0_11-12hpi_2
-    description: 'NextSeq 500 sequencing: GSM4593526: delta IPC0 Rep. 2 Homo sapiens
+- ind: SRX8483066
+  sample: SAMN15147618
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937733
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483066_SRR11937733_1.fastq.gz
+      - fastq/SRX8483066_SRR11937733_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 62249565
+    bases: 9332008566
+  attributes:
+    title: HFF_delta-ICP0_11-12hpi_2
+  description: 'NextSeq 500 sequencing: GSM4593526: delta IPC0 Rep. 2 Homo sapiens
     RNA-Seq'
-  - ind: SRX8483067
-    sample: SAMN15147616
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-        - 4sU
-      strandedness: R
-    runs:
-      - ind: SRR11937734
-        layout:
-          type: paired
-          files:
-            - fastq/SRX8483067_SRR11937734_1.fastq.gz
-            - fastq/SRX8483067_SRR11937734_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: NextSeq 500'
-        reads: 53535801
-        bases: 8030626044
-    attributes:
-      title: HFF_delta-ICP22_11-12hpi_2
-    description: 'NextSeq 500 sequencing: GSM4593527: delta ICP22 Rep. 2 Homo sapiens
+- ind: SRX8483067
+  sample: SAMN15147616
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - 4sU
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: SRR11937734
+    layout:
+      type: paired
+      files:
+      - fastq/SRX8483067_SRR11937734_1.fastq.gz
+      - fastq/SRX8483067_SRR11937734_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: NextSeq 500'
+    reads: 53535801
+    bases: 8030626044
+  attributes:
+    title: HFF_delta-ICP22_11-12hpi_2
+  description: 'NextSeq 500 sequencing: GSM4593527: delta ICP22 Rep. 2 Homo sapiens
     RNA-Seq'
 samples:
-  - ind: SAMN15147615
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: mock
-      time-point: mock
-      cells: HFF
-      protocol: 4sU-RNA
-    description: Mock Rep. 1
-  - ind: SAMN15147633
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: Strain 17
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: WT strain 17 Rep. 1
-  - ind: SAMN15147632
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: delta VHS
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta vhs Rep. 1
-  - ind: SAMN15147630
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: TsK
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: TsK Rep. 1
-  - ind: SAMN15147629
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: delta ICP27
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta ICP27 Rep. 1
-  - ind: SAMN15147628
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: delta ICP0
-      time-point: 11-12hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta IPC0 Rep. 1
-  - ind: SAMN15147627
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: delta ICP22
-      time-point: 11-12hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta ICP22 Rep. 1
-  - ind: SAMN15147626
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '1'
-      HSV-1: delta ICP4
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta ICP4 Rep. 1
-  - ind: SAMN15147624
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: mock
-      time-point: mock
-      cells: HFF
-      protocol: 4sU-RNA
-    description: Mock Rep. 2
-  - ind: SAMN15147623
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: Strain 17
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: WT strain 17 Rep. 2
-  - ind: SAMN15147622
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: delta VHS
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta vhs Rep. 2
-  - ind: SAMN15147620
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: TsK
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: TsK Rep. 2
-  - ind: SAMN15147619
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: delta ICP27
-      time-point: 7-8hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta ICP27 Rep. 2
-  - ind: SAMN15147618
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: delta ICP0
-      time-point: 11-12hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta IPC0 Rep. 2
-  - ind: SAMN15147616
-    organism:
-      - Homo sapiens
-      - HSV-1
-    attributes:
-      replica: '2'
-      HSV-1: delta ICP22
-      time-point: 11-12hpi
-      cells: HFF
-      protocol: 4sU-RNA
-    description: delta ICP22 Rep. 2
-description: 'Wide-spread disruption of transcription termination in HSV-1 infection:
-  Next generation sequencing of total and newly transcribed (4sU-RNA) RNA from different
-  virus strains and mutant viruses'
+- ind: SAMN15147615
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: mock
+    time-point: mock
+    cells: HFF
+    protocol: 4sU-RNA
+  description: Mock Rep. 1
+- ind: SAMN15147633
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: Strain 17
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: WT strain 17 Rep. 1
+- ind: SAMN15147632
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: delta VHS
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta vhs Rep. 1
+- ind: SAMN15147630
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: TsK
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: TsK Rep. 1
+- ind: SAMN15147629
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: delta ICP27
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta ICP27 Rep. 1
+- ind: SAMN15147628
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: delta ICP0
+    time-point: 11-12hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta IPC0 Rep. 1
+- ind: SAMN15147627
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: delta ICP22
+    time-point: 11-12hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta ICP22 Rep. 1
+- ind: SAMN15147626
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '1'
+    HSV-1: delta ICP4
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta ICP4 Rep. 1
+- ind: SAMN15147624
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: mock
+    time-point: mock
+    cells: HFF
+    protocol: 4sU-RNA
+  description: Mock Rep. 2
+- ind: SAMN15147623
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: Strain 17
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: WT strain 17 Rep. 2
+- ind: SAMN15147622
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: delta VHS
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta vhs Rep. 2
+- ind: SAMN15147620
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: TsK
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: TsK Rep. 2
+- ind: SAMN15147619
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: delta ICP27
+    time-point: 7-8hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta ICP27 Rep. 2
+- ind: SAMN15147618
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: delta ICP0
+    time-point: 11-12hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta IPC0 Rep. 2
+- ind: SAMN15147616
+  organism:
+  - Homo sapiens
+  - HSV-1
+  attributes:
+    replica: '2'
+    HSV-1: delta ICP22
+    time-point: 11-12hpi
+    cells: HFF
+    protocol: 4sU-RNA
+  description: delta ICP22 Rep. 2
+description: 4sU RNA-seq of HSV-1 mutants

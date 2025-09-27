@@ -1,1216 +1,1217 @@
 ind: PRJEB75711
 experiments:
-  - ind: ERX12477974
-    sample: SAMEA115610018
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106334
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477974_ERR13106334_1.fastq.gz
-            - fastq/ERX12477974_ERR13106334_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 102979844
-        bases: 15549956444
-    attributes:
-      title: A549_IAV-dNS1_16hpi_cytosol_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477975
-    sample: SAMEA115610019
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106335
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477975_ERR13106335_1.fastq.gz
-            - fastq/ERX12477975_ERR13106335_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 80994070
-        bases: 12230104570
-    attributes:
-      title: A549_IAV-dNS1_16hpi_cytosol_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477976
-    sample: SAMEA115610020
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106336
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477976_ERR13106336_1.fastq.gz
-            - fastq/ERX12477976_ERR13106336_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 111314548
-        bases: 16808496748
-    attributes:
-      title: A549_IAV-dNS1_16hpi_cytosol_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477977
-    sample: SAMEA115610021
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106337
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477977_ERR13106337_1.fastq.gz
-            - fastq/ERX12477977_ERR13106337_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 87378514
-        bases: 13194155614
-    attributes:
-      title: A549_IAV-dNS1_16hpi_nucleus_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477978
-    sample: SAMEA115610022
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106338
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477978_ERR13106338_1.fastq.gz
-            - fastq/ERX12477978_ERR13106338_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 104880124
-        bases: 15836898724
-    attributes:
-      title: A549_IAV-dNS1_16hpi_nucleus_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477979
-    sample: SAMEA115610023
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106339
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477979_ERR13106339_1.fastq.gz
-            - fastq/ERX12477979_ERR13106339_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 97190028
-        bases: 14675694228
-    attributes:
-      title: A549_IAV-dNS1_16hpi_nucleus_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477980
-    sample: SAMEA115610024
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106340
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477980_ERR13106340_1.fastq.gz
-            - fastq/ERX12477980_ERR13106340_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 79782766
-        bases: 12047197666
-    attributes:
-      title: A549_IAV-WT_16hpi_cytosol_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477981
-    sample: SAMEA115610025
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106341
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477981_ERR13106341_1.fastq.gz
-            - fastq/ERX12477981_ERR13106341_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 78112864
-        bases: 11795042464
-    attributes:
-      title: A549_IAV-WT_16hpi_cytosol_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477982
-    sample: SAMEA115610026
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106342
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477982_ERR13106342_1.fastq.gz
-            - fastq/ERX12477982_ERR13106342_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 90527176
-        bases: 13669603576
-    attributes:
-      title: A549_IAV-WT_16hpi_cytosol_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477983
-    sample: SAMEA115610027
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106343
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477983_ERR13106343_1.fastq.gz
-            - fastq/ERX12477983_ERR13106343_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 87115968
-        bases: 13154511168
-    attributes:
-      title: A549_IAV-WT_16hpi_nucleus_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477984
-    sample: SAMEA115610028
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106344
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477984_ERR13106344_1.fastq.gz
-            - fastq/ERX12477984_ERR13106344_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 92664172
-        bases: 13992289972
-    attributes:
-      title: A549_IAV-WT_16hpi_nucleus_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477985
-    sample: SAMEA115610029
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106345
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477985_ERR13106345_1.fastq.gz
-            - fastq/ERX12477985_ERR13106345_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 98526908
-        bases: 14877563108
-    attributes:
-      title: A549_IAV-WT_16hpi_nucleus_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477986
-    sample: SAMEA115610030
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106346
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477986_ERR13106346_1.fastq.gz
-            - fastq/ERX12477986_ERR13106346_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 77207210
-        bases: 11658288710
-    attributes:
-      title: A549_mock_16hpi_cytosol_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477987
-    sample: SAMEA115610031
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106347
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477987_ERR13106347_1.fastq.gz
-            - fastq/ERX12477987_ERR13106347_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 101543414
-        bases: 15333055514
-    attributes:
-      title: A549_mock_16hpi_cytosol_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477988
-    sample: SAMEA115610032
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106348
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477988_ERR13106348_1.fastq.gz
-            - fastq/ERX12477988_ERR13106348_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 99997466
-        bases: 15099617366
-    attributes:
-      title: A549_mock_16hpi_cytosol_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477989
-    sample: SAMEA115610033
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106349
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477989_ERR13106349_1.fastq.gz
-            - fastq/ERX12477989_ERR13106349_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 93336280
-        bases: 14093778280
-    attributes:
-      title: A549_mock_16hpi_nucleus_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477990
-    sample: SAMEA115610034
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106350
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477990_ERR13106350_1.fastq.gz
-            - fastq/ERX12477990_ERR13106350_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 99308514
-        bases: 14995585614
-    attributes:
-      title: A549_mock_16hpi_nucleus_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477991
-    sample: SAMEA115610035
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106351
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477991_ERR13106351_1.fastq.gz
-            - fastq/ERX12477991_ERR13106351_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 94175802
-        bases: 14220546102
-    attributes:
-      title: A549_mock_16hpi_nucleus_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477992
-    sample: SAMEA115610036
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106352
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477992_ERR13106352_1.fastq.gz
-            - fastq/ERX12477992_ERR13106352_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 130014852
-        bases: 19632242652
-    attributes:
-      title: A549_IAV-dNS1_8hpi_cytosol_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477993
-    sample: SAMEA115610037
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106353
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477993_ERR13106353_1.fastq.gz
-            - fastq/ERX12477993_ERR13106353_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 107122828
-        bases: 16175547028
-    attributes:
-      title: A549_IAV-dNS1_8hpi_cytosol_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477994
-    sample: SAMEA115610038
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106354
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477994_ERR13106354_1.fastq.gz
-            - fastq/ERX12477994_ERR13106354_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 93331480
-        bases: 14093053480
-    attributes:
-      title: A549_IAV-dNS1_8hpi_cytosol_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477995
-    sample: SAMEA115610039
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106355
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477995_ERR13106355_1.fastq.gz
-            - fastq/ERX12477995_ERR13106355_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 105238056
-        bases: 15890946456
-    attributes:
-      title: A549_IAV-dNS1_8hpi_nucleus_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477996
-    sample: SAMEA115610040
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106356
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477996_ERR13106356_1.fastq.gz
-            - fastq/ERX12477996_ERR13106356_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 105223660
-        bases: 15888772660
-    attributes:
-      title: A549_IAV-dNS1_8hpi_nucleus_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477997
-    sample: SAMEA115610041
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106357
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477997_ERR13106357_1.fastq.gz
-            - fastq/ERX12477997_ERR13106357_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 111460030
-        bases: 16830464530
-    attributes:
-      title: A549_IAV-dNS1_8hpi_nucleus_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477998
-    sample: SAMEA115610042
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106358
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477998_ERR13106358_1.fastq.gz
-            - fastq/ERX12477998_ERR13106358_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 117975598
-        bases: 17814315298
-    attributes:
-      title: A549_IAV-WT_8hpi_cytosol_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12477999
-    sample: SAMEA115610043
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106359
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12477999_ERR13106359_1.fastq.gz
-            - fastq/ERX12477999_ERR13106359_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 82965814
-        bases: 12527837914
-    attributes:
-      title: A549_IAV-WT_8hpi_cytosol_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478000
-    sample: SAMEA115610044
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106360
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478000_ERR13106360_1.fastq.gz
-            - fastq/ERX12478000_ERR13106360_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 99678994
-        bases: 15051528094
-    attributes:
-      title: A549_IAV-WT_8hpi_cytosol_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478001
-    sample: SAMEA115610045
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106361
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478001_ERR13106361_1.fastq.gz
-            - fastq/ERX12478001_ERR13106361_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 100770472
-        bases: 15216341272
-    attributes:
-      title: A549_IAV-WT_8hpi_nucleus_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478002
-    sample: SAMEA115610046
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106362
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478002_ERR13106362_1.fastq.gz
-            - fastq/ERX12478002_ERR13106362_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 82240370
-        bases: 12418295870
-    attributes:
-      title: A549_IAV-WT_8hpi_nucleus_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478003
-    sample: SAMEA115610047
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106363
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478003_ERR13106363_1.fastq.gz
-            - fastq/ERX12478003_ERR13106363_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 90804758
-        bases: 13711518458
-    attributes:
-      title: A549_IAV-WT_8hpi_nucleus_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478004
-    sample: SAMEA115610048
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106364
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478004_ERR13106364_1.fastq.gz
-            - fastq/ERX12478004_ERR13106364_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 120905118
-        bases: 18256672818
-    attributes:
-      title: A549_mock_8hpi_cytosol_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478005
-    sample: SAMEA115610049
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106365
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478005_ERR13106365_1.fastq.gz
-            - fastq/ERX12478005_ERR13106365_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 87349604
-        bases: 13189790204
-    attributes:
-      title: A549_mock_8hpi_cytosol_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478006
-    sample: SAMEA115610050
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106366
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478006_ERR13106366_1.fastq.gz
-            - fastq/ERX12478006_ERR13106366_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 101115428
-        bases: 15268429628
-    attributes:
-      title: A549_mock_8hpi_cytosol_3
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478007
-    sample: SAMEA115610051
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106367
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478007_ERR13106367_1.fastq.gz
-            - fastq/ERX12478007_ERR13106367_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 89581686
-        bases: 13526834586
-    attributes:
-      title: A549_mock_8hpi_nucleus_1
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478008
-    sample: SAMEA115610052
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: ERR13106368
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478008_ERR13106368_1.fastq.gz
-            - fastq/ERX12478008_ERR13106368_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 116686366
-        bases: 17619641266
-    attributes:
-      title: A549_mock_8hpi_nucleus_2
-    description: Illumina NovaSeq 6000 sequencing
-  - ind: ERX12478009
-    sample: SAMEA115610053
-    library:
-      source:
-        - TRANSCRIPTOMIC
-      selection:
-        - rRNA depletion
-      strandedness: F
-    runs:
-      - ind: ERR13106369
-        layout:
-          type: paired
-          files:
-            - fastq/ERX12478009_ERR13106369_1.fastq.gz
-            - fastq/ERX12478009_ERR13106369_2.fastq.gz
-          orientation: I
-        machine: 'ILLUMINA: Illumina NovaSeq 6000'
-        reads: 107884168
-        bases: 16290509368
-    attributes:
-      title: A549_mock_8hpi_nucleus_3
-    description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477974
+  sample: SAMEA115610018
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106334
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477974_ERR13106334_1.fastq.gz
+      - fastq/ERX12477974_ERR13106334_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 102979844
+    bases: 15549956444
+  attributes:
+    title: A549_IAV-dNS1_16hpi_cytosol_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477975
+  sample: SAMEA115610019
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106335
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477975_ERR13106335_1.fastq.gz
+      - fastq/ERX12477975_ERR13106335_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 80994070
+    bases: 12230104570
+  attributes:
+    title: A549_IAV-dNS1_16hpi_cytosol_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477976
+  sample: SAMEA115610020
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106336
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477976_ERR13106336_1.fastq.gz
+      - fastq/ERX12477976_ERR13106336_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 111314548
+    bases: 16808496748
+  attributes:
+    title: A549_IAV-dNS1_16hpi_cytosol_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477977
+  sample: SAMEA115610021
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106337
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477977_ERR13106337_1.fastq.gz
+      - fastq/ERX12477977_ERR13106337_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 87378514
+    bases: 13194155614
+  attributes:
+    title: A549_IAV-dNS1_16hpi_nucleus_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477978
+  sample: SAMEA115610022
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106338
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477978_ERR13106338_1.fastq.gz
+      - fastq/ERX12477978_ERR13106338_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 104880124
+    bases: 15836898724
+  attributes:
+    title: A549_IAV-dNS1_16hpi_nucleus_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477979
+  sample: SAMEA115610023
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106339
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477979_ERR13106339_1.fastq.gz
+      - fastq/ERX12477979_ERR13106339_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 97190028
+    bases: 14675694228
+  attributes:
+    title: A549_IAV-dNS1_16hpi_nucleus_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477980
+  sample: SAMEA115610024
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106340
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477980_ERR13106340_1.fastq.gz
+      - fastq/ERX12477980_ERR13106340_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 79782766
+    bases: 12047197666
+  attributes:
+    title: A549_IAV-WT_16hpi_cytosol_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477981
+  sample: SAMEA115610025
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106341
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477981_ERR13106341_1.fastq.gz
+      - fastq/ERX12477981_ERR13106341_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 78112864
+    bases: 11795042464
+  attributes:
+    title: A549_IAV-WT_16hpi_cytosol_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477982
+  sample: SAMEA115610026
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106342
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477982_ERR13106342_1.fastq.gz
+      - fastq/ERX12477982_ERR13106342_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 90527176
+    bases: 13669603576
+  attributes:
+    title: A549_IAV-WT_16hpi_cytosol_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477983
+  sample: SAMEA115610027
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106343
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477983_ERR13106343_1.fastq.gz
+      - fastq/ERX12477983_ERR13106343_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 87115968
+    bases: 13154511168
+  attributes:
+    title: A549_IAV-WT_16hpi_nucleus_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477984
+  sample: SAMEA115610028
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106344
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477984_ERR13106344_1.fastq.gz
+      - fastq/ERX12477984_ERR13106344_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 92664172
+    bases: 13992289972
+  attributes:
+    title: A549_IAV-WT_16hpi_nucleus_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477985
+  sample: SAMEA115610029
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106345
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477985_ERR13106345_1.fastq.gz
+      - fastq/ERX12477985_ERR13106345_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 98526908
+    bases: 14877563108
+  attributes:
+    title: A549_IAV-WT_16hpi_nucleus_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477986
+  sample: SAMEA115610030
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106346
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477986_ERR13106346_1.fastq.gz
+      - fastq/ERX12477986_ERR13106346_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 77207210
+    bases: 11658288710
+  attributes:
+    title: A549_mock_16hpi_cytosol_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477987
+  sample: SAMEA115610031
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106347
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477987_ERR13106347_1.fastq.gz
+      - fastq/ERX12477987_ERR13106347_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 101543414
+    bases: 15333055514
+  attributes:
+    title: A549_mock_16hpi_cytosol_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477988
+  sample: SAMEA115610032
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106348
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477988_ERR13106348_1.fastq.gz
+      - fastq/ERX12477988_ERR13106348_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 99997466
+    bases: 15099617366
+  attributes:
+    title: A549_mock_16hpi_cytosol_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477989
+  sample: SAMEA115610033
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106349
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477989_ERR13106349_1.fastq.gz
+      - fastq/ERX12477989_ERR13106349_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 93336280
+    bases: 14093778280
+  attributes:
+    title: A549_mock_16hpi_nucleus_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477990
+  sample: SAMEA115610034
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106350
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477990_ERR13106350_1.fastq.gz
+      - fastq/ERX12477990_ERR13106350_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 99308514
+    bases: 14995585614
+  attributes:
+    title: A549_mock_16hpi_nucleus_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477991
+  sample: SAMEA115610035
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106351
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477991_ERR13106351_1.fastq.gz
+      - fastq/ERX12477991_ERR13106351_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 94175802
+    bases: 14220546102
+  attributes:
+    title: A549_mock_16hpi_nucleus_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477992
+  sample: SAMEA115610036
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106352
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477992_ERR13106352_1.fastq.gz
+      - fastq/ERX12477992_ERR13106352_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 130014852
+    bases: 19632242652
+  attributes:
+    title: A549_IAV-dNS1_8hpi_cytosol_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477993
+  sample: SAMEA115610037
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106353
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477993_ERR13106353_1.fastq.gz
+      - fastq/ERX12477993_ERR13106353_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 107122828
+    bases: 16175547028
+  attributes:
+    title: A549_IAV-dNS1_8hpi_cytosol_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477994
+  sample: SAMEA115610038
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106354
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477994_ERR13106354_1.fastq.gz
+      - fastq/ERX12477994_ERR13106354_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 93331480
+    bases: 14093053480
+  attributes:
+    title: A549_IAV-dNS1_8hpi_cytosol_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477995
+  sample: SAMEA115610039
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106355
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477995_ERR13106355_1.fastq.gz
+      - fastq/ERX12477995_ERR13106355_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 105238056
+    bases: 15890946456
+  attributes:
+    title: A549_IAV-dNS1_8hpi_nucleus_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477996
+  sample: SAMEA115610040
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106356
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477996_ERR13106356_1.fastq.gz
+      - fastq/ERX12477996_ERR13106356_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 105223660
+    bases: 15888772660
+  attributes:
+    title: A549_IAV-dNS1_8hpi_nucleus_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477997
+  sample: SAMEA115610041
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106357
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477997_ERR13106357_1.fastq.gz
+      - fastq/ERX12477997_ERR13106357_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 111460030
+    bases: 16830464530
+  attributes:
+    title: A549_IAV-dNS1_8hpi_nucleus_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477998
+  sample: SAMEA115610042
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106358
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477998_ERR13106358_1.fastq.gz
+      - fastq/ERX12477998_ERR13106358_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 117975598
+    bases: 17814315298
+  attributes:
+    title: A549_IAV-WT_8hpi_cytosol_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12477999
+  sample: SAMEA115610043
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106359
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12477999_ERR13106359_1.fastq.gz
+      - fastq/ERX12477999_ERR13106359_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 82965814
+    bases: 12527837914
+  attributes:
+    title: A549_IAV-WT_8hpi_cytosol_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478000
+  sample: SAMEA115610044
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106360
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478000_ERR13106360_1.fastq.gz
+      - fastq/ERX12478000_ERR13106360_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 99678994
+    bases: 15051528094
+  attributes:
+    title: A549_IAV-WT_8hpi_cytosol_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478001
+  sample: SAMEA115610045
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106361
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478001_ERR13106361_1.fastq.gz
+      - fastq/ERX12478001_ERR13106361_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 100770472
+    bases: 15216341272
+  attributes:
+    title: A549_IAV-WT_8hpi_nucleus_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478002
+  sample: SAMEA115610046
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106362
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478002_ERR13106362_1.fastq.gz
+      - fastq/ERX12478002_ERR13106362_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 82240370
+    bases: 12418295870
+  attributes:
+    title: A549_IAV-WT_8hpi_nucleus_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478003
+  sample: SAMEA115610047
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106363
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478003_ERR13106363_1.fastq.gz
+      - fastq/ERX12478003_ERR13106363_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 90804758
+    bases: 13711518458
+  attributes:
+    title: A549_IAV-WT_8hpi_nucleus_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478004
+  sample: SAMEA115610048
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106364
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478004_ERR13106364_1.fastq.gz
+      - fastq/ERX12478004_ERR13106364_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 120905118
+    bases: 18256672818
+  attributes:
+    title: A549_mock_8hpi_cytosol_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478005
+  sample: SAMEA115610049
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106365
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478005_ERR13106365_1.fastq.gz
+      - fastq/ERX12478005_ERR13106365_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 87349604
+    bases: 13189790204
+  attributes:
+    title: A549_mock_8hpi_cytosol_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478006
+  sample: SAMEA115610050
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106366
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478006_ERR13106366_1.fastq.gz
+      - fastq/ERX12478006_ERR13106366_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 101115428
+    bases: 15268429628
+  attributes:
+    title: A549_mock_8hpi_cytosol_3
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478007
+  sample: SAMEA115610051
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106367
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478007_ERR13106367_1.fastq.gz
+      - fastq/ERX12478007_ERR13106367_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 89581686
+    bases: 13526834586
+  attributes:
+    title: A549_mock_8hpi_nucleus_1
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478008
+  sample: SAMEA115610052
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: R
+  runs:
+  - ind: ERR13106368
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478008_ERR13106368_1.fastq.gz
+      - fastq/ERX12478008_ERR13106368_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 116686366
+    bases: 17619641266
+  attributes:
+    title: A549_mock_8hpi_nucleus_2
+  description: Illumina NovaSeq 6000 sequencing
+- ind: ERX12478009
+  sample: SAMEA115610053
+  library:
+    source:
+    - TRANSCRIPTOMIC
+    selection:
+    - rRNA depletion
+    strandedness: F
+  runs:
+  - ind: ERR13106369
+    layout:
+      type: paired
+      files:
+      - fastq/ERX12478009_ERR13106369_1.fastq.gz
+      - fastq/ERX12478009_ERR13106369_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 107884168
+    bases: 16290509368
+  attributes:
+    title: A549_mock_8hpi_nucleus_3
+  description: Illumina NovaSeq 6000 sequencing
 samples:
-  - ind: SAMEA115610018
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '1'
-    description: 16hpi_dNS1_cytosol_1
-  - ind: SAMEA115610019
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '2'
-    description: 16hpi_dNS1_cytosol_2
-  - ind: SAMEA115610020
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '3'
-    description: 16hpi_dNS1_cytosol_3
-  - ind: SAMEA115610021
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '1'
-    description: 16hpi_dNS1_nucleus_1
-  - ind: SAMEA115610022
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '2'
-    description: 16hpi_dNS1_nucleus_2
-  - ind: SAMEA115610023
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '3'
-    description: 16hpi_dNS1_nucleus_3
-  - ind: SAMEA115610024
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '1'
-    description: 16hpi_IAV_cytosol_1
-  - ind: SAMEA115610025
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '2'
-    description: 16hpi_IAV_cytosol_2
-  - ind: SAMEA115610026
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '3'
-    description: 16hpi_IAV_cytosol_3
-  - ind: SAMEA115610027
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '1'
-    description: 16hpi_IAV_nucleus_1
-  - ind: SAMEA115610028
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '2'
-    description: 16hpi_IAV_nucleus_2
-  - ind: SAMEA115610029
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '3'
-    description: 16hpi_IAV_nucleus_3
-  - ind: SAMEA115610030
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '1'
-    description: 16hpi_mock_cytosol_1
-  - ind: SAMEA115610031
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '2'
-    description: 16hpi_mock_cytosol_2
-  - ind: SAMEA115610032
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 16hpi
-      fraction: cytosol
-      replica: '3'
-    description: 16hpi_mock_cytosol_3
-  - ind: SAMEA115610033
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '1'
-    description: 16hpi_mock_nucleus_1
-  - ind: SAMEA115610034
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '2'
-    description: 16hpi_mock_nucleus_2
-  - ind: SAMEA115610035
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 16hpi
-      fraction: nucleus
-      replica: '3'
-    description: 16hpi_mock_nucleus_3
-  - ind: SAMEA115610036
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '1'
-    description: 8hpi_dNS1_cytosol_1
-  - ind: SAMEA115610037
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '2'
-    description: 8hpi_dNS1_cytosol_2
-  - ind: SAMEA115610038
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '3'
-    description: 8hpi_dNS1_cytosol_3
-  - ind: SAMEA115610039
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '1'
-    description: 8hpi_dNS1_nucleus_1
-  - ind: SAMEA115610040
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '2'
-    description: 8hpi_dNS1_nucleus_2
-  - ind: SAMEA115610041
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-dNS1
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '3'
-    description: 8hpi_dNS1_nucleus_3
-  - ind: SAMEA115610042
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '1'
-    description: 8hpi_IAV_cytosol_1
-  - ind: SAMEA115610043
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '2'
-    description: 8hpi_IAV_cytosol_2
-  - ind: SAMEA115610044
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '3'
-    description: 8hpi_IAV_cytosol_3
-  - ind: SAMEA115610045
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '1'
-    description: 8hpi_IAV_nucleus_1
-  - ind: SAMEA115610046
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '2'
-    description: 8hpi_IAV_nucleus_2
-  - ind: SAMEA115610047
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      strain: A/WSN/1933
-      IAV: IAV-WT
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '3'
-    description: 8hpi_IAV_nucleus_3
-  - ind: SAMEA115610048
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '1'
-    description: 8hpi_mock_cytosol_1
-  - ind: SAMEA115610049
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '2'
-    description: 8hpi_mock_cytosol_2
-  - ind: SAMEA115610050
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 8hpi
-      fraction: cytosol
-      replica: '3'
-    description: 8hpi_mock_cytosol_3
-  - ind: SAMEA115610051
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '1'
-    description: 8hpi_mock_nucleus_1
-  - ind: SAMEA115610052
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '2'
-    description: 8hpi_mock_nucleus_2
-  - ind: SAMEA115610053
-    organism:
-      - Homo sapiens
-      - IAV
-    attributes:
-      cells: A549
-      IAV: mock
-      time-point: 8hpi
-      fraction: nucleus
-      replica: '3'
-    description: 8hpi_mock_nucleus_3
-description: Influenza A virus NS1 and cellular dsRNA
+- ind: SAMEA115610018
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '1'
+  description: 16hpi_dNS1_cytosol_1
+- ind: SAMEA115610019
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '2'
+  description: 16hpi_dNS1_cytosol_2
+- ind: SAMEA115610020
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '3'
+  description: 16hpi_dNS1_cytosol_3
+- ind: SAMEA115610021
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '1'
+  description: 16hpi_dNS1_nucleus_1
+- ind: SAMEA115610022
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '2'
+  description: 16hpi_dNS1_nucleus_2
+- ind: SAMEA115610023
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '3'
+  description: 16hpi_dNS1_nucleus_3
+- ind: SAMEA115610024
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '1'
+  description: 16hpi_IAV_cytosol_1
+- ind: SAMEA115610025
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '2'
+  description: 16hpi_IAV_cytosol_2
+- ind: SAMEA115610026
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '3'
+  description: 16hpi_IAV_cytosol_3
+- ind: SAMEA115610027
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '1'
+  description: 16hpi_IAV_nucleus_1
+- ind: SAMEA115610028
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '2'
+  description: 16hpi_IAV_nucleus_2
+- ind: SAMEA115610029
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '3'
+  description: 16hpi_IAV_nucleus_3
+- ind: SAMEA115610030
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '1'
+  description: 16hpi_mock_cytosol_1
+- ind: SAMEA115610031
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '2'
+  description: 16hpi_mock_cytosol_2
+- ind: SAMEA115610032
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 16hpi
+    fraction: cytosol
+    replica: '3'
+  description: 16hpi_mock_cytosol_3
+- ind: SAMEA115610033
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '1'
+  description: 16hpi_mock_nucleus_1
+- ind: SAMEA115610034
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '2'
+  description: 16hpi_mock_nucleus_2
+- ind: SAMEA115610035
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 16hpi
+    fraction: nucleus
+    replica: '3'
+  description: 16hpi_mock_nucleus_3
+- ind: SAMEA115610036
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '1'
+  description: 8hpi_dNS1_cytosol_1
+- ind: SAMEA115610037
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '2'
+  description: 8hpi_dNS1_cytosol_2
+- ind: SAMEA115610038
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '3'
+  description: 8hpi_dNS1_cytosol_3
+- ind: SAMEA115610039
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '1'
+  description: 8hpi_dNS1_nucleus_1
+- ind: SAMEA115610040
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '2'
+  description: 8hpi_dNS1_nucleus_2
+- ind: SAMEA115610041
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-dNS1
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '3'
+  description: 8hpi_dNS1_nucleus_3
+- ind: SAMEA115610042
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '1'
+  description: 8hpi_IAV_cytosol_1
+- ind: SAMEA115610043
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '2'
+  description: 8hpi_IAV_cytosol_2
+- ind: SAMEA115610044
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '3'
+  description: 8hpi_IAV_cytosol_3
+- ind: SAMEA115610045
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '1'
+  description: 8hpi_IAV_nucleus_1
+- ind: SAMEA115610046
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '2'
+  description: 8hpi_IAV_nucleus_2
+- ind: SAMEA115610047
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    strain: A/WSN/1933
+    IAV: IAV-WT
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '3'
+  description: 8hpi_IAV_nucleus_3
+- ind: SAMEA115610048
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '1'
+  description: 8hpi_mock_cytosol_1
+- ind: SAMEA115610049
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '2'
+  description: 8hpi_mock_cytosol_2
+- ind: SAMEA115610050
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 8hpi
+    fraction: cytosol
+    replica: '3'
+  description: 8hpi_mock_cytosol_3
+- ind: SAMEA115610051
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '1'
+  description: 8hpi_mock_nucleus_1
+- ind: SAMEA115610052
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '2'
+  description: 8hpi_mock_nucleus_2
+- ind: SAMEA115610053
+  organism:
+  - IAV
+  - Homo sapiens
+  attributes:
+    cells: A549
+    IAV: mock
+    time-point: 8hpi
+    fraction: nucleus
+    replica: '3'
+  description: 8hpi_mock_nucleus_3
+description: RNA-seq of nuclear and cytoplasmic transcripts from IAV-infected A549
+  cells

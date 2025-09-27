@@ -37,12 +37,12 @@ cmd = "bash download-annotations.sh $HUMAN_VERSION $MOUSE_VERSION $ASSEMBLIES"
 env = { HUMAN_VERSION = "47", MOUSE_VERSION = "M36", ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies" }
 cwd = "setup/annotation"
 
-#[feature.nfcore.tasks."setup/make-indexes"]
-#cmd = "bash index.sh $ASSEMBLIES $PREMAPPING"
-#env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results" }
-#cwd = "stories/nfcore/resources"
+[feature.nfcore.tasks."setup/make-indexes"]
+cmd = "bash index.sh $ASSEMBLIES $PREMAPPING"
+env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results" }
+cwd = "stories/nfcore/resources"
 
-#[feature.nfcore.tasks."nfcore/nf-core/rnaseq"]
+#[feature.nfcore.tasks."nf-core/rnaseq"]
 #cmd = [
 #    "cd", "$PIXI_PROJECT_ROOT/stories/nfcore/rnaseq/{{ directory }}", "&&",
 #    "nfcore", "run", "-c", "resources/nfcore.config", "-params-file", "resources/params.yaml", "-resume",
@@ -50,7 +50,7 @@ cwd = "setup/annotation"
 #]
 #args = ["directory"]
 
-[feature.nextflow.tasks."nextflow/nf-core/fetchngs"]
+[feature.nextflow.tasks."nf-core/fetchngs"]
 cmd = [
     # Change to the directory with id.csv
     "cd", "$PIXI_PROJECT_ROOT/stories/nextflow/series/{{ directory }}/fastq", "&&",
@@ -222,11 +222,3 @@ args = ["directory"]
 #bioconductor-deseq2 = "==1.46.0"
 #bioconductor-dexseq = "==1.52.0"
 #bioconductor-apeglm = "==1.28.0"
-#
-#####################################################################################################
-## bowtie: probes validation               # TODO: remove when bowtie is no longer used
-#####################################################################################################
-#[feature.bowtie.dependencies]
-#bowtie = "==1.3.1"
-#samtools = "==1.21"
-#python = "==3.12.11"

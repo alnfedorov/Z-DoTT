@@ -1,3 +1,20 @@
+```shell
+pixi run setup/download-annotations
+# pixi run setup/liftoff # Note: not required, as lifted annotations are included in the repository
+pixi run setup/
+
+```
+
+
+
+
+
+
+
+
+
+
+
 This repository accompanies the publication *"Host cell Z-RNAs activate ZBP1 during virus infections"* and contains the
 code required to reproduce the bioinformatics results presented in the paper.
 
@@ -49,10 +66,10 @@ execution via `make <target>` from the repository's root directory.
 
    ```bash
    # Request a compute node
-   srun --account $(whoami) --job-name nextflow-indices --cpus-per-task 32 --mem-per-cpu 8G --pty bash -i
+   srun --account $(whoami) --job-name nfcore-indices --cpus-per-task 32 --mem-per-cpu 8G --pty bash -i
 
    # Run genome indexing
-   make setup/nextflow-indices
+   make setup/nfcore-indices
    ```
 
 ---
@@ -66,8 +83,8 @@ example, to download data for *PRJNA256013*:
 
 ```bash
 micromamba activate zdott
-cd stories/nextflow/series/SRA/PRJNA256013/fastq
-nextflow run \
+cd stories/nfcore/rnaseq/SRA/PRJNA256013/fastq
+nfcore run \
     -r 7544cb9297a0db754120bd1cb8d7df4586a60610 \
     nf-core/fetchngs \
     --input id.csv \
@@ -82,7 +99,7 @@ mv results/fastq/*.fastq.gz .
 # cat MD5.txt | xargs -I{} -P $(nproc) sh -c 'echo "{}" | md5sum -c -'
 
 # Clean up unnecessary files
-rm -rf work results .nextflow*
+rm -rf work results .nfcore*
 ```
 
 Similarly, data can be downloaded for other public sequencing projects in the `stories/nextflow/series/SRA folder`.
@@ -102,8 +119,8 @@ To process each sequencing experiment, navigate to its corresponding directory u
 
 ```bash
 micromamba activate zdott
-nextflow run \
-    -c resources/nextflow.config \
+nfcore run \
+    -c resources/nfcore.config \
     -params-file resources/params.yaml \
     -resume \
     -profile slurm,latency \
@@ -111,7 +128,7 @@ nextflow run \
     alnfedorov/rnaseq
 
 # Optionally, clean up the directory
-# rm -rf work .nextflow*
+# rm -rf work .nfcore*
 ```
 
 All experiments in `series/SRA` and `series/internal` directories should be processed before proceeding with the

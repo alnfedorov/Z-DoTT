@@ -13,8 +13,8 @@ __pycache__/
 *.so
 
 # Nextflow
-stories/nextflow/resources/indexes
-stories/nextflow/series/**/results
+stories/nfcore/resources/indexes
+stories/nfcore/rnaseq/**/results
 .nextflow*
 
 # Local results

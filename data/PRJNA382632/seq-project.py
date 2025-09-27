@@ -40,4 +40,8 @@ for exp in project.experiments:
     exp.attributes["title"] = title
     titles.add(title)
 
+object.__setattr__(
+    project, "description", "Total RNA-seq of Human monocyte-derived macrophages infected with IAV"
+)
+
 seqproj.adapter.yaml.dump(project, FOLDER / "seq-project.yaml")

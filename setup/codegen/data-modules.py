@@ -4,6 +4,8 @@ from pathlib import Path
 
 from biobit.toolkit import seqproj
 
+from resources import HEADER
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -13,7 +15,6 @@ logging.basicConfig(
 # Constants are clear and well-placed
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
 SEQ_PROJECT_YAML = "seq-project.yaml"
-HEADER = "# AUTO-GENERATED FILE - DO NOT EDIT\n"
 PARSER = f"""
 def {{}}() -> seqproj.Project:
     return seqproj.adapter.yaml.load(ROOT / "{SEQ_PROJECT_YAML}")
