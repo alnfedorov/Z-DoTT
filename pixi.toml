@@ -89,6 +89,7 @@ cmd = [
 python = "==3.12.8"
 pixi-pycharm = "*"
 tabix = "==1.11"
+bedtools= "==2.31.1"
 
 # Python dependecies must be managed only using pip to allow rebuilding wheels when needed
 [feature.python.pypi-dependencies]
@@ -101,7 +102,9 @@ joblib = "==1.4.0"
 matplotlib = "==3.9.2"
 matplotlib-venn = "==1.1.1"
 pandas = "==2.2.1"
+pybedtools = "==0.10.0"
 pybigwig = "==0.3.22"
+pysam = "==0.22.1"
 rustworkx = "==0.15.1"
 scikit-learn = "==1.5.1"
 seaborn = "==0.13.2"
