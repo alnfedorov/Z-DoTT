@@ -4,7 +4,7 @@ from . import utils
 
 ROOT = Path(__file__).parent
 
-fasta = ROOT / "sequence.fasta"
+fasta = ROOT / "sequence.fa"
 # doi.org-10.1038-s41467-020-15992-5 + NCBI LAT RNA + manual fixes
 gff3 = ROOT / "sequence.gff3"
 ncbi = ROOT / "annotation.ncbi.gff3"

@@ -3,7 +3,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 
 # Note: The IAV sequence was corrected manually for observed variations
-fasta = ROOT / "sequence.fasta"
+fasta = ROOT / "sequence.fa"
 gff3 = ROOT / "sequence.gff3"
 
 name = "IAV"
