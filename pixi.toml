@@ -76,11 +76,15 @@ gcc = "==12.4"
 
 [feature.rust.tasks."setup/REAT"]
 cmd = [
+    "mkdir", "-p", "cargo", "&&",
     "cargo", "install", "-v", "--git", "https://github.com/alnfedorov/reat",
     "--rev", "c166a6c740739c6dbab7bdab971a912bea1031c5", "--locked",
-    "--root", "$PIXI_PROJECT_ROOT/analyses/A2I/resources",
-    "--force"
+    "--root", "cargo",
+    "--force", "&&",
+    "mv", "cargo/bin/reat", "reat", "&&",
+    "rm", "-rf", "cargo"
 ]
+cwd = "analyses/A2I/resources"
 
 ####################################################################################################
 # Python: bioinformatics stories
