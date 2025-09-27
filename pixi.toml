@@ -89,7 +89,7 @@ cmd = [
 python = "==3.12.8"
 pixi-pycharm = "*"
 tabix = "==1.11"
-bedtools= "==2.31.1"
+bedtools = "==2.31.1"
 
 # Python dependecies must be managed only using pip to allow rebuilding wheels when needed
 [feature.python.pypi-dependencies]
@@ -120,16 +120,17 @@ env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
 cmd = "python {{ script }} {{ args }}"
 args = ["script", { arg = "args", default = "" }]
 
-#[feature.python.tasks]
-## Setup
-#"setup/index-annotation" = { depends-on = [
-#    { task = "run-py", args = ["setup/annotation/index-liftoff-gff.py"] },
-#    { task = "run-py", args = ["setup/annotation/index-refseq-gff.py"] },
-#    { task = "run-py", args = ["setup/annotation/index-gencode-gff.py"] }
-#] }
-#"setup/derive-premap-library" = { depends-on = [
-#    { task = "run-py", args = ["setup/pre-mapping/derive-premap-library.py"] }
-#] }
+# Setup
+[feature.python.tasks]
+"setup/index-annotations" = { depends-on = [
+    { task = "run-py", args = ["setup/annotation/index-liftoff-gff.py"] },
+    { task = "run-py", args = ["setup/annotation/index-refseq-gff.py"] },
+    { task = "run-py", args = ["setup/annotation/index-gencode-gff.py"] }
+] }
+"setup/derive-premap-library" = { depends-on = [
+    { task = "run-py", args = ["setup/pre-mapping/derive-premap-library.py"] }
+] }
+
 ## Stories
 #"stories/annotation" = { depends-on = [
 #    { task = "run-py", args = ["stories/annotation/filter-gencode.py"] },

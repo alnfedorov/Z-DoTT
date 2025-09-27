@@ -1,7 +1,10 @@
 ```shell
 pixi run setup/download-annotations
-# pixi run setup/liftoff # Note: not required, as lifted annotations are included in the repository
-pixi run setup/
+pixi run setup/index-annotation
+# Note: These steps are optional, as the required annotations are already included in the repository.
+# pixi run setup/liftoff
+# pixi run setup/derive-premap-library
+
 
 ```
 
