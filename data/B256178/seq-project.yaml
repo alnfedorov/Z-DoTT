@@ -1155,4 +1155,4 @@ samples:
       cells: MEF
       treatment: mock
       replica: '2'
-description: null
+description: FLAG/Z22 RIP-seq of IAV-infected MEFs

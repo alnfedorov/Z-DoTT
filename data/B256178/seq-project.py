@@ -101,4 +101,7 @@ project = JCCSeq.parse(
     experiment_builder=experiment_builder,
     project_builder=project_builder
 )
+
+object.__setattr__(project, "description", "FLAG/Z22 RIP-seq of IAV-infected MEFs")
+
 seqproj.adapter.yaml.dump(project, ROOT / "seq-project.yaml")
