@@ -36,6 +36,8 @@ The entire workflow is managed using [Pixi](https://pixi.sh/latest/); commands a
 * To prevent environment conflicts, please ensure any active conda or mamba environments are **deactivated** before
   running Pixi commands.
 * Pixi tasks are cacheless and re-execute from scratch each time they are run.
+* Pay attention to exit codes and error messages. If a task fails, it will not produce the expected output, and
+  subsequent tasks depending on it will also fail.
 
 ---
 
