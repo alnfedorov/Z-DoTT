@@ -52,16 +52,16 @@ args = ["directory"]
 
 [feature.nextflow.tasks."nfcore/fetchngs"]
 cmd = [
-    # Change to the directory with id.csv
-    "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
-    # Run nfcore/fetchngs
-    "nextflow", "run", "-resume", "-profile", "singularity",
-    "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
-    "--input", "id.csv", "--outdir", "results", "&&",
-    # Save FASTQ files and discard Nextflow files
-    "mv", "results/fastq/*.gz", ".", "&&",
-    "mv", "results/samplesheet/samplesheet.csv", ".", "&&",
-    "cat", "results/fastq/md5/*.md5", ">", "MD5.txt", "&&",
+#    # Change to the directory with id.csv
+#    "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
+#    # Run nfcore/fetchngs
+#    "nextflow", "run", "-resume", "-profile", "singularity",
+#    "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
+#    "--input", "id.csv", "--outdir", "results", "&&",
+#    # Save FASTQ files and discard Nextflow files
+#    "mv", "results/fastq/*.gz", ".", "&&",
+#    "mv", "results/samplesheet/samplesheet.csv", ".", "&&",
+    "cat", "results/fastq/md5/*.md5", ">", "MD5.txt", ";", # Using ';' to avoid error if no md5 files are present (e.g. for SRA downloads)
     "rm", "-rf", ".nextflow", ".nextflow.log", "work", "results"
 ]
 args = ["directory"]
