@@ -38,8 +38,12 @@ env = { HUMAN_VERSION = "47", MOUSE_VERSION = "M36", ASSEMBLIES = "$PIXI_PROJECT
 cwd = "setup/annotation"
 
 [feature.nextflow.tasks."setup/make-nfcore-indexes"]
-cmd = "./index.sh $ASSEMBLIES $PREMAPPING $INDEXES"
-env = { ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies", PREMAPPING = "$PIXI_PROJECT_ROOT/setup/pre-mapping/results", INDEXES = "$PIXI_PROJECT_ROOT/analyses/nfcore/resources/indexes" }
+cmd = [
+    "./index.sh",
+    "$PIXI_PROJECT_ROOT/assemblies", # Assemblies directory
+    "$PIXI_PROJECT_ROOT/setup/pre-mapping/results", # Pre-mapping results directory
+    "$PIXI_PROJECT_ROOT/analyses/nfcore/resources/indexes"  # Indexes output directory
+]
 cwd = "setup/nfcore"
 
 [feature.nextflow.tasks."nfcore/rnaseq"]
@@ -55,12 +59,12 @@ cmd = [
     # Change to the directory with id.csv
     "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
     # Run nfcore/fetchngs
-#    "nextflow", "run", "-resume", "-profile", "singularity",
-#    "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
-#    "--input", "id.csv", "--outdir", "results", "&&",
-#    # Save FASTQ files and discard Nextflow files
-#    "mv", "results/fastq/*.gz", ".", "&&",
-#    "mv", "results/samplesheet/samplesheet.csv", ".", "&&",
+    "nextflow", "run", "-resume", "-profile", "singularity",
+    "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
+    "--input", "id.csv", "--outdir", "results", "&&",
+    # Save FASTQ files and discard Nextflow files
+    "mv", "results/fastq/*.gz", ".", "&&",
+    "mv", "results/samplesheet/samplesheet.csv", ".", "&&",
     "cat", "results/fastq/md5/*.md5", ">", "MD5.txt", ";", # Using ';' to avoid error if no md5 files are present (e.g. for SRA downloads)
     "rm", "-rf", ".nextflow", ".nextflow.log", "work", "results"
 ]
