@@ -52,9 +52,9 @@ args = ["directory"]
 
 [feature.nextflow.tasks."nfcore/fetchngs"]
 cmd = [
-#    # Change to the directory with id.csv
-#    "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
-#    # Run nfcore/fetchngs
+    # Change to the directory with id.csv
+    "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
+    # Run nfcore/fetchngs
 #    "nextflow", "run", "-resume", "-profile", "singularity",
 #    "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
 #    "--input", "id.csv", "--outdir", "results", "&&",
