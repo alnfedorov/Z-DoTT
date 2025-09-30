@@ -1,21 +1,11 @@
 import logging
 import sys
-from pathlib import Path
 
 from biobit.toolkit import seqproj
 
-from resources import HEADER
+from resources import HEADER, DATA_DIR, SEQ_PROJECT_YAML, setup_logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
-
-# Constants are clear and well-placed
-DATA_DIR = Path(__file__).parent.parent.parent / "data"
-SEQ_PROJECT_YAML = "seq-project.yaml"
-PARSER = f"""
+PARSER_FN = f"""
 def {{}}() -> seqproj.Project:
     return seqproj.adapter.yaml.load(ROOT / "{SEQ_PROJECT_YAML}")
 """
@@ -28,7 +18,7 @@ def main():
     """
     if not DATA_DIR.exists():
         logging.error(f"Data directory not found: {DATA_DIR}")
-        sys.exit(1)  # Exit with an error code for clarity
+        sys.exit(1)
 
     projects: dict[str, seqproj.Project] = {}
     logging.info(f"Scanning subdirectories in {DATA_DIR}...")
@@ -64,7 +54,7 @@ def main():
                 f.write("from pathlib import Path\n\n")
                 f.write("from biobit.toolkit import seqproj\n\n")
                 f.write(f"ROOT = Path(__file__).parent\n\n")
-                f.write(PARSER.format(folder.name))
+                f.write(PARSER_FN.format(folder.name))
         except Exception as e:
             logging.error(f"Failed to write __init__.py for '{folder.name}'. Error: {e}")
             continue
@@ -99,4 +89,5 @@ def main():
 
 
 if __name__ == "__main__":
+    setup_logging()
     main()
