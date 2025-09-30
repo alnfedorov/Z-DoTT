@@ -1,3 +1,16 @@
-from utils.seqproj import initialize_rnaseq
+# AUTO-GENERATED FILE - DO NOT EDIT
+from pathlib import Path
 
-PRJNA382632 = initialize_rnaseq(__file__)
+from biobit.toolkit import nfcore, seqproj
+
+ROOT = Path(__file__).parent
+
+
+def PRJNA382632() -> seqproj.Project:
+    from data import PRJNA382632
+    project = PRJNA382632()
+    
+    return nfcore.rnaseq.parse.into_seqproj(
+        project, ROOT / 'results',
+        seqexp2descriptor=lambda exp: nfcore.rnaseq.descriptor.from_seqexp(exp, title_builder="title")
+    )
