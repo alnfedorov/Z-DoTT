@@ -8,9 +8,7 @@ ROOT = Path(__file__).parent
 
 def B831009() -> seqproj.Project:
     from data import B831009
-    project = B831009()
-    
     return nfcore.rnaseq.parse.into_seqproj(
-        project, ROOT / 'results',
+        B831009(), ROOT / 'results',
         seqexp2descriptor=lambda exp: nfcore.rnaseq.descriptor.from_seqexp(exp, title_builder="title")
     )
