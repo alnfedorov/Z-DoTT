@@ -3,9 +3,6 @@ from pathlib import Path
 
 HEADER = "# AUTO-GENERATED FILE - DO NOT EDIT\n"
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent
-DATA_DIR = PROJECT_ROOT / "data"
-NFCORE_RNASEQ_DIR = PROJECT_ROOT / "analyses" / "nfcore" / "rnaseq"
 
 SEQ_PROJECT_YAML = "seq-project.yaml"
 NFCORE_RNASEQ_DESIGN = "design.csv"
