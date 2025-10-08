@@ -72,7 +72,7 @@ def hook(seqmap):
 for assembly in GRCm39, CHM13v2:
     print(f"Processing {assembly.name} RefSeq GFF")
     records = at.preprocess_gff(
-        assembly.refseq.gff,
+        assembly._refseq.gff,
         ignore_sources=set(),
         ignore_types={
             "biological_region", "enhancer", "silencer", "transcriptional_cis_regulatory_region",
@@ -118,7 +118,7 @@ for assembly in GRCm39, CHM13v2:
             tid2cds[tid].append(ind)
             parents.add(tid)
 
-        attrs = assembly.refseq.AttrCDS(source, bool(attributes["partial"]), attributes["product"], frozenset(parents))
+        attrs = assembly._refseq.AttrCDS(source, bool(attributes["partial"]), attributes["product"], frozenset(parents))
         loc = at.transcriptome.Location(seqid, strand, blocks[0].start, blocks[-1].end)
         cds.append(at.transcriptome.CDS(ind, loc, attrs, tuple(blocks)))
     cds = at.transcriptome.CDSBundle(cds)
@@ -144,7 +144,7 @@ for assembly in GRCm39, CHM13v2:
         gid2tid[parent].add(ind)
 
         tags = [x for x in attributes.pop("tag", "").split(",") if x]
-        attrs = assembly.refseq.AttrRNA(
+        attrs = assembly._refseq.AttrRNA(
             source, attributes.pop("Name", None), attributes.pop("product", None),
             bool(attributes.pop("partial", "false")), attributes.pop("biotype"), frozenset(tags),
             attributes.pop("experiment", None)
@@ -160,7 +160,7 @@ for assembly in GRCm39, CHM13v2:
 
         # Name, description, gene_biotype, gene_synonym, partial,
         synonyms = [x for x in attributes.pop("gene_synonym", "").split(",") if x]
-        attrs = assembly.refseq.AttrGene(
+        attrs = assembly._refseq.AttrGene(
             source, attributes.pop("Name"), attributes.pop("description", None), attributes.pop("gene_biotype"),
             bool(attributes.pop("partial", "false")), frozenset(synonyms)
         )
@@ -175,5 +175,5 @@ for assembly in GRCm39, CHM13v2:
         print(f"Singleton genes (N={len(singletons)}): {singletons}")
 
     annotome = at.Annotome(assembly.name, "RefSeq", genes, RNA, cds)
-    with open(assembly.refseq.index, "wb") as stream:
+    with open(assembly._refseq.index, "wb") as stream:
         pickle.dump(annotome, stream)

@@ -7,7 +7,7 @@ from pysam import FastxFile
 from tqdm import tqdm
 
 from assemblies import GRCm39, CHM13v2
-from utils import bed, fasta
+from lib import bed, fasta
 
 ROOT = Path(__file__).parent
 RESOURCES = ROOT / "resources"
@@ -20,7 +20,7 @@ collected = defaultdict(int)
 
 for assembly in GRCm39, CHM13v2:
     # Fetch GENCODE genes
-    gencode = assembly.gencode.load()
+    gencode = assembly._gencode.load()
     for transcript in gencode.rnas.values():
         if transcript.attrs.type in {'rRNA_pseudogene', 'rRNA'}:
             collected[assembly.name, "GENCODE"] += 1
@@ -28,7 +28,7 @@ for assembly in GRCm39, CHM13v2:
             intervals[assembly].append(Interval(seqid, transcript.loc.start, transcript.loc.end, strand=strand))
 
     # Refseq genes
-    refseq = assembly.refseq.load()
+    refseq = assembly._refseq.load()
     for transcript in refseq.rnas.values():
         if transcript.attrs.biotype == 'rRNA':
             collected[assembly.name, "RefSeq"] += 1
@@ -36,7 +36,7 @@ for assembly in GRCm39, CHM13v2:
             intervals[assembly].append(Interval(seqid, transcript.loc.start, transcript.loc.end, strand=strand))
 
     # Repmasker annotations
-    for i in BedTool(assembly.repmasker.as_posix()):
+    for i in BedTool(assembly._repmasker.as_posix()):
         classification = assembly.repcls.classify(i.name)
         if classification is None:
             raise ValueError(f"Unknown repeat: {i.name} ({i})")
@@ -59,7 +59,7 @@ RNA, inside_assembly = [], {}
 for assembly, ints in intervals.items():
     merged = bed.merge_stranded([BedTool(ints)]).sort()
     for i in merged:
-        seq = fasta.sequence(assembly.fasta, i.chrom, i.start, i.end, strand=i.strand)
+        seq = fasta.sequence(assembly._fasta, i.chrom, i.start, i.end, strand=i.strand)
         name = f"{assembly.name}_{i.chrom}_{i.start}_{i.end}_{i.strand}"
         assert name not in inside_assembly
         inside_assembly[name] = i

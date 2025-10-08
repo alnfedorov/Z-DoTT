@@ -133,11 +133,12 @@ args = ["script", { arg = "args", default = "" }]
 "_assemblies/CHM13v2/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/CHM13v2/setup.py"] }] }
 "_assemblies/CHM13v2/liftoff" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/CHM13v2/liftoff.py"] }] }
 "_assemblies/zdhs/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/zdhs/setup.py"] }] }
+"_assemblies/zdmm/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/zdmm/setup.py"] }] }
 
 
 "assemblies/setup" = { depends-on = [
     "_assemblies/GRCm39/setup", "_assemblies/GRCh38/setup", "_assemblies/CHM13v2/setup", "_assemblies/zdhs/setup",
-
+    "_assemblies/zdmm/setup"
 ] }
 
 

@@ -8,8 +8,8 @@ from ..resources import Assembly
 class GRCh38(Assembly):
     def __init__(self, fasta: Path, gencode_gff3: Path):
         super().__init__()
-        self.fasta = fasta
-        self.gencode_gff3 = gencode_gff3
+        self._fasta = fasta
+        self._gencode = gencode_gff3
 
     @property
     def name(self) -> str:
@@ -28,9 +28,9 @@ class GRCh38(Assembly):
     def files(self, annotation: str) -> tuple[Path, ...]:
         match annotation:
             case "GENCODE":
-                return (self.gencode_gff3,)
+                return (self._gencode,)
             case "FASTA":
-                return (self.fasta,)
+                return (self._fasta,)
             case _:
                 raise ValueError(f"Unknown annotation: {annotation}")
 

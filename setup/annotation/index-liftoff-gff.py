@@ -50,7 +50,7 @@ def hook(type: str, loc: at.transcriptome.Location, attributes: dict[str, str]):
 assembly = CHM13v2
 print(f"Processing {assembly.name} GENCODE GFF3")
 records = at.preprocess_gff(
-    assembly.gencode.gff3,
+    assembly._gencode.gff3,
     ignore_sources={"GRCm39", "GRCh38", "cpg", "Eponine"},
     ignore_types={
         "five_prime_UTR", "three_prime_UTR", "biological_region", "chromosome", "scaffold", "start_codon", "stop_codon",
@@ -90,7 +90,7 @@ for ind, matches in records["CDS"].items():
         _, copyind = ind.split("_", maxsplit=1)
         copyind = int(copyind)
 
-    attrs = assembly.gencode.AttrCDS(copyind, source, frozenset(parents))
+    attrs = assembly._gencode.AttrCDS(copyind, source, frozenset(parents))
     loc = at.transcriptome.Location(seqid, strand, blocks[0].start, blocks[-1].end)
     cds.append(at.transcriptome.CDS(ind, loc, attrs, tuple(blocks)))
 cds = at.transcriptome.CDSBundle(cds)
@@ -148,7 +148,7 @@ for ind, matches in records["transcript"].items():
         _, copyind = ind.split("_", maxsplit=1)
         copyind = int(copyind)
 
-    attrs = assembly.gencode.AttrRNA(
+    attrs = assembly._gencode.AttrRNA(
         copyind, int(attributes.pop("extra_copy_number")), source, int(attributes.pop("level")),
         attributes.pop("transcript_name"), attributes.pop("transcript_type"), frozenset(tags), tsl,
         frozenset(tid2cds.pop(ind, ()))
@@ -176,7 +176,7 @@ for ind, matches in records["gene"].items():
         _, copyind = ind.split("_", maxsplit=1)
         copyind = int(copyind)
 
-    attrs = assembly.gencode.AttrGene(
+    attrs = assembly._gencode.AttrGene(
         float(attributes.pop("coverage")), float(attributes.pop("sequence_ID")),
         copyind, source, int(attributes.pop("level")), attributes.pop("gene_name"), attributes.pop("gene_type")
     )
@@ -185,5 +185,5 @@ assert len(gid2tid) == 0, gid2tid
 genes = at.transcriptome.GeneBundle(genes)
 
 annotome = at.Annotome(assembly.name, "GENCODE v47", genes, RNA, cds)
-with open(assembly.gencode.index, "wb") as stream:
+with open(assembly._gencode.index, "wb") as stream:
     pickle.dump(annotome, stream)

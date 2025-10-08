@@ -9,7 +9,7 @@ if __name__ == "__main__":
         "https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0.fa.gz",
         resources.FASTA
     )
-    setup.ungzip_then_bgzip(resources.FASTA)
+    setup.rebgzip(resources.FASTA)
 
     # RefSeq GFF3
     setup.download(

@@ -64,7 +64,9 @@ The entire workflow is managed using [Pixi](https://pixi.sh/latest/); commands a
     pixi run setup/REAT
     
     # The following steps are optional as their outputs are already included in the repo
-    # pixi run setup/liftoff # Lifts over annotations from GRCh38 to CHM13v2 (requires ~64GB RAM)
+    # pixi run setup/liftoff # Lifts over annotations from GRCh38 to CHM13v2 (requires ~80GB RAM)
+   srun --partition long,short --account $(whoami) --job-name biobit 
+   --cpus-per-task 8 --mem-per-cpu 10G --time 0-08:00:00 --pty bash -i
     # pixi run setup/derive-premap-library # Derives the pre-mapping rRNA library
     ```
 

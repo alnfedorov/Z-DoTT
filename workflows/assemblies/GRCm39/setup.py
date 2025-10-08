@@ -8,7 +8,7 @@ if __name__ == "__main__":
     setup.download(
         f"{base}/GRCm39.primary_assembly.genome.fa.gz", resources.FASTA
     )
-    setup.ungzip_then_bgzip(resources.FASTA)
+    setup.rebgzip(resources.FASTA)
 
     # GENCODE GFF3
     setup.download(

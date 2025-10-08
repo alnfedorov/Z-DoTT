@@ -10,7 +10,7 @@ def download(url: str, saveto: Path):
     check_call(['wget', url, '-O', saveto])
 
 
-def ungzip_then_bgzip(gzfile: Path):
+def rebgzip(gzfile: Path):
     """Ungzip a file and then bgzip it inplace"""
     tmp = gzfile.with_suffix('.tmp')
     gzfile.rename(tmp)
@@ -18,9 +18,30 @@ def ungzip_then_bgzip(gzfile: Path):
     tmp.unlink()
 
 
-def index_fasta(fasta: Path):
+def bgzip(file: Path, saveto: Path):
+    """Bgzip a file inplace or to a specified location"""
+    saveto.parent.mkdir(parents=True, exist_ok=True)
+    check_call(f"bgzip --threads $(nproc) -l 6 -c {file} > {saveto}", shell=True)
+
+
+def gzip(file: Path, saveto: Path):
+    """Gzip a file to a specified location"""
+    saveto.parent.mkdir(parents=True, exist_ok=True)
+    check_call(f"gzip -c {file} > {saveto}", shell=True)
+
+
+def faidx(fasta: Path):
     """Index a FASTA file using samtools"""
     check_call(['samtools', 'faidx', fasta])
+
+
+def autocat(files: list[Path], outfile: Path):
+    """Concatenate multiple files into one using cat or zcat based on file extension"""
+    outfile.parent.mkdir(parents=True, exist_ok=True)
+    with open(outfile, 'w') as out:
+        for file in files:
+            cmd = 'zcat' if file.suffix in {'.gz', '.bgz'} else 'cat'
+            subprocess.check_call(f"{cmd} {file}", shell=True, stdout=out)
 
 
 def run_in_pixi(environment: Literal["nextflow", "liftoff"], cwd: Path, cmd: str):

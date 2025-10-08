@@ -7,8 +7,8 @@ if __name__ == "__main__":
         f"{base}/GRCh38.primary_assembly.genome.fa.gz",
         resources.FASTA
     )
-    setup.ungzip_then_bgzip(resources.FASTA)
-    setup.index_fasta(resources.FASTA)
+    setup.rebgzip(resources.FASTA)
+    setup.faidx(resources.FASTA)
 
     setup.download(
         f"{base}/gencode.v{resources.GENCODE_VERSION}.primary_assembly.annotation.gff3.gz",

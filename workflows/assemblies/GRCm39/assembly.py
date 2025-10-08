@@ -13,12 +13,12 @@ class GRCm39(Assembly):
             repmasker: Path, repmasker_classification: Path
     ):
         super().__init__()
-        self.fasta = fasta
-        self.gencode_gff3 = gencode_gff3
-        self.refseq_gff3 = refseq_gff3
-        self.rediportal = rediportal
-        self.repmasker = repmasker
-        self.repmasker_classification = repmasker_classification
+        self._fasta = fasta
+        self._gencode = gencode_gff3
+        self._refseq = refseq_gff3
+        self._rediportal = rediportal
+        self._repmasker = repmasker
+        self._repmasker_classification = repmasker_classification
 
     @property
     def name(self) -> str:
@@ -39,28 +39,28 @@ class GRCm39(Assembly):
     def files(self, annotation: str) -> tuple[Path, ...]:
         match annotation:
             case "REDIportal":
-                return (self.rediportal,)
+                return (self._rediportal,)
             case "RepeatMasker":
-                return (self.repmasker,)
+                return (self._repmasker,)
             case "RepeatMasker classification":
-                return (self.repmasker_classification,)
+                return (self._repmasker_classification,)
             case "GENCODE":
-                return (self.gencode_gff3,)
+                return (self._gencode,)
             case "RefSeq":
-                return (self.refseq_gff3,)
+                return (self._refseq,)
             case "FASTA":
-                return (self.fasta,)
+                return (self._fasta,)
             case _:
                 raise ValueError(f"Unknown annotation: {annotation}")
 
     def load(self, annotation: str) -> Any:
         match annotation:
             case "REDIportal":
-                return BedTool(self.rediportal)
+                return BedTool(self._rediportal)
             case "RepeatMasker":
-                return BedTool(self.repmasker)
+                return BedTool(self._repmasker)
             case "RepeatMasker classification":
-                return self.repmasker_classification
+                return self._repmasker_classification
             case "GENCODE" | "RefSeq" | "FASTA":
                 raise NotImplementedError(f"Loading {annotation} is unsupported")
             case _:

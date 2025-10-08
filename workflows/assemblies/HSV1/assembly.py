@@ -10,8 +10,8 @@ from ..resources import Assembly
 class HSV1(Assembly):
     def __init__(self, fasta: Path, annotation_gff3: Path):
         super().__init__()
-        self.fasta = fasta
-        self.annotation_gff3 = annotation_gff3
+        self._fasta = fasta
+        self._annotation = annotation_gff3
 
     @property
     def name(self) -> str:
@@ -30,9 +30,9 @@ class HSV1(Assembly):
     def files(self, annotation: str) -> tuple[Path, ...]:
         match annotation:
             case "GFF3":
-                return (self.annotation_gff3,)
+                return (self._annotation,)
             case "FASTA":
-                return (self.fasta,)
+                return (self._fasta,)
             case _:
                 raise ValueError(f"Unknown annotation: {annotation}")
 
