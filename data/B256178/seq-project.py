@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 from biobit.toolkit import seqproj
 
-from utils.seqproj import JCCSeq
+from lib.seqproj import JCCSeq
 
 ROOT = Path(__file__).parent
 FASTQ = ROOT / "fastq"
