@@ -12,13 +12,17 @@ __pycache__/
 # C extensions
 *.so
 
+# Compressed files
+*.gz
+*.bgz
+
 # Nextflow
 stories/nfcore/resources/indexes
 stories/nfcore/rnaseq/**/results
 .nextflow*
 
 # Local results
-**/ld/results
+**/results
 
 # Fastq files
 *.fastq
