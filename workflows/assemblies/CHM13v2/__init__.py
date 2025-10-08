@@ -1,6 +1,4 @@
-import assembly
-import resources
-from . import seqid
+from . import seqid, assembly, resources
 
 
 def CHM13v2() -> assembly.CHM13v2:

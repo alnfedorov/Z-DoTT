@@ -8,6 +8,7 @@ if __name__ == "__main__":
         resources.FASTA
     )
     setup.ungzip_then_bgzip(resources.FASTA)
+    setup.index_fasta(resources.FASTA)
 
     setup.download(
         f"{base}/gencode.v{resources.GENCODE_VERSION}.primary_assembly.annotation.gff3.gz",

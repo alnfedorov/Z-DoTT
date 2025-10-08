@@ -1,8 +1,6 @@
 from pathlib import Path
 from typing import Any
 
-from pybedtools import BedTool
-
 from . import seqid
 from ..resources import Assembly
 
@@ -54,6 +52,9 @@ class CHM13v2(Assembly):
                 raise ValueError(f"Unknown annotation: {annotation}")
 
     def load(self, annotation: str) -> Any:
+        # Import here to avoid hard dependency if not used
+        from pybedtools import BedTool
+
         match annotation:
             case "REDIportal":
                 return BedTool(self.rediportal)

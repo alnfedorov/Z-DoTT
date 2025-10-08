@@ -10,4 +10,4 @@ RESULTS = ROOT.parent / "results"
 
 FASTA = RESULTS / "CHM13v2.fa.bgz"
 REFSEQ_GFF3 = RESULTS / "CHM13v2.refseq.gff.gz"
-GENCODE_LIFTOFF_GFF3 = RESULTS / "CHM13v2.liftoff+gencode-47.gff3.gz"
+GENCODE_LIFTOFF_GFF3 = RESULTS / "CHM13v2.liftoff+gencode.gff3.gz"

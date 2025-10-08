@@ -1,5 +1,4 @@
-import assembly
-import resources
+from . import resources, assembly
 
 
 def GRCh38() -> assembly.GRCh38:

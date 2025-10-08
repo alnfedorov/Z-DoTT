@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import Any
 
+from . import seqid
 from ..resources import Assembly
 
 
@@ -19,7 +20,7 @@ class GRCh38(Assembly):
         return frozenset(["Homo sapiens"])
 
     def seqsizes(self) -> dict[str, int]:
-        raise NotImplementedError()
+        return seqid.sizes()
 
     def annotations(self) -> frozenset[str]:
         return frozenset(["GENCODE", "FASTA"])
