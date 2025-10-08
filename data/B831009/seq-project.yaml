@@ -1,1836 +1,2124 @@
-ind: HT-29 HSV-1/IAV [B831009, JCC411]
+ind: B831009
 experiments:
-  - ind: '3162323'
-    sample: A1+E3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162323-A1+E3-S107-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S107_L007_R1_001.fastq.gz
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S107_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162323-A1+E3-S107-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S107_L008_R1_001.fastq.gz
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S107_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162323-A1+E3-S32-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S32_L001_R1_001.fastq.gz
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S32_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162323-A1+E3-S32-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S32_L002_R1_001.fastq.gz
-            - fastq/3162323_JCC411_July2024_A1_MockZ22RIP-1_S32_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+- ind: SRX30572818
+  sample: SAMN51585467-SAMN51585447
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-RIP_1
-  - ind: '3162324'
-    sample: B1+F3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162324-B1+F3-S1-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S1_L001_R1_001.fastq.gz
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S1_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162324-B1+F3-S1-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S1_L002_R1_001.fastq.gz
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S1_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162324-B1+F3-S108-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S108_L007_R1_001.fastq.gz
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S108_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162324-B1+F3-S108-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S108_L008_R1_001.fastq.gz
-            - fastq/3162324_JCC411_July2024_B1_MockZ22RIP-2_S108_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496784
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572818_SRR35496784_1.fastq.gz
+      - fastq/SRX30572818_SRR35496784_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23672761
+    bases: 7149173822
+  - ind: SRR35496785
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572818_SRR35496785_1.fastq.gz
+      - fastq/SRX30572818_SRR35496785_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23187597
+    bases: 7002654294
+  - ind: SRR35496786
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572818_SRR35496786_1.fastq.gz
+      - fastq/SRX30572818_SRR35496786_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23828618
+    bases: 7196242636
+  - ind: SRR35496787
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572818_SRR35496787_1.fastq.gz
+      - fastq/SRX30572818_SRR35496787_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23660511
+    bases: 7145474322
+  attributes:
+    title: HT-29_mock_Z22_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246582: HT-29, mock, Z22, 1
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572819
+  sample: SAMN51585466-SAMN51585446
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-RIP_2
-  - ind: '3162325'
-    sample: C1+G3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162325-C1+G3-S109-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S109_L007_R1_001.fastq.gz
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S109_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162325-C1+G3-S109-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S109_L008_R1_001.fastq.gz
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S109_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162325-C1+G3-S2-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S2_L001_R1_001.fastq.gz
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S2_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162325-C1+G3-S2-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S2_L002_R1_001.fastq.gz
-            - fastq/3162325_JCC411_July2024_C1_MockZ22RIP-3_S2_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496780
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572819_SRR35496780_1.fastq.gz
+      - fastq/SRX30572819_SRR35496780_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23018157
+    bases: 6951483414
+  - ind: SRR35496781
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572819_SRR35496781_1.fastq.gz
+      - fastq/SRX30572819_SRR35496781_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22939753
+    bases: 6927805406
+  - ind: SRR35496782
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572819_SRR35496782_1.fastq.gz
+      - fastq/SRX30572819_SRR35496782_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21410873
+    bases: 6466083646
+  - ind: SRR35496783
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572819_SRR35496783_1.fastq.gz
+      - fastq/SRX30572819_SRR35496783_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21178917
+    bases: 6396032934
+  attributes:
+    title: HT-29_mock_Z22_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246583: HT-29, mock, Z22, 2
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572820
+  sample: SAMN51585465-SAMN51585445
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-RIP_3
-  - ind: '3162326'
-    sample: D1+H3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162326-D1+H3-S110-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S110_L007_R1_001.fastq.gz
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S110_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162326-D1+H3-S110-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S110_L008_R1_001.fastq.gz
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S110_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162326-D1+H3-S3-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S3_L001_R1_001.fastq.gz
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S3_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162326-D1+H3-S3-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S3_L002_R1_001.fastq.gz
-            - fastq/3162326_JCC411_July2024_D1_MockZ22RIP-4_S3_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496776
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572820_SRR35496776_1.fastq.gz
+      - fastq/SRX30572820_SRR35496776_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29123212
+    bases: 8795210024
+  - ind: SRR35496777
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572820_SRR35496777_1.fastq.gz
+      - fastq/SRX30572820_SRR35496777_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 28701770
+    bases: 8667934540
+  - ind: SRR35496778
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572820_SRR35496778_1.fastq.gz
+      - fastq/SRX30572820_SRR35496778_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 7370785
+    bases: 2225977070
+  - ind: SRR35496779
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572820_SRR35496779_1.fastq.gz
+      - fastq/SRX30572820_SRR35496779_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 7298953
+    bases: 2204283806
+  attributes:
+    title: HT-29_mock_Z22_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246584: HT-29, mock, Z22, 3
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572821
+  sample: SAMN51585464-SAMN51585444
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-RIP_4
-  - ind: '3162327'
-    sample: E1+A4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162327-E1+A4-S111-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S111_L007_R1_001.fastq.gz
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S111_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162327-E1+A4-S111-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S111_L008_R1_001.fastq.gz
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S111_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162327-E1+A4-S4-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S4_L001_R1_001.fastq.gz
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S4_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162327-E1+A4-S4-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S4_L002_R1_001.fastq.gz
-            - fastq/3162327_JCC411_July2024_E1_HSV-1Z22RIP-1_S4_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496772
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572821_SRR35496772_1.fastq.gz
+      - fastq/SRX30572821_SRR35496772_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27686418
+    bases: 8361298236
+  - ind: SRR35496773
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572821_SRR35496773_1.fastq.gz
+      - fastq/SRX30572821_SRR35496773_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27089795
+    bases: 8181118090
+  - ind: SRR35496774
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572821_SRR35496774_1.fastq.gz
+      - fastq/SRX30572821_SRR35496774_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 10987541
+    bases: 3318237382
+  - ind: SRR35496775
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572821_SRR35496775_1.fastq.gz
+      - fastq/SRX30572821_SRR35496775_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 11178949
+    bases: 3376042598
+  attributes:
+    title: HT-29_mock_Z22_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246585: HT-29, mock, Z22, 4
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572822
+  sample: SAMN51585463-SAMN51585443
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-RIP_1
-  - ind: '3162328'
-    sample: F1+B4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162328-F1+B4-S112-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S112_L007_R1_001.fastq.gz
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S112_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162328-F1+B4-S112-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S112_L008_R1_001.fastq.gz
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S112_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162328-F1+B4-S5-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S5_L001_R1_001.fastq.gz
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S5_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162328-F1+B4-S5-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S5_L002_R1_001.fastq.gz
-            - fastq/3162328_JCC411_July2024_F1_HSV-1Z22RIP-2_S5_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496768
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572822_SRR35496768_1.fastq.gz
+      - fastq/SRX30572822_SRR35496768_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21244013
+    bases: 6415691926
+  - ind: SRR35496769
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572822_SRR35496769_1.fastq.gz
+      - fastq/SRX30572822_SRR35496769_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20973341
+    bases: 6333948982
+  - ind: SRR35496770
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572822_SRR35496770_1.fastq.gz
+      - fastq/SRX30572822_SRR35496770_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23355697
+    bases: 7053420494
+  - ind: SRR35496771
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572822_SRR35496771_1.fastq.gz
+      - fastq/SRX30572822_SRR35496771_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23289768
+    bases: 7033509936
+  attributes:
+    title: HT-29_HSV-1_Z22_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246586: HT-29, HSV-1, Z22, 1
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572823
+  sample: SAMN51585462-SAMN51585442
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-RIP_2
-  - ind: '3162329'
-    sample: G1+C4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162329-G1+C4-S113-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S113_L007_R1_001.fastq.gz
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S113_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162329-G1+C4-S113-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S113_L008_R1_001.fastq.gz
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S113_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162329-G1+C4-S6-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S6_L001_R1_001.fastq.gz
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S6_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162329-G1+C4-S6-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S6_L002_R1_001.fastq.gz
-            - fastq/3162329_JCC411_July2024_G1_HSV-1Z22RIP-3_S6_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496764
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572823_SRR35496764_1.fastq.gz
+      - fastq/SRX30572823_SRR35496764_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 28042546
+    bases: 8468848892
+  - ind: SRR35496765
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572823_SRR35496765_1.fastq.gz
+      - fastq/SRX30572823_SRR35496765_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27685614
+    bases: 8361055428
+  - ind: SRR35496766
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572823_SRR35496766_1.fastq.gz
+      - fastq/SRX30572823_SRR35496766_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 7519959
+    bases: 2271027618
+  - ind: SRR35496767
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572823_SRR35496767_1.fastq.gz
+      - fastq/SRX30572823_SRR35496767_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 7447840
+    bases: 2249247680
+  attributes:
+    title: HT-29_HSV-1_Z22_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246587: HT-29, HSV-1, Z22, 2
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572824
+  sample: SAMN51585461-SAMN51585441
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-RIP_3
-  - ind: '3162330'
-    sample: H1+D4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162330-H1+D4-S114-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S114_L007_R1_001.fastq.gz
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S114_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162330-H1+D4-S114-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S114_L008_R1_001.fastq.gz
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S114_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162330-H1+D4-S7-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S7_L001_R1_001.fastq.gz
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S7_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162330-H1+D4-S7-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S7_L002_R1_001.fastq.gz
-            - fastq/3162330_JCC411_July2024_H1_HSV-1Z22RIP-4_S7_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496760
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572824_SRR35496760_1.fastq.gz
+      - fastq/SRX30572824_SRR35496760_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 24469099
+    bases: 7389667898
+  - ind: SRR35496761
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572824_SRR35496761_1.fastq.gz
+      - fastq/SRX30572824_SRR35496761_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 24192141
+    bases: 7306026582
+  - ind: SRR35496762
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572824_SRR35496762_1.fastq.gz
+      - fastq/SRX30572824_SRR35496762_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 18155730
+    bases: 5483030460
+  - ind: SRR35496763
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572824_SRR35496763_1.fastq.gz
+      - fastq/SRX30572824_SRR35496763_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 18023114
+    bases: 5442980428
+  attributes:
+    title: HT-29_HSV-1_Z22_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246588: HT-29, HSV-1, Z22, 3
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572825
+  sample: SAMN51585460-SAMN51585440
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-RIP_4
-  - ind: '3162331'
-    sample: A2+E4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162331-A2+E4-S115-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S115_L007_R1_001.fastq.gz
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S115_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162331-A2+E4-S115-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S115_L008_R1_001.fastq.gz
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S115_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162331-A2+E4-S8-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S8_L001_R1_001.fastq.gz
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S8_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162331-A2+E4-S8-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S8_L002_R1_001.fastq.gz
-            - fastq/3162331_JCC411_July2024_A2_HSV-1FLAGRIP-1_S8_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496756
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572825_SRR35496756_1.fastq.gz
+      - fastq/SRX30572825_SRR35496756_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 8170448
+    bases: 2467475296
+  - ind: SRR35496757
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572825_SRR35496757_1.fastq.gz
+      - fastq/SRX30572825_SRR35496757_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 8031796
+    bases: 2425602392
+  - ind: SRR35496758
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572825_SRR35496758_1.fastq.gz
+      - fastq/SRX30572825_SRR35496758_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27914841
+    bases: 8430281982
+  - ind: SRR35496759
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572825_SRR35496759_1.fastq.gz
+      - fastq/SRX30572825_SRR35496759_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27639832
+    bases: 8347229264
+  attributes:
+    title: HT-29_HSV-1_Z22_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246589: HT-29, HSV-1, Z22, 4
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572826
+  sample: SAMN51585462-SAMN51585442
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-RIP_1
-  - ind: '3162332'
-    sample: B2+F4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162332-B2+F4-S116-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S116_L007_R1_001.fastq.gz
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S116_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162332-B2+F4-S116-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S116_L008_R1_001.fastq.gz
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S116_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162332-B2+F4-S9-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S9_L001_R1_001.fastq.gz
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S9_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162332-B2+F4-S9-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S9_L002_R1_001.fastq.gz
-            - fastq/3162332_JCC411_July2024_B2_HSV-1FLAGRIP-2_S9_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496752
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572826_SRR35496752_1.fastq.gz
+      - fastq/SRX30572826_SRR35496752_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 16313701
+    bases: 4926737702
+  - ind: SRR35496753
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572826_SRR35496753_1.fastq.gz
+      - fastq/SRX30572826_SRR35496753_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 15988090
+    bases: 4828403180
+  - ind: SRR35496754
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572826_SRR35496754_1.fastq.gz
+      - fastq/SRX30572826_SRR35496754_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29460021
+    bases: 8896926342
+  - ind: SRR35496755
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572826_SRR35496755_1.fastq.gz
+      - fastq/SRX30572826_SRR35496755_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29253819
+    bases: 8834653338
+  attributes:
+    title: HT-29_HSV-1_Z22-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246607: HT-29, HSV-1, Z22-input,
+    2 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572827
+  sample: SAMN51585461-SAMN51585441
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-RIP_2
-  - ind: '3162333'
-    sample: C2+G4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162333-C2+G4-S10-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S10_L001_R1_001.fastq.gz
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S10_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162333-C2+G4-S10-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S10_L002_R1_001.fastq.gz
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S10_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162333-C2+G4-S117-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S117_L007_R1_001.fastq.gz
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S117_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162333-C2+G4-S117-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S117_L008_R1_001.fastq.gz
-            - fastq/3162333_JCC411_July2024_C2_HSV-1FLAGRIP-3_S117_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496748
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572827_SRR35496748_1.fastq.gz
+      - fastq/SRX30572827_SRR35496748_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 28306585
+    bases: 8548588670
+  - ind: SRR35496749
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572827_SRR35496749_1.fastq.gz
+      - fastq/SRX30572827_SRR35496749_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27920151
+    bases: 8431885602
+  - ind: SRR35496750
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572827_SRR35496750_1.fastq.gz
+      - fastq/SRX30572827_SRR35496750_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 8754227
+    bases: 2643776554
+  - ind: SRR35496751
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572827_SRR35496751_1.fastq.gz
+      - fastq/SRX30572827_SRR35496751_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 8679539
+    bases: 2621220778
+  attributes:
+    title: HT-29_HSV-1_Z22-input_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246608: HT-29, HSV-1, Z22-input,
+    3 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572828
+  sample: SAMN51585460-SAMN51585440
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-RIP_3
-  - ind: '3162334'
-    sample: D2+H4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162334-D2+H4-S11-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S11_L001_R1_001.fastq.gz
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S11_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162334-D2+H4-S11-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S11_L002_R1_001.fastq.gz
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S11_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162334-D2+H4-S118-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S118_L007_R1_001.fastq.gz
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S118_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162334-D2+H4-S118-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S118_L008_R1_001.fastq.gz
-            - fastq/3162334_JCC411_July2024_D2_HSV-1FLAGRIP-4_S118_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496744
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572828_SRR35496744_1.fastq.gz
+      - fastq/SRX30572828_SRR35496744_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29410374
+    bases: 8881932948
+  - ind: SRR35496745
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572828_SRR35496745_1.fastq.gz
+      - fastq/SRX30572828_SRR35496745_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29334653
+    bases: 8859065206
+  - ind: SRR35496746
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572828_SRR35496746_1.fastq.gz
+      - fastq/SRX30572828_SRR35496746_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 4038084
+    bases: 1219501368
+  - ind: SRR35496747
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572828_SRR35496747_1.fastq.gz
+      - fastq/SRX30572828_SRR35496747_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 4042907
+    bases: 1220957914
+  attributes:
+    title: HT-29_HSV-1_Z22-input_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246609: HT-29, HSV-1, Z22-input,
+    4 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572829
+  sample: SAMN51585463-SAMN51585443
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-RIP_4
-  - ind: '3162335'
-    sample: E2+A5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162335-E2+A5-S119-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S119_L007_R1_001.fastq.gz
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S119_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162335-E2+A5-S119-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S119_L008_R1_001.fastq.gz
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S119_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162335-E2+A5-S12-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S12_L001_R1_001.fastq.gz
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S12_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162335-E2+A5-S12-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S12_L002_R1_001.fastq.gz
-            - fastq/3162335_JCC411_July2024_E2_PR8Z22RIP-1_S12_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496742
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572829_SRR35496742_1.fastq.gz
+      - fastq/SRX30572829_SRR35496742_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 32820266
+    bases: 9911720332
+  - ind: SRR35496743
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572829_SRR35496743_1.fastq.gz
+      - fastq/SRX30572829_SRR35496743_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 32279493
+    bases: 9748406886
+  attributes:
+    title: HT-29_HSV-1_Z22-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246606: HT-29, HSV-1, Z22-input,
+    1 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572830
+  sample: SAMN51585439-SAMN51585459
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-RIP_1
-  - ind: '3162336'
-    sample: F2+B5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162336-F2+B5-S120-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S120_L007_R1_001.fastq.gz
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S120_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162336-F2+B5-S120-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S120_L008_R1_001.fastq.gz
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S120_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162336-F2+B5-S13-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S13_L001_R1_001.fastq.gz
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S13_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162336-F2+B5-S13-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S13_L002_R1_001.fastq.gz
-            - fastq/3162336_JCC411_July2024_F2_PR8Z22RIP-2_S13_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496740
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572830_SRR35496740_1.fastq.gz
+      - fastq/SRX30572830_SRR35496740_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36823123
+    bases: 11120583146
+  - ind: SRR35496741
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572830_SRR35496741_1.fastq.gz
+      - fastq/SRX30572830_SRR35496741_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36399529
+    bases: 10992657758
+  attributes:
+    title: HT-29_HSV-1_FLAG-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246610: HT-29, HSV-1, FLAG-input,
+    1 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572831
+  sample: SAMN51585438-SAMN51585458
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-RIP_2
-  - ind: '3162337'
-    sample: G2+C5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162337-G2+C5-S121-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S121_L007_R1_001.fastq.gz
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S121_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162337-G2+C5-S121-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S121_L008_R1_001.fastq.gz
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S121_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162337-G2+C5-S14-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S14_L001_R1_001.fastq.gz
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S14_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162337-G2+C5-S14-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S14_L002_R1_001.fastq.gz
-            - fastq/3162337_JCC411_July2024_G2_PR8Z22RIP-3_S14_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496738
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572831_SRR35496738_1.fastq.gz
+      - fastq/SRX30572831_SRR35496738_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33765018
+    bases: 10197035436
+  - ind: SRR35496739
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572831_SRR35496739_1.fastq.gz
+      - fastq/SRX30572831_SRR35496739_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33269323
+    bases: 10047335546
+  attributes:
+    title: HT-29_HSV-1_FLAG-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246611: HT-29, HSV-1, FLAG-input,
+    2 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572832
+  sample: SAMN51585437-SAMN51585457
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-RIP_3
-  - ind: '3162338'
-    sample: H2+D5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - Z22 RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162338-H2+D5-S122-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S122_L007_R1_001.fastq.gz
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S122_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162338-H2+D5-S122-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S122_L008_R1_001.fastq.gz
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S122_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162338-H2+D5-S15-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S15_L001_R1_001.fastq.gz
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S15_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162338-H2+D5-S15-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S15_L002_R1_001.fastq.gz
-            - fastq/3162338_JCC411_July2024_H2_PR8Z22RIP-4_S15_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496736
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572832_SRR35496736_1.fastq.gz
+      - fastq/SRX30572832_SRR35496736_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27200554
+    bases: 8214567308
+  - ind: SRR35496737
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572832_SRR35496737_1.fastq.gz
+      - fastq/SRX30572832_SRR35496737_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 26870461
+    bases: 8114879222
+  attributes:
+    title: HT-29_HSV-1_FLAG-input_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246612: HT-29, HSV-1, FLAG-input,
+    3 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572833
+  sample: SAMN51585436-SAMN51585456
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-RIP_4
-  - ind: '3162339'
-    sample: A3+E5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162339-A3+E5-S123-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S123_L007_R1_001.fastq.gz
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S123_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162339-A3+E5-S123-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S123_L008_R1_001.fastq.gz
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S123_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162339-A3+E5-S16-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S16_L001_R1_001.fastq.gz
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S16_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162339-A3+E5-S16-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S16_L002_R1_001.fastq.gz
-            - fastq/3162339_JCC411_July2024_A3_PR8FLAGRIP-1_S16_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496732
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572833_SRR35496732_1.fastq.gz
+      - fastq/SRX30572833_SRR35496732_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 32262549
+    bases: 9743289798
+  - ind: SRR35496733
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572833_SRR35496733_1.fastq.gz
+      - fastq/SRX30572833_SRR35496733_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 31892145
+    bases: 9631427790
+  - ind: SRR35496734
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572833_SRR35496734_1.fastq.gz
+      - fastq/SRX30572833_SRR35496734_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 12473800
+    bases: 3767087600
+  - ind: SRR35496735
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572833_SRR35496735_1.fastq.gz
+      - fastq/SRX30572833_SRR35496735_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 12439215
+    bases: 3756642930
+  attributes:
+    title: HT-29_HSV-1_FLAG-input_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246613: HT-29, HSV-1, FLAG-input,
+    4 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572834
+  sample: SAMN51585439-SAMN51585459
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-RIP_1
-  - ind: '3162340'
-    sample: B3+F5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162340-B3+F5-S124-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S124_L007_R1_001.fastq.gz
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S124_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162340-B3+F5-S124-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S124_L008_R1_001.fastq.gz
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S124_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162340-B3+F5-S17-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S17_L001_R1_001.fastq.gz
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S17_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162340-B3+F5-S17-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S17_L002_R1_001.fastq.gz
-            - fastq/3162340_JCC411_July2024_B3_PR8FLAGRIP-2_S17_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496728
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572834_SRR35496728_1.fastq.gz
+      - fastq/SRX30572834_SRR35496728_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 9388704
+    bases: 2835388608
+  - ind: SRR35496729
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572834_SRR35496729_1.fastq.gz
+      - fastq/SRX30572834_SRR35496729_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 9404402
+    bases: 2840129404
+  - ind: SRR35496730
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572834_SRR35496730_1.fastq.gz
+      - fastq/SRX30572834_SRR35496730_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23478283
+    bases: 7090441466
+  - ind: SRR35496731
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572834_SRR35496731_1.fastq.gz
+      - fastq/SRX30572834_SRR35496731_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23563113
+    bases: 7116060126
+  attributes:
+    title: HT-29_HSV-1_FLAG_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246590: HT-29, HSV-1, FLAG,
+    1 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572835
+  sample: SAMN51585438-SAMN51585458
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-RIP_2
-  - ind: '3162341'
-    sample: C3+G5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162341-C3+G5-S125-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S125_L007_R1_001.fastq.gz
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S125_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162341-C3+G5-S125-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S125_L008_R1_001.fastq.gz
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S125_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162341-C3+G5-S18-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S18_L001_R1_001.fastq.gz
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S18_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162341-C3+G5-S18-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S18_L002_R1_001.fastq.gz
-            - fastq/3162341_JCC411_July2024_C3_PR8FLAGRIP-3_S18_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496724
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572835_SRR35496724_1.fastq.gz
+      - fastq/SRX30572835_SRR35496724_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20612665
+    bases: 6225024830
+  - ind: SRR35496725
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572835_SRR35496725_1.fastq.gz
+      - fastq/SRX30572835_SRR35496725_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20390958
+    bases: 6158069316
+  - ind: SRR35496726
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572835_SRR35496726_1.fastq.gz
+      - fastq/SRX30572835_SRR35496726_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23031888
+    bases: 6955630176
+  - ind: SRR35496727
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572835_SRR35496727_1.fastq.gz
+      - fastq/SRX30572835_SRR35496727_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22895016
+    bases: 6914294832
+  attributes:
+    title: HT-29_HSV-1_FLAG_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246591: HT-29, HSV-1, FLAG,
+    2 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572836
+  sample: SAMN51585437-SAMN51585457
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-RIP_3
-  - ind: '3162342'
-    sample: D3+H5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - FLAG RIP
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 3162342-D3+H5-S126-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S126_L007_R1_001.fastq.gz
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S126_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162342-D3+H5-S126-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S126_L008_R1_001.fastq.gz
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S126_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162342-D3+H5-S19-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S19_L001_R1_001.fastq.gz
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S19_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162342-D3+H5-S19-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S19_L002_R1_001.fastq.gz
-            - fastq/3162342_JCC411_July2024_D3_PR8FLAGRIP-4_S19_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496720
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572836_SRR35496720_1.fastq.gz
+      - fastq/SRX30572836_SRR35496720_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22947021
+    bases: 6930000342
+  - ind: SRR35496721
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572836_SRR35496721_1.fastq.gz
+      - fastq/SRX30572836_SRR35496721_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22824834
+    bases: 6893099868
+  - ind: SRR35496722
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572836_SRR35496722_1.fastq.gz
+      - fastq/SRX30572836_SRR35496722_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20912749
+    bases: 6315650198
+  - ind: SRR35496723
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572836_SRR35496723_1.fastq.gz
+      - fastq/SRX30572836_SRR35496723_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20870205
+    bases: 6302801910
+  attributes:
+    title: HT-29_HSV-1_FLAG_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246592: HT-29, HSV-1, FLAG,
+    3 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572837
+  sample: SAMN51585436-SAMN51585456
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-RIP_4
-  - ind: '3162343'
-    sample: A1+E3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162343-A1+E3-S127-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162343_JCC411_July2024_E3_MockZ22input-1_S127_L007_R1_001.fastq.gz
-            - fastq/3162343_JCC411_July2024_E3_MockZ22input-1_S127_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162343-A1+E3-S127-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162343_JCC411_July2024_E3_MockZ22input-1_S127_L008_R1_001.fastq.gz
-            - fastq/3162343_JCC411_July2024_E3_MockZ22input-1_S127_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496716
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572837_SRR35496716_1.fastq.gz
+      - fastq/SRX30572837_SRR35496716_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27354070
+    bases: 8260929140
+  - ind: SRR35496717
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572837_SRR35496717_1.fastq.gz
+      - fastq/SRX30572837_SRR35496717_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27509969
+    bases: 8308010638
+  - ind: SRR35496718
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572837_SRR35496718_1.fastq.gz
+      - fastq/SRX30572837_SRR35496718_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17933271
+    bases: 5415847842
+  - ind: SRR35496719
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572837_SRR35496719_1.fastq.gz
+      - fastq/SRX30572837_SRR35496719_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17877650
+    bases: 5399050300
+  attributes:
+    title: HT-29_HSV-1_FLAG_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246593: HT-29, HSV-1, FLAG,
+    4 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572838
+  sample: SAMN51585455-SAMN51585435
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-input_1
-  - ind: '3162344'
-    sample: B1+F3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162344-B1+F3-S128-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162344_JCC411_July2024_F3_MockZ22input-2_S128_L007_R1_001.fastq.gz
-            - fastq/3162344_JCC411_July2024_F3_MockZ22input-2_S128_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162344-B1+F3-S128-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162344_JCC411_July2024_F3_MockZ22input-2_S128_L008_R1_001.fastq.gz
-            - fastq/3162344_JCC411_July2024_F3_MockZ22input-2_S128_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496712
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572838_SRR35496712_1.fastq.gz
+      - fastq/SRX30572838_SRR35496712_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27278173
+    bases: 8238008246
+  - ind: SRR35496713
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572838_SRR35496713_1.fastq.gz
+      - fastq/SRX30572838_SRR35496713_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27043249
+    bases: 8167061198
+  - ind: SRR35496714
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572838_SRR35496714_1.fastq.gz
+      - fastq/SRX30572838_SRR35496714_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 10972312
+    bases: 3313638224
+  - ind: SRR35496715
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572838_SRR35496715_1.fastq.gz
+      - fastq/SRX30572838_SRR35496715_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 10880509
+    bases: 3285913718
+  attributes:
+    title: HT-29_IAV_Z22_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246594: HT-29, IAV, Z22, 1 [B831009]
+    Homo sapiens RIP-Seq'
+- ind: SRX30572839
+  sample: SAMN51585454-SAMN51585434
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-input_2
-  - ind: '3162345'
-    sample: C1+G3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162345-C1+G3-S129-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S129_L007_R1_001.fastq.gz
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S129_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162345-C1+G3-S129-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S129_L008_R1_001.fastq.gz
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S129_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162345-C1+G3-S20-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S20_L001_R1_001.fastq.gz
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S20_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162345-C1+G3-S20-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S20_L002_R1_001.fastq.gz
-            - fastq/3162345_JCC411_July2024_G3_MockZ22input-3_S20_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496708
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572839_SRR35496708_1.fastq.gz
+      - fastq/SRX30572839_SRR35496708_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27291495
+    bases: 8242031490
+  - ind: SRR35496709
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572839_SRR35496709_1.fastq.gz
+      - fastq/SRX30572839_SRR35496709_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 26971132
+    bases: 8145281864
+  - ind: SRR35496710
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572839_SRR35496710_1.fastq.gz
+      - fastq/SRX30572839_SRR35496710_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 9918440
+    bases: 2995368880
+  - ind: SRR35496711
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572839_SRR35496711_1.fastq.gz
+      - fastq/SRX30572839_SRR35496711_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 9904656
+    bases: 2991206112
+  attributes:
+    title: HT-29_IAV_Z22_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246595: HT-29, IAV, Z22, 2 [B831009]
+    Homo sapiens RIP-Seq'
+- ind: SRX30572840
+  sample: SAMN51585453-SAMN51585433
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-input_3
-  - ind: '3162346'
-    sample: D1+H3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162346-D1+H3-S130-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S130_L007_R1_001.fastq.gz
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S130_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162346-D1+H3-S130-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S130_L008_R1_001.fastq.gz
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S130_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162346-D1+H3-S21-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S21_L001_R1_001.fastq.gz
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S21_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162346-D1+H3-S21-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S21_L002_R1_001.fastq.gz
-            - fastq/3162346_JCC411_July2024_H3_MockZ22input-4_S21_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496704
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572840_SRR35496704_1.fastq.gz
+      - fastq/SRX30572840_SRR35496704_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17400116
+    bases: 5254835032
+  - ind: SRR35496705
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572840_SRR35496705_1.fastq.gz
+      - fastq/SRX30572840_SRR35496705_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17219434
+    bases: 5200269068
+  - ind: SRR35496706
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572840_SRR35496706_1.fastq.gz
+      - fastq/SRX30572840_SRR35496706_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 30060670
+    bases: 9078322340
+  - ind: SRR35496707
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572840_SRR35496707_1.fastq.gz
+      - fastq/SRX30572840_SRR35496707_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29790789
+    bases: 8996818278
+  attributes:
+    title: HT-29_IAV_Z22_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246596: HT-29, IAV, Z22, 3 [B831009]
+    Homo sapiens RIP-Seq'
+- ind: SRX30572841
+  sample: SAMN51585452-SAMN51585432
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: HT-29_mock_Z22-input_4
-  - ind: '3162347'
-    sample: E1+A4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162347-E1+A4-S131-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162347_JCC411_July2024_A4_HSV-1Z22input-1_S131_L007_R1_001.fastq.gz
-            - fastq/3162347_JCC411_July2024_A4_HSV-1Z22input-1_S131_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162347-E1+A4-S131-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162347_JCC411_July2024_A4_HSV-1Z22input-1_S131_L008_R1_001.fastq.gz
-            - fastq/3162347_JCC411_July2024_A4_HSV-1Z22input-1_S131_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496700
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572841_SRR35496700_1.fastq.gz
+      - fastq/SRX30572841_SRR35496700_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 11045828
+    bases: 3335840056
+  - ind: SRR35496701
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572841_SRR35496701_1.fastq.gz
+      - fastq/SRX30572841_SRR35496701_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 10941703
+    bases: 3304394306
+  - ind: SRR35496702
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572841_SRR35496702_1.fastq.gz
+      - fastq/SRX30572841_SRR35496702_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33804646
+    bases: 10209003092
+  - ind: SRR35496703
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572841_SRR35496703_1.fastq.gz
+      - fastq/SRX30572841_SRR35496703_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33526374
+    bases: 10124964948
+  attributes:
+    title: HT-29_IAV_Z22_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246597: HT-29, IAV, Z22, 4 [B831009]
+    Homo sapiens RIP-Seq'
+- ind: SRX30572842
+  sample: SAMN51585451-SAMN51585431
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-input_1
-  - ind: '3162348'
-    sample: F1+B4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162348-F1+B4-S132-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S132_L007_R1_001.fastq.gz
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S132_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162348-F1+B4-S132-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S132_L008_R1_001.fastq.gz
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S132_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162348-F1+B4-S22-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S22_L001_R1_001.fastq.gz
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S22_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162348-F1+B4-S22-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S22_L002_R1_001.fastq.gz
-            - fastq/3162348_JCC411_July2024_B4_HSV-1Z22input-2_S22_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496696
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572842_SRR35496696_1.fastq.gz
+      - fastq/SRX30572842_SRR35496696_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21628984
+    bases: 6531953168
+  - ind: SRR35496697
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572842_SRR35496697_1.fastq.gz
+      - fastq/SRX30572842_SRR35496697_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21357080
+    bases: 6449838160
+  - ind: SRR35496698
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572842_SRR35496698_1.fastq.gz
+      - fastq/SRX30572842_SRR35496698_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20899622
+    bases: 6311685844
+  - ind: SRR35496699
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572842_SRR35496699_1.fastq.gz
+      - fastq/SRX30572842_SRR35496699_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20765011
+    bases: 6271033322
+  attributes:
+    title: HT-29_IAV_FLAG_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246598: HT-29, IAV, FLAG, 1
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572843
+  sample: SAMN51585450-SAMN51585430
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-input_2
-  - ind: '3162349'
-    sample: G1+C4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162349-G1+C4-S133-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S133_L007_R1_001.fastq.gz
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S133_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162349-G1+C4-S133-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S133_L008_R1_001.fastq.gz
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S133_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162349-G1+C4-S23-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S23_L001_R1_001.fastq.gz
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S23_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162349-G1+C4-S23-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S23_L002_R1_001.fastq.gz
-            - fastq/3162349_JCC411_July2024_C4_HSV-1Z22input-3_S23_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496692
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572843_SRR35496692_1.fastq.gz
+      - fastq/SRX30572843_SRR35496692_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20856234
+    bases: 6298582668
+  - ind: SRR35496693
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572843_SRR35496693_1.fastq.gz
+      - fastq/SRX30572843_SRR35496693_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20606502
+    bases: 6223163604
+  - ind: SRR35496694
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572843_SRR35496694_1.fastq.gz
+      - fastq/SRX30572843_SRR35496694_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22374071
+    bases: 6756969442
+  - ind: SRR35496695
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572843_SRR35496695_1.fastq.gz
+      - fastq/SRX30572843_SRR35496695_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22170308
+    bases: 6695433016
+  attributes:
+    title: HT-29_IAV_FLAG_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246599: HT-29, IAV, FLAG, 2
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572844
+  sample: SAMN51585449-SAMN51585429
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-input_3
-  - ind: '3162350'
-    sample: H1+D4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162350-H1+D4-S134-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S134_L007_R1_001.fastq.gz
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S134_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162350-H1+D4-S134-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S134_L008_R1_001.fastq.gz
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S134_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162350-H1+D4-S24-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S24_L001_R1_001.fastq.gz
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S24_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162350-H1+D4-S24-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S24_L002_R1_001.fastq.gz
-            - fastq/3162350_JCC411_July2024_D4_HSV-1Z22input-4_S24_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496688
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572844_SRR35496688_1.fastq.gz
+      - fastq/SRX30572844_SRR35496688_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21352284
+    bases: 6448389768
+  - ind: SRR35496689
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572844_SRR35496689_1.fastq.gz
+      - fastq/SRX30572844_SRR35496689_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20983937
+    bases: 6337148974
+  - ind: SRR35496690
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572844_SRR35496690_1.fastq.gz
+      - fastq/SRX30572844_SRR35496690_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22389702
+    bases: 6761690004
+  - ind: SRR35496691
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572844_SRR35496691_1.fastq.gz
+      - fastq/SRX30572844_SRR35496691_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22193593
+    bases: 6702465086
+  attributes:
+    title: HT-29_IAV_FLAG_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246600: HT-29, IAV, FLAG, 3
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572845
+  sample: SAMN51585448-SAMN51585428
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - FLAG RIP
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_Z22-input_4
-  - ind: '3162351'
-    sample: A2+E4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162351-A2+E4-S135-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162351_JCC411_July2024_E4_HSV-1FLAGinput-1_S135_L007_R1_001.fastq.gz
-            - fastq/3162351_JCC411_July2024_E4_HSV-1FLAGinput-1_S135_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162351-A2+E4-S135-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162351_JCC411_July2024_E4_HSV-1FLAGinput-1_S135_L008_R1_001.fastq.gz
-            - fastq/3162351_JCC411_July2024_E4_HSV-1FLAGinput-1_S135_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: FLAG
+  runs:
+  - ind: SRR35496684
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572845_SRR35496684_1.fastq.gz
+      - fastq/SRX30572845_SRR35496684_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22392370
+    bases: 6762495740
+  - ind: SRR35496685
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572845_SRR35496685_1.fastq.gz
+      - fastq/SRX30572845_SRR35496685_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22034515
+    bases: 6654423530
+  - ind: SRR35496686
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572845_SRR35496686_1.fastq.gz
+      - fastq/SRX30572845_SRR35496686_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21634963
+    bases: 6533758826
+  - ind: SRR35496687
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572845_SRR35496687_1.fastq.gz
+      - fastq/SRX30572845_SRR35496687_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21467043
+    bases: 6483046986
+  attributes:
+    title: HT-29_IAV_FLAG_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246601: HT-29, IAV, FLAG, 4
+    [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572846
+  sample: SAMN51585467-SAMN51585447
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-input_1
-  - ind: '3162352'
-    sample: B2+F4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162352-B2+F4-S136-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162352_JCC411_July2024_F4_HSV-1FLAGinput-2_S136_L007_R1_001.fastq.gz
-            - fastq/3162352_JCC411_July2024_F4_HSV-1FLAGinput-2_S136_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162352-B2+F4-S136-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162352_JCC411_July2024_F4_HSV-1FLAGinput-2_S136_L008_R1_001.fastq.gz
-            - fastq/3162352_JCC411_July2024_F4_HSV-1FLAGinput-2_S136_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496682
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572846_SRR35496682_1.fastq.gz
+      - fastq/SRX30572846_SRR35496682_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 31631414
+    bases: 9552687028
+  - ind: SRR35496683
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572846_SRR35496683_1.fastq.gz
+      - fastq/SRX30572846_SRR35496683_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 31349163
+    bases: 9467447226
+  attributes:
+    title: HT-29_mock_Z22-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246602: HT-29, mock, Z22-input,
+    1 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572847
+  sample: SAMN51585466-SAMN51585446
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-input_2
-  - ind: '3162353'
-    sample: C2+G4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162353-C2+G4-S137-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162353_JCC411_July2024_G4_HSV-1FLAGinput-3_S137_L007_R1_001.fastq.gz
-            - fastq/3162353_JCC411_July2024_G4_HSV-1FLAGinput-3_S137_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162353-C2+G4-S137-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162353_JCC411_July2024_G4_HSV-1FLAGinput-3_S137_L008_R1_001.fastq.gz
-            - fastq/3162353_JCC411_July2024_G4_HSV-1FLAGinput-3_S137_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496680
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572847_SRR35496680_1.fastq.gz
+      - fastq/SRX30572847_SRR35496680_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 41395391
+    bases: 12501408082
+  - ind: SRR35496681
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572847_SRR35496681_1.fastq.gz
+      - fastq/SRX30572847_SRR35496681_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 41036526
+    bases: 12393030852
+  attributes:
+    title: HT-29_mock_Z22-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246603: HT-29, mock, Z22-input,
+    2 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572848
+  sample: SAMN51585465-SAMN51585445
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-input_3
-  - ind: '3162354'
-    sample: D2+H4
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162354-D2+H4-S138-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S138_L007_R1_001.fastq.gz
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S138_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162354-D2+H4-S138-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S138_L008_R1_001.fastq.gz
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S138_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162354-D2+H4-S33-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S33_L001_R1_001.fastq.gz
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S33_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162354-D2+H4-S33-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S33_L002_R1_001.fastq.gz
-            - fastq/3162354_JCC411_July2024_H4_HSV-1FLAGinput-4_S33_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496676
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572848_SRR35496676_1.fastq.gz
+      - fastq/SRX30572848_SRR35496676_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17697342
+    bases: 5344597284
+  - ind: SRR35496677
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572848_SRR35496677_1.fastq.gz
+      - fastq/SRX30572848_SRR35496677_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17402332
+    bases: 5255504264
+  - ind: SRR35496678
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572848_SRR35496678_1.fastq.gz
+      - fastq/SRX30572848_SRR35496678_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 28431670
+    bases: 8586364340
+  - ind: SRR35496679
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572848_SRR35496679_1.fastq.gz
+      - fastq/SRX30572848_SRR35496679_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 28204904
+    bases: 8517881008
+  attributes:
+    title: HT-29_mock_Z22-input_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246604: HT-29, mock, Z22-input,
+    3 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572849
+  sample: SAMN51585464-SAMN51585444
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_HSV-1_FLAG-input_4
-  - ind: '3162355'
-    sample: E2+A5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162355-E2+A5-S139-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162355_JCC411_July2024_A5_PR8Z22input-1_S139_L007_R1_001.fastq.gz
-            - fastq/3162355_JCC411_July2024_A5_PR8Z22input-1_S139_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162355-E2+A5-S139-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162355_JCC411_July2024_A5_PR8Z22input-1_S139_L008_R1_001.fastq.gz
-            - fastq/3162355_JCC411_July2024_A5_PR8Z22input-1_S139_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496672
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572849_SRR35496672_1.fastq.gz
+      - fastq/SRX30572849_SRR35496672_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 13547808
+    bases: 4091438016
+  - ind: SRR35496673
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572849_SRR35496673_1.fastq.gz
+      - fastq/SRX30572849_SRR35496673_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 13312588
+    bases: 4020401576
+  - ind: SRR35496674
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572849_SRR35496674_1.fastq.gz
+      - fastq/SRX30572849_SRR35496674_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33917822
+    bases: 10243182244
+  - ind: SRR35496675
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572849_SRR35496675_1.fastq.gz
+      - fastq/SRX30572849_SRR35496675_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33454150
+    bases: 10103153300
+  attributes:
+    title: HT-29_mock_Z22-input_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246605: HT-29, mock, Z22-input,
+    4 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572850
+  sample: SAMN51585455-SAMN51585435
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-input_1
-  - ind: '3162356'
-    sample: F2+B5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162356-F2+B5-S140-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162356_JCC411_July2024_B5_PR8Z22input-2_S140_L007_R1_001.fastq.gz
-            - fastq/3162356_JCC411_July2024_B5_PR8Z22input-2_S140_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162356-F2+B5-S140-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162356_JCC411_July2024_B5_PR8Z22input-2_S140_L008_R1_001.fastq.gz
-            - fastq/3162356_JCC411_July2024_B5_PR8Z22input-2_S140_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496670
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572850_SRR35496670_1.fastq.gz
+      - fastq/SRX30572850_SRR35496670_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36925573
+    bases: 11151523046
+  - ind: SRR35496671
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572850_SRR35496671_1.fastq.gz
+      - fastq/SRX30572850_SRR35496671_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36436190
+    bases: 11003729380
+  attributes:
+    title: HT-29_IAV_Z22-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246614: HT-29, IAV, Z22-input,
+    1 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572851
+  sample: SAMN51585454-SAMN51585434
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-input_2
-  - ind: '3162357'
-    sample: G2+C5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162357-G2+C5-S141-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S141_L007_R1_001.fastq.gz
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S141_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162357-G2+C5-S141-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S141_L008_R1_001.fastq.gz
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S141_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162357-G2+C5-S25-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S25_L001_R1_001.fastq.gz
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S25_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162357-G2+C5-S25-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S25_L002_R1_001.fastq.gz
-            - fastq/3162357_JCC411_July2024_C5_PR8Z22input-3_S25_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496668
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572851_SRR35496668_1.fastq.gz
+      - fastq/SRX30572851_SRR35496668_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 35116873
+    bases: 10605295646
+  - ind: SRR35496669
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572851_SRR35496669_1.fastq.gz
+      - fastq/SRX30572851_SRR35496669_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 34585813
+    bases: 10444915526
+  attributes:
+    title: HT-29_IAV_Z22-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246615: HT-29, IAV, Z22-input,
+    2 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572852
+  sample: SAMN51585453-SAMN51585433
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-input_3
-  - ind: '3162358'
-    sample: H2+D5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: Z22 RIP
-    runs:
-      - ind: 3162358-H2+D5-S142-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162358_JCC411_July2024_D5_PR8Z22input-4_S142_L007_R1_001.fastq.gz
-            - fastq/3162358_JCC411_July2024_D5_PR8Z22input-4_S142_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162358-H2+D5-S142-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162358_JCC411_July2024_D5_PR8Z22input-4_S142_L008_R1_001.fastq.gz
-            - fastq/3162358_JCC411_July2024_D5_PR8Z22input-4_S142_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496664
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572852_SRR35496664_1.fastq.gz
+      - fastq/SRX30572852_SRR35496664_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 25387285
+    bases: 7666960070
+  - ind: SRR35496665
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572852_SRR35496665_1.fastq.gz
+      - fastq/SRX30572852_SRR35496665_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 25041004
+    bases: 7562383208
+  - ind: SRR35496666
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572852_SRR35496666_1.fastq.gz
+      - fastq/SRX30572852_SRR35496666_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17564065
+    bases: 5304347630
+  - ind: SRR35496667
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572852_SRR35496667_1.fastq.gz
+      - fastq/SRX30572852_SRR35496667_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 17428883
+    bases: 5263522666
+  attributes:
+    title: HT-29_IAV_Z22-input_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246616: HT-29, IAV, Z22-input,
+    3 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572853
+  sample: SAMN51585452-SAMN51585432
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_Z22-input_4
-  - ind: '3162359'
-    sample: A3+E5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162359-A3+E5-S143-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162359_JCC411_July2024_E5_PR8FLAGinput-1_S143_L007_R1_001.fastq.gz
-            - fastq/3162359_JCC411_July2024_E5_PR8FLAGinput-1_S143_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162359-A3+E5-S143-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162359_JCC411_July2024_E5_PR8FLAGinput-1_S143_L008_R1_001.fastq.gz
-            - fastq/3162359_JCC411_July2024_E5_PR8FLAGinput-1_S143_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496662
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572853_SRR35496662_1.fastq.gz
+      - fastq/SRX30572853_SRR35496662_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 34132474
+    bases: 10308007148
+  - ind: SRR35496663
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572853_SRR35496663_1.fastq.gz
+      - fastq/SRX30572853_SRR35496663_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33389477
+    bases: 10083622054
+  attributes:
+    title: HT-29_IAV_Z22-input_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246617: HT-29, IAV, Z22-input,
+    4 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572854
+  sample: SAMN51585451-SAMN51585431
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-input_1
-  - ind: '3162360'
-    sample: B3+F5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162360-B3+F5-S144-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162360_JCC411_July2024_F5_PR8FLAGinput-2_S144_L007_R1_001.fastq.gz
-            - fastq/3162360_JCC411_July2024_F5_PR8FLAGinput-2_S144_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162360-B3+F5-S144-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162360_JCC411_July2024_F5_PR8FLAGinput-2_S144_L008_R1_001.fastq.gz
-            - fastq/3162360_JCC411_July2024_F5_PR8FLAGinput-2_S144_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496660
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572854_SRR35496660_1.fastq.gz
+      - fastq/SRX30572854_SRR35496660_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36444778
+    bases: 11006322956
+  - ind: SRR35496661
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572854_SRR35496661_1.fastq.gz
+      - fastq/SRX30572854_SRR35496661_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 35775574
+    bases: 10804223348
+  attributes:
+    title: HT-29_IAV_FLAG-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246618: HT-29, IAV, FLAG-input,
+    1 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572855
+  sample: SAMN51585449-SAMN51585429
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-input_2
-  - ind: '3162361'
-    sample: C3+G5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162361-C3+G5-S145-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S145_L007_R1_001.fastq.gz
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S145_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162361-C3+G5-S145-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S145_L008_R1_001.fastq.gz
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S145_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162361-C3+G5-S26-L001
-        layout:
-          type: paired
-          files:
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S26_L001_R1_001.fastq.gz
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S26_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162361-C3+G5-S26-L002
-        layout:
-          type: paired
-          files:
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S26_L002_R1_001.fastq.gz
-            - fastq/3162361_JCC411_July2024_G5_PR8FLAGinput-3_S26_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496656
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572855_SRR35496656_1.fastq.gz
+      - fastq/SRX30572855_SRR35496656_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 19726602
+    bases: 5957433804
+  - ind: SRR35496657
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572855_SRR35496657_1.fastq.gz
+      - fastq/SRX30572855_SRR35496657_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 19507569
+    bases: 5891285838
+  - ind: SRR35496658
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572855_SRR35496658_1.fastq.gz
+      - fastq/SRX30572855_SRR35496658_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27009367
+    bases: 8156828834
+  - ind: SRR35496659
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572855_SRR35496659_1.fastq.gz
+      - fastq/SRX30572855_SRR35496659_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 26848177
+    bases: 8108149454
+  attributes:
+    title: HT-29_IAV_FLAG-input_3
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246620: HT-29, IAV, FLAG-input,
+    3 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572856
+  sample: SAMN51585450-SAMN51585430
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-input_3
-  - ind: '3162362'
-    sample: D3+H5
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-      attributes:
-        source: FLAG RIP
-    runs:
-      - ind: 3162362-D3+H5-S146-L007
-        layout:
-          type: paired
-          files:
-            - fastq/3162362_JCC411_July2024_H5_PR8FLAGinput-4_S146_L007_R1_001.fastq.gz
-            - fastq/3162362_JCC411_July2024_H5_PR8FLAGinput-4_S146_L007_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 3162362-D3+H5-S146-L008
-        layout:
-          type: paired
-          files:
-            - fastq/3162362_JCC411_July2024_H5_PR8FLAGinput-4_S146_L008_R1_001.fastq.gz
-            - fastq/3162362_JCC411_July2024_H5_PR8FLAGinput-4_S146_L008_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496654
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572856_SRR35496654_1.fastq.gz
+      - fastq/SRX30572856_SRR35496654_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 39516109
+    bases: 11933864918
+  - ind: SRR35496655
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572856_SRR35496655_1.fastq.gz
+      - fastq/SRX30572856_SRR35496655_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 38966393
+    bases: 11767850686
+  attributes:
+    title: HT-29_IAV_FLAG-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246619: HT-29, IAV, FLAG-input,
+    2 [B831009] Homo sapiens RIP-Seq'
+- ind: SRX30572857
+  sample: SAMN51585448-SAMN51585428
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: HT-29_IAV_FLAG-input_4
+      RIP: input
+  runs:
+  - ind: SRR35496652
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572857_SRR35496652_1.fastq.gz
+      - fastq/SRX30572857_SRR35496652_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 35868978
+    bases: 10832431356
+  - ind: SRR35496653
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572857_SRR35496653_1.fastq.gz
+      - fastq/SRX30572857_SRR35496653_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 35352256
+    bases: 10676381312
+  attributes:
+    title: HT-29_IAV_FLAG-input_4
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246621: HT-29, IAV, FLAG-input,
+    4 [B831009] Homo sapiens RIP-Seq'
 samples:
-  - ind: A1+E3
-    organism:
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '1'
-      treatment: mock
-  - ind: A2+E4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '1'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: A3+E5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '1'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: B1+F3
-    organism:
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '2'
-      treatment: mock
-  - ind: B2+F4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '2'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: B3+F5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '2'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: C1+G3
-    organism:
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '3'
-      treatment: mock
-  - ind: C2+G4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '3'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: C3+G5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '3'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: D1+H3
-    organism:
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '4'
-      treatment: mock
-  - ind: D2+H4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '4'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: D3+H5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '4'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: E1+A4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '1'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: E2+A5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '1'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: F1+B4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '2'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: F2+B5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '2'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: G1+C4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '3'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: G2+C5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '3'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
-  - ind: H1+D4
-    organism:
-      - Herpes simplex virus 1
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '4'
-      treatment: HSV-1
-      HSV-1: F strain[VR-733]
-      MOI: '10'
-      Hours: '7'
-  - ind: H2+D5
-    organism:
-      - Influenza A virus
-      - Homo sapiens
-    attributes:
-      cells: HT-29
-      replica: '4'
-      treatment: IAV
-      IAV: PR8
-      MOI: '5'
-      Hours: '7'
+- ind: SAMN51585467-SAMN51585447
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: mock
+    replica: '1'
+- ind: SAMN51585466-SAMN51585446
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: mock
+    replica: '2'
+- ind: SAMN51585465-SAMN51585445
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: mock
+    replica: '3'
+- ind: SAMN51585464-SAMN51585444
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: mock
+    replica: '4'
+- ind: SAMN51585463-SAMN51585443
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '1'
+- ind: SAMN51585462-SAMN51585442
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '2'
+- ind: SAMN51585461-SAMN51585441
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '3'
+- ind: SAMN51585460-SAMN51585440
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '4'
+- ind: SAMN51585439-SAMN51585459
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '1'
+- ind: SAMN51585438-SAMN51585458
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '2'
+- ind: SAMN51585437-SAMN51585457
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '3'
+- ind: SAMN51585436-SAMN51585456
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: HSV-1
+    replica: '4'
+- ind: SAMN51585455-SAMN51585435
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '1'
+- ind: SAMN51585454-SAMN51585434
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '2'
+- ind: SAMN51585453-SAMN51585433
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '3'
+- ind: SAMN51585452-SAMN51585432
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '4'
+- ind: SAMN51585451-SAMN51585431
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '1'
+- ind: SAMN51585450-SAMN51585430
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '2'
+- ind: SAMN51585449-SAMN51585429
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '3'
+- ind: SAMN51585448-SAMN51585428
+  organism:
+  - Homo sapiens
+  attributes:
+    cells: HT-29
+    treatment: IAV
+    replica: '4'
 description: FLAG/Z22 RIP-seq from HSV-1-/IAV-infected HT-29 cells
