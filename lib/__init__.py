@@ -1,3 +1,1 @@
-from . import bed, assembly, repeto, fasta, plot
-
-__all__ = ["bed", "assembly", "repeto", "fasta", "plot"]
+from . import bed, repeto, fasta, plot

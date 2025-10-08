@@ -1,8 +1,6 @@
 import logging
-from pathlib import Path
 
 HEADER = "# AUTO-GENERATED FILE - DO NOT EDIT\n"
-
 
 SEQ_PROJECT_YAML = "seq-project.yaml"
 NFCORE_RNASEQ_DESIGN = "design.csv"
