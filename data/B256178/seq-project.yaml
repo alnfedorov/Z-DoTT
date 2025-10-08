@@ -118,8 +118,8 @@ experiments:
     source:
     - RNA
     selection:
-    - FLAG RIP
     - rRNA depletion
+    - FLAG RIP
     strandedness: R
     attributes:
       RIP: FLAG
@@ -286,8 +286,8 @@ experiments:
     source:
     - RNA
     selection:
-    - FLAG RIP
     - rRNA depletion
+    - FLAG RIP
     strandedness: R
     attributes:
       RIP: FLAG
@@ -454,8 +454,8 @@ experiments:
     source:
     - RNA
     selection:
-    - FLAG RIP
     - rRNA depletion
+    - FLAG RIP
     strandedness: R
     attributes:
       RIP: FLAG
@@ -622,8 +622,8 @@ experiments:
     source:
     - RNA
     selection:
-    - FLAG RIP
     - rRNA depletion
+    - FLAG RIP
     strandedness: R
     attributes:
       RIP: FLAG

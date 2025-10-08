@@ -21,7 +21,7 @@ for exp in project.experiments:
     assert mef == "MEF"
     assert condition in {"mock", "IAV"}
     assert selection in {"IgG", "Z22", "FLAG", "IgG-input", "Z22-input", "FLAG-input"}
-    assert postfix.endswith(" [B256178]")
+    assert postfix.endswith(f" [{FOLDER.name}]")
     replica = postfix.split(' ')[0]
     assert replica in {"1", "2"}
 
@@ -61,7 +61,7 @@ for (condition, ip, replica), exps in samples.items():
     new_samples.append(sample)
 
 object.__setattr__(project, "samples", new_samples)
-object.__setattr__(project, "ind", "B256178")
+object.__setattr__(project, "ind", FOLDER.name)
 object.__setattr__(project, "description", "FLAG/Z22 RIP-seq of IAV-infected MEFs")
 
 seqproj.adapter.yaml.dump(project, FOLDER / "seq-project.yaml")
