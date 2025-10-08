@@ -1,6 +1,8 @@
 from pathlib import Path
 from typing import Any
 
+from pybedtools import BedTool
+
 from . import seqid
 from ..resources import Assembly
 
@@ -11,12 +13,12 @@ class CHM13v2(Assembly):
             repmasker: Path, repmasker_classification: Path
     ):
         super().__init__()
-        self.fasta = fasta
-        self.gencode_liftoff_gff3 = gencode_liftoff_gff3
-        self.refseq_gff3 = refseq_gff3
-        self.rediportal = rediportal
-        self.repmasker = repmasker
-        self.repmasker_classification = repmasker_classification
+        self._fasta = fasta
+        self._gencode_liftoff = gencode_liftoff_gff3
+        self._refseq = refseq_gff3
+        self._rediportal = rediportal
+        self._repmasker = repmasker
+        self._repmasker_classification = repmasker_classification
 
     @property
     def name(self) -> str:
@@ -37,31 +39,28 @@ class CHM13v2(Assembly):
     def files(self, annotation: str) -> tuple[Path, ...]:
         match annotation:
             case "REDIportal":
-                return (self.rediportal,)
+                return (self._rediportal,)
             case "RepeatMasker":
-                return (self.repmasker,)
+                return (self._repmasker,)
             case "RepeatMasker classification":
-                return (self.repmasker_classification,)
+                return (self._repmasker_classification,)
             case "GENCODE-Liftoff":
-                return (self.gencode_liftoff_gff3,)
+                return (self._gencode_liftoff,)
             case "RefSeq":
-                return (self.refseq_gff3,)
+                return (self._refseq,)
             case "FASTA":
-                return (self.fasta,)
+                return (self._fasta,)
             case _:
                 raise ValueError(f"Unknown annotation: {annotation}")
 
     def load(self, annotation: str) -> Any:
-        # Import here to avoid hard dependency if not used
-        from pybedtools import BedTool
-
         match annotation:
             case "REDIportal":
-                return BedTool(self.rediportal)
+                return BedTool(self._rediportal)
             case "RepeatMasker":
-                return BedTool(self.repmasker)
+                return BedTool(self._repmasker)
             case "RepeatMasker classification":
-                return self.repmasker_classification
+                return self._repmasker_classification
             case "GENCODE-Liftoff" | "RefSeq" | "FASTA":
                 raise NotImplementedError(f"Loading {annotation} is unsupported")
             case _:
