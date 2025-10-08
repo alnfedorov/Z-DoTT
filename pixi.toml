@@ -14,12 +14,14 @@ nextflow = ["nextflow"]
 ####################################################################################################
 [feature.liftoff.dependencies]
 liftoff = "==1.6.3"
-samtools = "==1.21"
 
-[feature.liftoff.tasks."setup/liftoff"]
+[feature.liftoff.tasks."assemblies/CHM13v2/liftoff"]
 cmd = "./liftoff-CHM13v2-annotation.sh $GENCODE_VERSION $ASSEMBLIES"
 env = { GENCODE_VERSION = "47", ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies" }
 cwd = "setup/annotation"
+
+[feature.liftoff.activation]
+env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
 
 ####################################################################################################
 # Nextflow: data preprocessing
@@ -98,6 +100,7 @@ python = "==3.12.8"
 pixi-pycharm = "*"
 tabix = "==1.11"
 bedtools = "==2.31.1"
+samtools = "==1.21"
 
 # Python dependecies must be managed only using pip to allow rebuilding wheels when needed
 [feature.python.pypi-dependencies]

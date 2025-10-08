@@ -114,10 +114,10 @@ submit jobs to the Slurm cluster.
 pixi run nfcore/rnaseq PRJNA256013
 
 # List processed files
-ls -alh analyses/nfcore/rnaseq/PRJNA256013/results
+ls -alh workflows/nfcore/rnaseq/PRJNA256013/results
 
 # Optionally, clean up the caches
-# rm -rf analyses/nfcore/rnaseq/PRJNA256013/{work,.nfcore*}
+# rm -rf workflows/nfcore/rnaseq/PRJNA256013/{work,.nfcore*}
 ```
 
 Pipeline parameters can be modified in the `params.yaml` and `nextflow.config` files located in
@@ -156,35 +156,35 @@ Order of execution:
 
 ```shell
 # Annotation filtering and indexing
-pixi run analyses/annotation
+pixi run workflows/annotation
 
 # Genome binning and read counting for QC
-pixi run analyses/normalization
+pixi run workflows/normalization
 
-# Additional quality control analyses
-pixi run analyses/qc
+# Additional quality control workflows
+pixi run workflows/qc
 
 # HSV-1-specific analysis
-pixi run analyses/HSV1
+pixi run workflows/HSV1
 
 # A-to-I editing analysis
-pixi run analyses/A2I
+pixi run workflows/A2I
 
 # ---- RIP Analysis ----
 # Peak calling
-pixi run analyses/RIP/pcalling
+pixi run workflows/RIP/pcalling
 # dsRNA prediction and clustering (requires 96 cores & 16GB RAM/core)
-pixi run analyses/RIP/clustering
+pixi run workflows/RIP/clustering
 # Annotation of predicted dsRNA clusters
-pixi run analyses/RIP/annotation
+pixi run workflows/RIP/annotation
 # Visualization of RIP analysis results
-pixi run analyses/RIP/plots
+pixi run workflows/RIP/plots
 
 # ---- Aberrantome Analysis ----
 # Statistical tests for aberrant transcription events
-pixi run analyses/aberrantome/calculate
+pixi run workflows/aberrantome/calculate
 # Visualization of aberrantome analysis results
-pixi run analyses/aberrantome/plot
+pixi run workflows/aberrantome/plot
 ```
 
 The final plots presented in the manuscript can be found in the respective `analyses/<name>/results` subfolders.
