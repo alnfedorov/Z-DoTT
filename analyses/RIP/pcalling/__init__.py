@@ -1,1 +1,0 @@
-from .ld import Config
