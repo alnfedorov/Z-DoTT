@@ -1,5 +1,7 @@
+import subprocess
 from pathlib import Path
 from subprocess import check_call
+from typing import Literal
 
 
 def download(url: str, saveto: Path):
@@ -19,3 +21,7 @@ def ungzip_then_bgzip(gzfile: Path):
 def index_fasta(fasta: Path):
     """Index a FASTA file using samtools"""
     check_call(['samtools', 'faidx', fasta])
+
+
+def run_in_pixi(environment: Literal["nextflow", "liftoff"], cwd: Path, cmd: str):
+    subprocess.check_call(f'pixi run -e {environment} "{cmd}"', shell=True, cwd=cwd)
