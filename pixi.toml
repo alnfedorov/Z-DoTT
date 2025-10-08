@@ -128,9 +128,9 @@ args = ["script", { arg = "args", default = "" }]
 [feature.python.tasks]
 # Assemblies setup
 "assemblies/setup" = { depends-on = [
-    { task = "run-py", args = ["assemblies/GRCm39/setup.py"] },
-    { task = "run-py", args = ["assemblies/GRCh38/setup.py"] },
-    { task = "run-py", args = ["assemblies/CHM13v2/setup.py"] },
+    { task = "run-py", args = ["workflows/assemblies/GRCm39/setup.py"] },
+    { task = "run-py", args = ["workflows/assemblies/GRCh38/setup.py"] },
+    { task = "run-py", args = ["workflows/assemblies/CHM13v2/setup.py"] },
 ] }
 
 #"setup/index-annotations" = { depends-on = [
