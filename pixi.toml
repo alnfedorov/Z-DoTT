@@ -15,13 +15,7 @@ nextflow = ["nextflow"]
 [feature.liftoff.dependencies]
 liftoff = "==1.6.3"
 
-[feature.liftoff.tasks."assemblies/CHM13v2/liftoff"]
-cmd = "./liftoff-CHM13v2-annotation.sh $GENCODE_VERSION $ASSEMBLIES"
-env = { GENCODE_VERSION = "47", ASSEMBLIES = "$PIXI_PROJECT_ROOT/assemblies" }
-cwd = "setup/annotation"
-
-[feature.liftoff.activation]
-env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
+# liftoff is called by a Python script in `workflows/assemblies/CHM13v2/liftoff.py`
 
 ####################################################################################################
 # Nextflow: data preprocessing
@@ -72,9 +66,9 @@ cmd = [
 ]
 args = ["directory"]
 
-########################################################################################################################
+####################################################################################################
 # Rust: for building the latest version of REAT
-########################################################################################################################
+####################################################################################################
 [feature.rust.dependencies]
 rust = "==1.84.0"
 cmake = "==4.0.2"
@@ -131,16 +125,22 @@ env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
 cmd = "python {{ script }} {{ args }}"
 args = ["script", { arg = "args", default = "" }]
 
-# Setup
 [feature.python.tasks]
-"setup/index-annotations" = { depends-on = [
-    { task = "run-py", args = ["setup/annotation/index-liftoff-gff.py"] },
-    { task = "run-py", args = ["setup/annotation/index-refseq-gff.py"] },
-    { task = "run-py", args = ["setup/annotation/index-gencode-gff.py"] }
+# Assemblies setup
+"assemblies/setup" = { depends-on = [
+    { task = "run-py", args = ["assemblies/GRCm39/setup.py"] },
+    { task = "run-py", args = ["assemblies/GRCh38/setup.py"] },
+    { task = "run-py", args = ["assemblies/CHM13v2/setup.py"] },
 ] }
-"setup/derive-premap-library" = { depends-on = [
-    { task = "run-py", args = ["setup/pre-mapping/derive-premap-library.py"] }
-] }
+
+#"setup/index-annotations" = { depends-on = [
+#    { task = "run-py", args = ["setup/annotation/index-liftoff-gff.py"] },
+#    { task = "run-py", args = ["setup/annotation/index-refseq-gff.py"] },
+#    { task = "run-py", args = ["setup/annotation/index-gencode-gff.py"] }
+#] }
+#"setup/derive-premap-library" = { depends-on = [
+#    { task = "run-py", args = ["setup/pre-mapping/derive-premap-library.py"] }
+#] }
 
 ## Stories
 #"stories/annotation" = { depends-on = [
