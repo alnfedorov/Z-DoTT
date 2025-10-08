@@ -1,674 +1,800 @@
-ind: MEF HSV-1 batch 1 [B261790, JCC411]
+ind: B261790
 experiments:
-  - ind: '2393115'
-    sample: A1+E2
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-        - IgG RIP
-      strandedness: R
-    runs:
-      - ind: 2393115-A1+E2-S1-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393115_JCC411_April2022_HSV_A1_S1_L001_R1_001.fastq.gz
-            - fastq/2393115_JCC411_April2022_HSV_A1_S1_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393115-A1+E2-S1-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393115_JCC411_April2022_HSV_A1_S1_L002_R1_001.fastq.gz
-            - fastq/2393115_JCC411_April2022_HSV_A1_S1_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+- ind: SRX30572615
+  sample: SAMN51585584-SAMN51585592
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_IgG-RIP_1
-  - ind: '2393116'
-    sample: B1+F2
-    library:
-      source:
-        - RNA
-      selection:
-        - Z22 RIP
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393116-B1+F2-S2-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393116_JCC411_April2022_HSV_B1_S2_L001_R1_001.fastq.gz
-            - fastq/2393116_JCC411_April2022_HSV_B1_S2_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393116-B1+F2-S2-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393116_JCC411_April2022_HSV_B1_S2_L002_R1_001.fastq.gz
-            - fastq/2393116_JCC411_April2022_HSV_B1_S2_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496363
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572615_SRR35496363_1.fastq.gz
+      - fastq/SRX30572615_SRR35496363_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 37400404
+    bases: 11294922008
+  - ind: SRR35496364
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572615_SRR35496364_1.fastq.gz
+      - fastq/SRX30572615_SRR35496364_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 34458689
+    bases: 10406524078
+  attributes:
+    title: MEF_mock_IgG-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246654: MEF, mock, IgG-input,
+    1 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572616
+  sample: SAMN51585583-SAMN51585591
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_Z22-RIP_1
-  - ind: '2393118'
-    sample: D1+H2
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-        - IgG RIP
-      strandedness: R
-    runs:
-      - ind: 2393118-D1+H2-S4-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393118_JCC411_April2022_HSV_D1_S4_L001_R1_001.fastq.gz
-            - fastq/2393118_JCC411_April2022_HSV_D1_S4_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393118-D1+H2-S4-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393118_JCC411_April2022_HSV_D1_S4_L002_R1_001.fastq.gz
-            - fastq/2393118_JCC411_April2022_HSV_D1_S4_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496361
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572616_SRR35496361_1.fastq.gz
+      - fastq/SRX30572616_SRR35496361_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 31734660
+    bases: 9583867320
+  - ind: SRR35496362
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572616_SRR35496362_1.fastq.gz
+      - fastq/SRX30572616_SRR35496362_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29223540
+    bases: 8825509080
+  attributes:
+    title: MEF_mock_Z22-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246655: MEF, mock, Z22-input,
+    1 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572617
+  sample: SAMN51585582
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_IgG-RIP_1
-  - ind: '2393119'
-    sample: E1+A3
-    library:
-      source:
-        - RNA
-      selection:
-        - Z22 RIP
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393119-E1+A3-S5-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393119_JCC411_April2022_HSV_E1_S5_L001_R1_001.fastq.gz
-            - fastq/2393119_JCC411_April2022_HSV_E1_S5_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393119-E1+A3-S5-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393119_JCC411_April2022_HSV_E1_S5_L002_R1_001.fastq.gz
-            - fastq/2393119_JCC411_April2022_HSV_E1_S5_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496359
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572617_SRR35496359_1.fastq.gz
+      - fastq/SRX30572617_SRR35496359_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 30278373
+    bases: 9144068646
+  - ind: SRR35496360
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572617_SRR35496360_1.fastq.gz
+      - fastq/SRX30572617_SRR35496360_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 27800270
+    bases: 8395681540
+  attributes:
+    title: MEF_mock_RIP-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246656: MEF, mock, RIP-input,
+    1 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572618
+  sample: SAMN51585581-SAMN51585590
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_Z22-RIP_1
-  - ind: '2393121'
-    sample: G1+C3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-        - IgG RIP
-      strandedness: R
-    runs:
-      - ind: 2393121-G1+C3-S7-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393121_JCC411_April2022_HSV_G1_S7_L001_R1_001.fastq.gz
-            - fastq/2393121_JCC411_April2022_HSV_G1_S7_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393121-G1+C3-S7-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393121_JCC411_April2022_HSV_G1_S7_L002_R1_001.fastq.gz
-            - fastq/2393121_JCC411_April2022_HSV_G1_S7_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496357
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572618_SRR35496357_1.fastq.gz
+      - fastq/SRX30572618_SRR35496357_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 39109058
+    bases: 11810935516
+  - ind: SRR35496358
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572618_SRR35496358_1.fastq.gz
+      - fastq/SRX30572618_SRR35496358_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36158761
+    bases: 10919945822
+  attributes:
+    title: MEF_HSV-1_IgG-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246657: MEF, HSV-1, IgG-input,
+    1 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572619
+  sample: SAMN51585580-SAMN51585589
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_IgG-RIP_2
-  - ind: '2393122'
-    sample: H1+D3
-    library:
-      source:
-        - RNA
-      selection:
-        - Z22 RIP
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393122-H1+D3-S8-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393122_JCC411_April2022_HSV_H1_S8_L001_R1_001.fastq.gz
-            - fastq/2393122_JCC411_April2022_HSV_H1_S8_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393122-H1+D3-S8-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393122_JCC411_April2022_HSV_H1_S8_L002_R1_001.fastq.gz
-            - fastq/2393122_JCC411_April2022_HSV_H1_S8_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496355
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572619_SRR35496355_1.fastq.gz
+      - fastq/SRX30572619_SRR35496355_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 46094459
+    bases: 13920526618
+  - ind: SRR35496356
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572619_SRR35496356_1.fastq.gz
+      - fastq/SRX30572619_SRR35496356_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 42670547
+    bases: 12886505194
+  attributes:
+    title: MEF_HSV-1_Z22-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246658: MEF, HSV-1, Z22-input,
+    1 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572620
+  sample: SAMN51585579
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_Z22-RIP_2
-  - ind: '2393124'
-    sample: B2+F3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-        - IgG RIP
-      strandedness: R
-    runs:
-      - ind: 2393124-B2+F3-S10-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393124_JCC411_April2022_HSV_B2_S10_L001_R1_001.fastq.gz
-            - fastq/2393124_JCC411_April2022_HSV_B2_S10_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393124-B2+F3-S10-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393124_JCC411_April2022_HSV_B2_S10_L002_R1_001.fastq.gz
-            - fastq/2393124_JCC411_April2022_HSV_B2_S10_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496353
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572620_SRR35496353_1.fastq.gz
+      - fastq/SRX30572620_SRR35496353_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 45191103
+    bases: 13647713106
+  - ind: SRR35496354
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572620_SRR35496354_1.fastq.gz
+      - fastq/SRX30572620_SRR35496354_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 41676375
+    bases: 12586265250
+  attributes:
+    title: MEF_HSV-1_RIP-input_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246659: MEF, HSV-1, RIP-input,
+    1 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572621
+  sample: SAMN51585578-SAMN51585588
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_IgG-RIP_2
-  - ind: '2393125'
-    sample: C2+G3
-    library:
-      source:
-        - RNA
-      selection:
-        - Z22 RIP
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393125-C2+G3-S11-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393125_JCC411_April2022_HSV_C2_S11_L001_R1_001.fastq.gz
-            - fastq/2393125_JCC411_April2022_HSV_C2_S11_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393125-C2+G3-S11-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393125_JCC411_April2022_HSV_C2_S11_L002_R1_001.fastq.gz
-            - fastq/2393125_JCC411_April2022_HSV_C2_S11_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496351
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572621_SRR35496351_1.fastq.gz
+      - fastq/SRX30572621_SRR35496351_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 47285300
+    bases: 14280160600
+  - ind: SRR35496352
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572621_SRR35496352_1.fastq.gz
+      - fastq/SRX30572621_SRR35496352_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 43595744
+    bases: 13165914688
+  attributes:
+    title: MEF_mock_IgG-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246660: MEF, mock, IgG-input,
+    2 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572622
+  sample: SAMN51585577-SAMN51585587
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_Z22-RIP_2
-  - ind: '2393127'
-    sample: A1+E2
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393127-A1+E2-S13-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393127_JCC411_April2022_HSV_E2_S13_L001_R1_001.fastq.gz
-            - fastq/2393127_JCC411_April2022_HSV_E2_S13_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393127-A1+E2-S13-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393127_JCC411_April2022_HSV_E2_S13_L002_R1_001.fastq.gz
-            - fastq/2393127_JCC411_April2022_HSV_E2_S13_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496349
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572622_SRR35496349_1.fastq.gz
+      - fastq/SRX30572622_SRR35496349_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 26293909
+    bases: 7940760518
+  - ind: SRR35496350
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572622_SRR35496350_1.fastq.gz
+      - fastq/SRX30572622_SRR35496350_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 24292834
+    bases: 7336435868
+  attributes:
+    title: MEF_mock_Z22-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246661: MEF, mock, Z22-input,
+    2 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572631
+  sample: SAMN51585576
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_input_1
-  - ind: '2393128'
-    sample: B1+F2
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393128-B1+F2-S14-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393128_JCC411_April2022_HSV_F2_S14_L001_R1_001.fastq.gz
-            - fastq/2393128_JCC411_April2022_HSV_F2_S14_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393128-B1+F2-S14-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393128_JCC411_April2022_HSV_F2_S14_L002_R1_001.fastq.gz
-            - fastq/2393128_JCC411_April2022_HSV_F2_S14_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496317
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572631_SRR35496317_1.fastq.gz
+      - fastq/SRX30572631_SRR35496317_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 32267806
+    bases: 9744877412
+  - ind: SRR35496318
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572631_SRR35496318_1.fastq.gz
+      - fastq/SRX30572631_SRR35496318_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29684389
+    bases: 8964685478
+  attributes:
+    title: MEF_mock_RIP-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246662: MEF, mock, RIP-input,
+    2 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572632
+  sample: SAMN51585575-SAMN51585586
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_input_1
-  - ind: '2393129'
-    sample: C1+G2
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393129-C1+G2-S15-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393129_JCC411_April2022_HSV_G2_S15_L001_R1_001.fastq.gz
-            - fastq/2393129_JCC411_April2022_HSV_G2_S15_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393129-C1+G2-S15-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393129_JCC411_April2022_HSV_G2_S15_L002_R1_001.fastq.gz
-            - fastq/2393129_JCC411_April2022_HSV_G2_S15_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496315
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572632_SRR35496315_1.fastq.gz
+      - fastq/SRX30572632_SRR35496315_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 36411495
+    bases: 10996271490
+  - ind: SRR35496316
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572632_SRR35496316_1.fastq.gz
+      - fastq/SRX30572632_SRR35496316_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 33732950
+    bases: 10187350900
+  attributes:
+    title: MEF_HSV-1_IgG-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246663: MEF, HSV-1, IgG-input,
+    2 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572633
+  sample: SAMN51585574-SAMN51585585
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_input_1
-  - ind: '2393130'
-    sample: D1+H2
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393130-D1+H2-S16-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393130_JCC411_April2022_HSV_H2_S16_L001_R1_001.fastq.gz
-            - fastq/2393130_JCC411_April2022_HSV_H2_S16_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393130-D1+H2-S16-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393130_JCC411_April2022_HSV_H2_S16_L002_R1_001.fastq.gz
-            - fastq/2393130_JCC411_April2022_HSV_H2_S16_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496313
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572633_SRR35496313_1.fastq.gz
+      - fastq/SRX30572633_SRR35496313_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 46278534
+    bases: 13976117268
+  - ind: SRR35496314
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572633_SRR35496314_1.fastq.gz
+      - fastq/SRX30572633_SRR35496314_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 42869671
+    bases: 12946640642
+  attributes:
+    title: MEF_HSV-1_Z22-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246664: MEF, HSV-1, Z22-input,
+    2 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572634
+  sample: SAMN51585573
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_input_1
-  - ind: '2393131'
-    sample: E1+A3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393131-E1+A3-S17-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393131_JCC411_April2022_HSV_A3_S17_L001_R1_001.fastq.gz
-            - fastq/2393131_JCC411_April2022_HSV_A3_S17_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393131-E1+A3-S17-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393131_JCC411_April2022_HSV_A3_S17_L002_R1_001.fastq.gz
-            - fastq/2393131_JCC411_April2022_HSV_A3_S17_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: input
+  runs:
+  - ind: SRR35496311
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572634_SRR35496311_1.fastq.gz
+      - fastq/SRX30572634_SRR35496311_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 40163676
+    bases: 12129430152
+  - ind: SRR35496312
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572634_SRR35496312_1.fastq.gz
+      - fastq/SRX30572634_SRR35496312_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 37215071
+    bases: 11238951442
+  attributes:
+    title: MEF_HSV-1_RIP-input_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246665: MEF, HSV-1, RIP-input,
+    2 [B261790] Mus musculus RIP-Seq'
+- ind: SRX30572655
+  sample: SAMN51585584-SAMN51585592
+  library:
+    source:
+    - RNA
+    selection:
+    - IgG RIP
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_input_1
-  - ind: '2393132'
-    sample: F1+B3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393132-F1+B3-S18-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393132_JCC411_April2022_HSV_B3_S18_L001_R1_001.fastq.gz
-            - fastq/2393132_JCC411_April2022_HSV_B3_S18_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393132-F1+B3-S18-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393132_JCC411_April2022_HSV_B3_S18_L002_R1_001.fastq.gz
-            - fastq/2393132_JCC411_April2022_HSV_B3_S18_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: IgG
+  runs:
+  - ind: SRR35496253
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572655_SRR35496253_1.fastq.gz
+      - fastq/SRX30572655_SRR35496253_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21111833
+    bases: 6375773566
+  - ind: SRR35496254
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572655_SRR35496254_1.fastq.gz
+      - fastq/SRX30572655_SRR35496254_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 19941314
+    bases: 6022276828
+  attributes:
+    title: MEF_mock_IgG_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246646: MEF, mock, IgG, 1 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572656
+  sample: SAMN51585583-SAMN51585591
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_input_1
-  - ind: '2393133'
-    sample: G1+C3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393133-G1+C3-S19-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393133_JCC411_April2022_HSV_C3_S19_L001_R1_001.fastq.gz
-            - fastq/2393133_JCC411_April2022_HSV_C3_S19_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393133-G1+C3-S19-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393133_JCC411_April2022_HSV_C3_S19_L002_R1_001.fastq.gz
-            - fastq/2393133_JCC411_April2022_HSV_C3_S19_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496251
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572656_SRR35496251_1.fastq.gz
+      - fastq/SRX30572656_SRR35496251_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 31512892
+    bases: 9516893384
+  - ind: SRR35496252
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572656_SRR35496252_1.fastq.gz
+      - fastq/SRX30572656_SRR35496252_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 29032011
+    bases: 8767667322
+  attributes:
+    title: MEF_mock_Z22_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246647: MEF, mock, Z22, 1 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572657
+  sample: SAMN51585581-SAMN51585590
+  library:
+    source:
+    - RNA
+    selection:
+    - IgG RIP
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_input_2
-  - ind: '2393134'
-    sample: H1+D3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393134-H1+D3-S20-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393134_JCC411_April2022_HSV_D3_S20_L001_R1_001.fastq.gz
-            - fastq/2393134_JCC411_April2022_HSV_D3_S20_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393134-H1+D3-S20-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393134_JCC411_April2022_HSV_D3_S20_L002_R1_001.fastq.gz
-            - fastq/2393134_JCC411_April2022_HSV_D3_S20_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: IgG
+  runs:
+  - ind: SRR35496249
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572657_SRR35496249_1.fastq.gz
+      - fastq/SRX30572657_SRR35496249_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 22731540
+    bases: 6864925080
+  - ind: SRR35496250
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572657_SRR35496250_1.fastq.gz
+      - fastq/SRX30572657_SRR35496250_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21375013
+    bases: 6455253926
+  attributes:
+    title: MEF_HSV-1_IgG_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246648: MEF, HSV-1, IgG, 1 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572658
+  sample: SAMN51585580-SAMN51585589
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: MEF_mock_input_2
-  - ind: '2393135'
-    sample: A2+E3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393135-A2+E3-S21-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393135_JCC411_April2022_HSV_E3_S21_L001_R1_001.fastq.gz
-            - fastq/2393135_JCC411_April2022_HSV_E3_S21_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393135-A2+E3-S21-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393135_JCC411_April2022_HSV_E3_S21_L002_R1_001.fastq.gz
-            - fastq/2393135_JCC411_April2022_HSV_E3_S21_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496247
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572658_SRR35496247_1.fastq.gz
+      - fastq/SRX30572658_SRR35496247_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 25732634
+    bases: 7771255468
+  - ind: SRR35496248
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572658_SRR35496248_1.fastq.gz
+      - fastq/SRX30572658_SRR35496248_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23606186
+    bases: 7129068172
+  attributes:
+    title: MEF_HSV-1_Z22_1
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246649: MEF, HSV-1, Z22, 1 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572659
+  sample: SAMN51585578-SAMN51585588
+  library:
+    source:
+    - RNA
+    selection:
+    - IgG RIP
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_mock_input_2
-  - ind: '2393136'
-    sample: B2+F3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393136-B2+F3-S22-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393136_JCC411_April2022_HSV_F3_S22_L001_R1_001.fastq.gz
-            - fastq/2393136_JCC411_April2022_HSV_F3_S22_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393136-B2+F3-S22-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393136_JCC411_April2022_HSV_F3_S22_L002_R1_001.fastq.gz
-            - fastq/2393136_JCC411_April2022_HSV_F3_S22_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: IgG
+  runs:
+  - ind: SRR35496245
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572659_SRR35496245_1.fastq.gz
+      - fastq/SRX30572659_SRR35496245_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21123675
+    bases: 6379349850
+  - ind: SRR35496246
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572659_SRR35496246_1.fastq.gz
+      - fastq/SRX30572659_SRR35496246_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20369227
+    bases: 6151506554
+  attributes:
+    title: MEF_mock_IgG_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246650: MEF, mock, IgG, 2 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572660
+  sample: SAMN51585577-SAMN51585587
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_input_2
-  - ind: '2393137'
-    sample: C2+G3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393137-C2+G3-S23-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393137_JCC411_April2022_HSV_G3_S23_L001_R1_001.fastq.gz
-            - fastq/2393137_JCC411_April2022_HSV_G3_S23_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393137-C2+G3-S23-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393137_JCC411_April2022_HSV_G3_S23_L002_R1_001.fastq.gz
-            - fastq/2393137_JCC411_April2022_HSV_G3_S23_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: Z22
+  runs:
+  - ind: SRR35496243
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572660_SRR35496243_1.fastq.gz
+      - fastq/SRX30572660_SRR35496243_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 21700405
+    bases: 6553522310
+  - ind: SRR35496244
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572660_SRR35496244_1.fastq.gz
+      - fastq/SRX30572660_SRR35496244_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 20096673
+    bases: 6069195246
+  attributes:
+    title: MEF_mock_Z22_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246651: MEF, mock, Z22, 2 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572661
+  sample: SAMN51585575-SAMN51585586
+  library:
+    source:
+    - RNA
+    selection:
+    - IgG RIP
+    - rRNA depletion
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_input_2
-  - ind: '2393138'
-    sample: D2+H3
-    library:
-      source:
-        - RNA
-      selection:
-        - Total RNA
-        - rRNA depletion
-      strandedness: R
-    runs:
-      - ind: 2393138-D2+H3-S42-L001
-        layout:
-          type: paired
-          files:
-            - fastq/2393138_JCC411_April2022_HSV_H3_S42_L001_R1_001.fastq.gz
-            - fastq/2393138_JCC411_April2022_HSV_H3_S42_L001_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
-      - ind: 2393138-D2+H3-S42-L002
-        layout:
-          type: paired
-          files:
-            - fastq/2393138_JCC411_April2022_HSV_H3_S42_L002_R1_001.fastq.gz
-            - fastq/2393138_JCC411_April2022_HSV_H3_S42_L002_R2_001.fastq.gz
-          orientation: I
-        machine: Illumina NovaSeq 6000
+      RIP: IgG
+  runs:
+  - ind: SRR35496241
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572661_SRR35496241_1.fastq.gz
+      - fastq/SRX30572661_SRR35496241_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 25029930
+    bases: 7559038860
+  - ind: SRR35496242
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572661_SRR35496242_1.fastq.gz
+      - fastq/SRX30572661_SRR35496242_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 23656925
+    bases: 7144391350
+  attributes:
+    title: MEF_HSV-1_IgG_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246652: MEF, HSV-1, IgG, 2 [B261790]
+    Mus musculus RIP-Seq'
+- ind: SRX30572662
+  sample: SAMN51585574-SAMN51585585
+  library:
+    source:
+    - RNA
+    selection:
+    - rRNA depletion
+    - Z22 RIP
+    strandedness: R
     attributes:
-      title: MEF_HSV-1_input_2
+      RIP: Z22
+  runs:
+  - ind: SRR35496239
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572662_SRR35496239_1.fastq.gz
+      - fastq/SRX30572662_SRR35496239_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 56418345
+    bases: 17038340190
+  - ind: SRR35496240
+    layout:
+      type: paired
+      files:
+      - fastq/SRX30572662_SRR35496240_1.fastq.gz
+      - fastq/SRX30572662_SRR35496240_2.fastq.gz
+      orientation: I
+    machine: 'ILLUMINA: Illumina NovaSeq 6000'
+    reads: 51785518
+    bases: 15639226436
+  attributes:
+    title: MEF_HSV-1_Z22_2
+  description: 'Illumina NovaSeq 6000 sequencing: GSM9246653: MEF, HSV-1, Z22, 2 [B261790]
+    Mus musculus RIP-Seq'
 samples:
-  - ind: A1+E2
-    organism:
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: mock
-      replica: '1'
-  - ind: A2+E3
-    organism:
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: mock
-      replica: '2'
-  - ind: B1+F2
-    organism:
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: mock
-      replica: '1'
-  - ind: B2+F3
-    organism:
-      - Herpes simplex virus 1
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: HSV-1
-      time-point: 8h
-      HSV-1: F strain[VR-733]
-      replica: '2'
-  - ind: C1+G2
-    organism:
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: mock
-      replica: '1'
-  - ind: C2+G3
-    organism:
-      - Herpes simplex virus 1
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: HSV-1
-      time-point: 8h
-      HSV-1: F strain[VR-733]
-      replica: '2'
-  - ind: D1+H2
-    organism:
-      - Herpes simplex virus 1
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: HSV-1
-      time-point: 8h
-      HSV-1: F strain[VR-733]
-      replica: '1'
-  - ind: D2+H3
-    organism:
-      - Herpes simplex virus 1
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: HSV-1
-      time-point: 8h
-      HSV-1: F strain[VR-733]
-      replica: '2'
-  - ind: E1+A3
-    organism:
-      - Herpes simplex virus 1
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: HSV-1
-      time-point: 8h
-      HSV-1: F strain[VR-733]
-      replica: '1'
-  - ind: F1+B3
-    organism:
-      - Herpes simplex virus 1
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: HSV-1
-      time-point: 8h
-      HSV-1: F strain[VR-733]
-      replica: '1'
-  - ind: G1+C3
-    organism:
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: mock
-      replica: '2'
-  - ind: H1+D3
-    organism:
-      - Mus musculus
-    attributes:
-      cells: MEF
-      treatment: mock
-      replica: '2'
+- ind: SAMN51585584-SAMN51585592
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: mock
+    replica: '1'
+- ind: SAMN51585583-SAMN51585591
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: mock
+    replica: '1'
+- ind: SAMN51585582
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: mock
+    replica: '1'
+  description: MEF, mock, RIP-input, 1 [B261790]
+- ind: SAMN51585581-SAMN51585590
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: HSV-1
+    replica: '1'
+- ind: SAMN51585580-SAMN51585589
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: HSV-1
+    replica: '1'
+- ind: SAMN51585579
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: HSV-1
+    replica: '1'
+  description: MEF, HSV-1, RIP-input, 1 [B261790]
+- ind: SAMN51585578-SAMN51585588
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: mock
+    replica: '2'
+- ind: SAMN51585577-SAMN51585587
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: mock
+    replica: '2'
+- ind: SAMN51585576
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: mock
+    replica: '2'
+  description: MEF, mock, RIP-input, 2 [B261790]
+- ind: SAMN51585575-SAMN51585586
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: HSV-1
+    replica: '2'
+- ind: SAMN51585574-SAMN51585585
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: HSV-1
+    replica: '2'
+- ind: SAMN51585573
+  organism:
+  - Mus musculus
+  attributes:
+    cells: MEF
+    treatment: HSV-1
+    replica: '2'
+  description: MEF, HSV-1, RIP-input, 2 [B261790]
 description: Z22 RIP-seq of HSV-1 infected MEFs (batch 1)
