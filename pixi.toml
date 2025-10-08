@@ -50,7 +50,7 @@ cmd = [
 ]
 args = ["directory"]
 
-[feature.nextflow.tasks."nfcore/fetchngs"]
+[feature.nextflow.tasks."nextflow/nfcore/fetchngs"]
 cmd = [
     # Change to the directory with id.csv
     "cd", "$PIXI_PROJECT_ROOT/data/{{ directory }}/fastq", "&&",
