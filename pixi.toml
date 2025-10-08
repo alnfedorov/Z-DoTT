@@ -57,14 +57,14 @@ cmd = [
     # Run nfcore/fetchngs
     "nextflow", "run", "-resume", "-profile", "singularity",
     "-r", "7544cb9297a0db754120bd1cb8d7df4586a60610", "nf-core/fetchngs",
-    "--input", "id.csv", "--outdir", "results", "&&",
+    "--input", "id.csv", "--outdir", "results", "{{ fetchngs_args }}", "&&",
     # Save FASTQ files and discard Nextflow files
     "mv", "results/fastq/*.gz", ".", "&&",
     "mv", "results/samplesheet/samplesheet.csv", ".", "&&",
     "cat", "results/fastq/md5/*.md5", ">", "MD5.txt", ";", # Using ';' to avoid error if no md5 files are present (e.g. for SRA downloads)
     "rm", "-rf", ".nextflow", ".nextflow.log", "work", "results"
 ]
-args = ["directory"]
+args = ["directory", { arg = "fetchngs_args", default = "" }]
 
 ####################################################################################################
 # Rust: for building the latest version of REAT
@@ -74,7 +74,7 @@ rust = "==1.84.0"
 cmake = "==4.0.2"
 gcc = "==12.4"
 
-[feature.rust.tasks."setup/REAT"]
+[feature.rust.tasks."A2I/REAT"]
 cmd = [
     "mkdir", "-p", "cargo", "&&",
     "cargo", "install", "-v", "--git", "https://github.com/alnfedorov/reat",
@@ -121,17 +121,25 @@ zhuntrs = "==0.0.4"
 [feature.python.activation]
 env = { PYTHONPATH = "$PIXI_PROJECT_ROOT" }
 
-[feature.python.tasks.run-py]
+[feature.python.tasks._py]
 cmd = "python {{ script }} {{ args }}"
 args = ["script", { arg = "args", default = "" }]
 
 [feature.python.tasks]
-# Assemblies setup
+# Assemblies management
+#---------------------------------------------------------------------------------------------------
+"_assemblies/GRCm39/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/GRCm39/setup.py"] }] }
+"_assemblies/GRCh38/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/GRCh38/setup.py"] }] }
+"_assemblies/CHM13v2/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/CHM13v2/setup.py"] }] }
+"_assemblies/CHM13v2/liftoff" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/CHM13v2/liftoff.py"] }] }
+"_assemblies/zdhs/setup" = { depends-on = [{ task = "_py", args = ["workflows/assemblies/zdhs/setup.py"] }] }
+
+
 "assemblies/setup" = { depends-on = [
-    { task = "run-py", args = ["workflows/assemblies/GRCm39/setup.py"] },
-    { task = "run-py", args = ["workflows/assemblies/GRCh38/setup.py"] },
-    { task = "run-py", args = ["workflows/assemblies/CHM13v2/setup.py"] },
+    "_assemblies/GRCm39/setup", "_assemblies/GRCh38/setup", "_assemblies/CHM13v2/setup", "_assemblies/zdhs/setup",
+
 ] }
+
 
 #"setup/index-annotations" = { depends-on = [
 #    { task = "run-py", args = ["setup/annotation/index-liftoff-gff.py"] },
