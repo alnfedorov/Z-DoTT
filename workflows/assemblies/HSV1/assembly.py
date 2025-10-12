@@ -3,8 +3,8 @@ from typing import Any, Literal
 
 from biobit.core.loc import Interval
 
+from lib.assembly import Assembly
 from .resources import expression
-from ..resources import Assembly
 
 
 class HSV1(Assembly):

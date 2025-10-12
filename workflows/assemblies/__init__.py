@@ -3,5 +3,5 @@ from .GRCh38 import GRCh38
 from .GRCm39 import GRCm39
 from .HSV1 import HSV1
 from .IAV import IAV
-from .resources.annotation import GencodeAnnotome, RefSeqAnnotome
-from .resources.assembly import Assembly, HasGencodeAnnotation, HasRefSeqAnnotation
+from .zdhs import zdhs
+from .zdmm import zdmm

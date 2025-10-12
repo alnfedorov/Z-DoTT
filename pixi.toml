@@ -137,8 +137,8 @@ args = ["script", { arg = "args", default = "" }]
 
 
 "assemblies/setup" = { depends-on = [
-    "_assemblies/GRCm39/setup", "_assemblies/GRCh38/setup", "_assemblies/CHM13v2/setup", "_assemblies/zdhs/setup",
-    "_assemblies/zdmm/setup"
+    "_assemblies/GRCm39/setup", "_assemblies/GRCh38/setup", "_assemblies/CHM13v2/setup",
+    "_assemblies/zdhs/setup", "_assemblies/zdmm/setup"
 ] }
 
 

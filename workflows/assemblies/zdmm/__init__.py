@@ -1,6 +1,6 @@
 from . import assembly, resources
-from .. import HSV1, CHM13v2, IAV
+from .. import HSV1, GRCm39, IAV
 
 
-def zdhs() -> assembly.zdhs:
-    return assembly.zdhs(resources.FASTA, resources.GFF3, HSV1(), IAV(), CHM13v2())
+def zdmm() -> assembly.zdmm:
+    return assembly.zdmm(resources.FASTA, resources.GFF3, HSV1(), IAV(), GRCm39())

@@ -1,15 +1,15 @@
 from pathlib import Path
 from typing import Any
 
+from lib.assembly import Assembly
 from . import seqid
-from ..resources import Assembly
 
 
 class GRCh38(Assembly):
     def __init__(self, fasta: Path, gencode_gff3: Path):
         super().__init__()
         self._fasta = fasta
-        self._gencode = gencode_gff3
+        self._gencode_gff3 = gencode_gff3
 
     @property
     def name(self) -> str:
@@ -28,7 +28,7 @@ class GRCh38(Assembly):
     def files(self, annotation: str) -> tuple[Path, ...]:
         match annotation:
             case "GENCODE":
-                return (self._gencode,)
+                return (self._gencode_gff3,)
             case "FASTA":
                 return (self._fasta,)
             case _:

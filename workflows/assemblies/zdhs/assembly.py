@@ -1,10 +1,10 @@
 from pathlib import Path
 from typing import Any
 
+from lib.assembly import Assembly
 from ..CHM13v2.assembly import CHM13v2
 from ..HSV1.assembly import HSV1
 from ..IAV.assembly import IAV
-from ..resources import Assembly
 
 
 class zdhs(Assembly):

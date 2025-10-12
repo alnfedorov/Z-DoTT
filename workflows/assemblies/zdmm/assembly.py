@@ -1,13 +1,13 @@
 from pathlib import Path
 from typing import Any
 
+from lib.assembly import Assembly
 from ..GRCm39.assembly import GRCm39
 from ..HSV1.assembly import HSV1
 from ..IAV.assembly import IAV
-from ..resources import Assembly
 
 
-class zdhs(Assembly):
+class zdmm(Assembly):
     def __init__(
             self, fasta: Path, gff3: Path, hsv1: HSV1, iav: IAV, grcm39: GRCm39
     ):

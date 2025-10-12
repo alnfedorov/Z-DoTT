@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Any
 
-from ..resources import Assembly
+from lib.assembly import Assembly
 
 
 class IAV(Assembly):
