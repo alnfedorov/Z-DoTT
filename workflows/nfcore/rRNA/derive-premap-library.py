@@ -1,26 +1,32 @@
 import gzip
+import logging
 from collections import defaultdict
-from pathlib import Path
 
 from pybedtools import BedTool, Interval
 from pysam import FastxFile
 from tqdm import tqdm
 
-from assemblies import GRCm39, CHM13v2
-from lib import bed, fasta
+import resources
+from lib import bed, fasta, logs
+from lib.assembly import Assembly, RefSeqAnnotome, HasGencodeAnnotome, HasGencodeLiftoffAnnotome, HasRefSeqAnnotome, \
+    HasRepeatMasker
+from workflows.assemblies import zdmm, zdhs
 
-ROOT = Path(__file__).parent
-RESOURCES = ROOT / "resources"
-RESULTS = ROOT / "results"
-
-RESULTS.mkdir(parents=True, exist_ok=True)
+logs.setup()
+resources.RESULTS.mkdir(parents=True, exist_ok=True)
 
 intervals = defaultdict(list[Interval])
 collected = defaultdict(int)
 
-for assembly in GRCm39, CHM13v2:
+for assembly in zdmm(), zdhs():  # type: Assembly
     # Fetch GENCODE genes
-    gencode = assembly._gencode.load()
+    if isinstance(assembly, HasGencodeAnnotome):
+        gencode = assembly.gencode()
+    elif isinstance(assembly, HasGencodeLiftoffAnnotome):
+        gencode = assembly.gencode_liftoff()
+    else:
+        raise TypeError(assembly)
+
     for transcript in gencode.rnas.values():
         if transcript.attrs.type in {'rRNA_pseudogene', 'rRNA'}:
             collected[assembly.name, "GENCODE"] += 1
@@ -28,28 +34,34 @@ for assembly in GRCm39, CHM13v2:
             intervals[assembly].append(Interval(seqid, transcript.loc.start, transcript.loc.end, strand=strand))
 
     # Refseq genes
-    refseq = assembly._refseq.load()
-    for transcript in refseq.rnas.values():
-        if transcript.attrs.biotype == 'rRNA':
-            collected[assembly.name, "RefSeq"] += 1
-            seqid, strand = transcript.loc.seqid, transcript.loc.strand.symbol()
-            intervals[assembly].append(Interval(seqid, transcript.loc.start, transcript.loc.end, strand=strand))
+    if isinstance(assembly, HasRefSeqAnnotome):
+        refseq: RefSeqAnnotome = assembly.refseq()
+        for transcript in refseq.rnas.values():
+            if transcript.attrs.biotype == 'rRNA':
+                collected[assembly.name, "RefSeq"] += 1
+                seqid, strand = transcript.loc.seqid, transcript.loc.strand.symbol()
+                intervals[assembly].append(Interval(seqid, transcript.loc.start, transcript.loc.end, strand=strand))
 
     # Repmasker annotations
-    for i in BedTool(assembly._repmasker.as_posix()):
-        classification = assembly.repcls.classify(i.name)
-        if classification is None:
-            raise ValueError(f"Unknown repeat: {i.name} ({i})")
+    if isinstance(assembly, HasRepeatMasker):
+        repcls = assembly.repeat_masker_classes()
+        for i in assembly.repeat_masker():
+            classification = repcls.classify(i.name)
+            if classification is None:
+                raise ValueError(f"Unknown repeat: {i.name} ({i})")
 
-        _, _, cls = classification
-        if cls in {"rRNA"}:
-            collected[assembly.name, "RepeatMasker"] += 1
-            intervals[assembly].append(i)
+            _, _, cls = classification
+            if cls in {"rRNA"}:
+                collected[assembly.name, "RepeatMasker"] += 1
+                intervals[assembly].append(i)
 
     # Curated sequences
-    for i in BedTool(RESOURCES / f"{assembly.name}.bed"):
-        collected[assembly.name, "Curated"] += 1
-        intervals[assembly].append(Interval(i.chrom, i.start, i.end, strand=i.strand))
+    path = RESOURCES / f"{assembly.name}.bed"
+    if path.exists():
+        logging.info(f"Loading curated rRNA annotations for {assembly.name} from {path}")
+        for i in BedTool(RESOURCES / f"{assembly.name}.bed"):
+            collected[assembly.name, "Curated"] += 1
+            intervals[assembly].append(Interval(i.chrom, i.start, i.end, strand=i.strand))
 
 print("Collected sequences from the annotation:")
 for k in collected:

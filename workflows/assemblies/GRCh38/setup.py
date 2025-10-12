@@ -1,5 +1,7 @@
 import resources
-from lib import setup
+from lib import setup, logs
+
+logs.setup()
 
 if __name__ == "__main__":
     base = f"https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_{resources.GENCODE_VERSION}"
