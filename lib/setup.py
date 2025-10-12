@@ -19,7 +19,7 @@ def download(url: str, saveto: Path):
 def rebgzip(gzfile: Path):
     """Ungzip a file and then bgzip it inplace"""
     tmp = gzfile.with_suffix('.tmp')
-    _execute(f"gunzip {gzfile} --stdout | bgzip --threads $(nproc) -l 6 -o {tmp} /dev/stdin")
+    _execute(f"gunzip {gzfile} --stdout | bgzip --threads $(nproc) -l 6 -o {tmp} /dev/stdin", shell=True)
     tmp.rename(gzfile)
 
 
