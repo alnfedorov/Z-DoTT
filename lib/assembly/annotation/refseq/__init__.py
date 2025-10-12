@@ -1,0 +1,1 @@
+from .annotome import RefSeqAnnotome

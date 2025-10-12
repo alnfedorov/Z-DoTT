@@ -1,9 +1,12 @@
 from abc import ABCMeta, abstractmethod
 from pathlib import Path
-from typing import Any
-from typing import Protocol
+from typing import Any, runtime_checkable, Protocol
 
-from .annotation import GencodeAnnotome, RefSeqAnnotome
+from biobit.deprecated.repmasker import RepmaskerClassification
+from pybedtools import BedTool
+
+from .annotation.gencode import GencodeAnnotome, GencodeLiftoffAnnotome
+from .annotation.refseq import RefSeqAnnotome
 
 
 class Assembly(metaclass=ABCMeta):
@@ -12,7 +15,7 @@ class Assembly(metaclass=ABCMeta):
     @property
     @abstractmethod
     def name(self) -> str:
-        """A unique identifier for the assembly (e.g., 'CHM13v2')."""
+        """A unique name for the assembly (e.g., 'CHM13v2')."""
         ...
 
     @property
@@ -54,9 +57,23 @@ class Assembly(metaclass=ABCMeta):
         ...
 
 
-class HasGencodeAnnotation(Protocol):
+@runtime_checkable
+class HasRepeatMasker(Protocol):
+    def repeat_masker(self) -> BedTool: ...
+
+    def repeat_masker_classes(self) -> RepmaskerClassification: ...
+
+
+@runtime_checkable
+class HasRefSeqAnnotome(Protocol):
+    def refseq(self) -> RefSeqAnnotome: ...
+
+
+@runtime_checkable
+class HasGencodeAnnotome(Protocol):
     def gencode(self) -> GencodeAnnotome: ...
 
 
-class HasRefSeqAnnotation(Protocol):
-    def refseq(self) -> RefSeqAnnotome: ...
+@runtime_checkable
+class HasGencodeLiftoffAnnotome(Protocol):
+    def gencode_liftoff(self) -> GencodeLiftoffAnnotome: ...

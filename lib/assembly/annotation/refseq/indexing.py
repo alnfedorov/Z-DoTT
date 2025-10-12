@@ -1,10 +1,12 @@
-import pickle
+import logging
 from collections import defaultdict
+from pathlib import Path
+from typing import Callable
 
 from biobit.core.loc import Interval
 from biobit.toolkit import annotome as at
 
-from assemblies import CHM13v2, GRCm39
+from .annotome import RefSeqAnnotome, AttrRNA, AttrCDS, AttrGene
 
 
 def hook(seqmap):
@@ -69,10 +71,10 @@ def hook(seqmap):
     return _hook
 
 
-for assembly in GRCm39, CHM13v2:
-    print(f"Processing {assembly.name} RefSeq GFF")
+def index(assembly_name: str, seqid_mapping: Callable[[str], str], gff3: Path) -> RefSeqAnnotome:
+    logging.info(f"Processing {assembly_name} RefSeq GFF")
     records = at.preprocess_gff(
-        assembly._refseq.gff,
+        gff3,
         ignore_sources=set(),
         ignore_types={
             "biological_region", "enhancer", "silencer", "transcriptional_cis_regulatory_region",
@@ -88,15 +90,15 @@ for assembly in GRCm39, CHM13v2:
             "imprinting_control_region", "regulatory_region", "CAGE_cluster", "TSS", "sequence_alteration_artifact",
             "centromere", "match", "cDNA_match", "D_loop"
         },
-        hook=hook(assembly.seqid.from_refseq), ind_key=lambda _, x: x["ID"]
+        hook=hook(seqid_mapping), ind_key=lambda _, x: x["ID"]
     )
     for key in "CDS", "transcript", "gene":
         unique = set(x for matches in records[key].values() for _, x, _ in matches)
-        print(f"\t{key} sources: {unique}")
+        logging.info(f"{key} unique sources: {unique}")
 
     for name, key in ("transcript", "biotype"), ("gene", "gene_biotype"):
         unique = set(x[key] for matches in records[name].values() for _, _, x in matches)
-        print(f"\t{name} biotypes: {unique}")
+        logging.info(f"{name} unique biotypes: {unique}")
 
     # Parse CDS records
     cds, tid2cds = [], defaultdict(list)
@@ -118,7 +120,7 @@ for assembly in GRCm39, CHM13v2:
             tid2cds[tid].append(ind)
             parents.add(tid)
 
-        attrs = assembly._refseq.AttrCDS(source, bool(attributes["partial"]), attributes["product"], frozenset(parents))
+        attrs = AttrCDS(source, bool(attributes["partial"]), attributes["product"], frozenset(parents))
         loc = at.transcriptome.Location(seqid, strand, blocks[0].start, blocks[-1].end)
         cds.append(at.transcriptome.CDS(ind, loc, attrs, tuple(blocks)))
     cds = at.transcriptome.CDSBundle(cds)
@@ -144,7 +146,7 @@ for assembly in GRCm39, CHM13v2:
         gid2tid[parent].add(ind)
 
         tags = [x for x in attributes.pop("tag", "").split(",") if x]
-        attrs = assembly._refseq.AttrRNA(
+        attrs = AttrRNA(
             source, attributes.pop("Name", None), attributes.pop("product", None),
             bool(attributes.pop("partial", "false")), attributes.pop("biotype"), frozenset(tags),
             attributes.pop("experiment", None)
@@ -160,7 +162,7 @@ for assembly in GRCm39, CHM13v2:
 
         # Name, description, gene_biotype, gene_synonym, partial,
         synonyms = [x for x in attributes.pop("gene_synonym", "").split(",") if x]
-        attrs = assembly._refseq.AttrGene(
+        attrs = AttrGene(
             source, attributes.pop("Name"), attributes.pop("description", None), attributes.pop("gene_biotype"),
             bool(attributes.pop("partial", "false")), frozenset(synonyms)
         )
@@ -172,8 +174,7 @@ for assembly in GRCm39, CHM13v2:
     genes = at.transcriptome.GeneBundle(genes)
 
     if singletons:
-        print(f"Singleton genes (N={len(singletons)}): {singletons}")
+        logging.warning(f"Found {len(singletons)} singleton genes (no transcripts): {list(sorted(singletons))}")
 
-    annotome = at.Annotome(assembly.name, "RefSeq", genes, RNA, cds)
-    with open(assembly._refseq.index, "wb") as stream:
-        pickle.dump(annotome, stream)
+    annotome = at.Annotome(assembly_name, "RefSeq", genes, RNA, cds)
+    return annotome

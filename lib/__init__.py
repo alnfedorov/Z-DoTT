@@ -1,1 +1,1 @@
-from . import bed, repeto, fasta, plot
+from . import bed, repeto, fasta, plot, logs

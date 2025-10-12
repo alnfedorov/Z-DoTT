@@ -6,7 +6,7 @@ from biobit.toolkit import annotome as at
 
 ROOT = Path(__file__).parent
 
-type GeneSource = Literal['Liftoff', 'ENSEMBL', 'HAVANA']
+type GeneSource = Literal['Liftoff']
 
 type GeneType = Literal[
     'IG_C_gene', 'IG_C_pseudogene', 'IG_D_gene', 'IG_D_pseudogene', 'IG_J_gene', 'IG_J_pseudogene', 'IG_LV_gene',
@@ -44,7 +44,7 @@ class AttrGene:
             raise ValueError(f"Invalid source: {self.source}")
 
 
-type RNASource = Literal['Liftoff', 'ENSEMBL', 'HAVANA']
+type RNASource = Literal['Liftoff']
 
 type RNAType = Literal[
     'IG_C_gene', 'IG_C_pseudogene', 'IG_D_gene', 'IG_D_pseudogene', 'IG_J_gene', 'IG_J_pseudogene', 'IG_LV_gene',
@@ -98,11 +98,11 @@ class AttrRNA:
             raise ValueError(f"Invalid biotype: {self.type}")
         if any(x not in RNATag.__value__.__args__ for x in self.tags):
             raise ValueError(f"Invalid tags: {self.tags}")
-        if self.TSL not in RNATSL.__value__.__args__:
+        if self.TSL not in RNATSL.__value__.__args__[0].__args__ and self.TSL is not None:
             raise ValueError(f"Invalid TSL: {self.TSL}")
 
 
-type CDSSource = Literal['Liftoff', 'ENSEMBL', 'HAVANA']
+type CDSSource = Literal['Liftoff']
 
 
 @define(hash=True, slots=True, frozen=True, eq=True, order=True, repr=True, str=True)
@@ -118,4 +118,4 @@ class AttrCDS:
             raise ValueError(f"Invalid source: {self.source}")
 
 
-type GencodeAnnotome = at.Annotome[AttrGene, AttrRNA, AttrCDS]
+type GencodeLiftoffAnnotome = at.Annotome[AttrGene, AttrRNA, AttrCDS]
